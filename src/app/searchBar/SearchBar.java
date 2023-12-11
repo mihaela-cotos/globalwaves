@@ -4,6 +4,7 @@ package app.searchBar;
 import app.Admin;
 import app.audio.LibraryEntry;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,14 +12,13 @@ import java.util.List;
 import static app.searchBar.FilterUtils.*;
 import static app.searchBar.FilterUtils.filterByFollowers;
 
+@Getter
+@Setter
 public class SearchBar {
     private List<LibraryEntry> results;
     private final String user;
     private static final Integer MAX_RESULTS = 5;
-    @Getter
     private String lastSearchType;
-
-    @Getter
     private LibraryEntry lastSelected;
 
     public SearchBar(String user) {
