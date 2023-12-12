@@ -6,6 +6,7 @@ import app.player.PlayerStats;
 import app.searchBar.Filters;
 import app.user.Artist;
 import app.user.SimpleUser;
+import app.user.User;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import fileio.input.CommandInput;
@@ -20,9 +21,14 @@ public class CommandRunner {
         SimpleUser user = (SimpleUser) Admin.getUser(commandInput.getUsername());
         Filters filters = new Filters(commandInput.getFilters());
         String type = commandInput.getType();
+        ArrayList<String> results = new ArrayList<>();
         String message;
 
-        ArrayList<String> results = user.search(filters, type);
+        if (type.equals("artist") || type.equals("host")) {
+            results = user.searchUser(filters, type);
+        } else {
+            results = user.search(filters, type);
+        }
 
         if (user.isOnlineStatus()) {
             message = "Search returned " + results.size() + " results";
@@ -42,8 +48,13 @@ public class CommandRunner {
 
     public static ObjectNode select(CommandInput commandInput) {
         SimpleUser user = (SimpleUser) Admin.getUser(commandInput.getUsername());
+        String message;
 
-        String message = user.select(commandInput.getItemNumber());
+        if (user.isSearchedUser()) {
+            message = user.selectUser(commandInput.getItemNumber());
+        } else {
+            message = user.select(commandInput.getItemNumber());
+        }
 
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
@@ -299,7 +310,7 @@ public class CommandRunner {
     }
 
     public static ObjectNode switchConnectionStatus(CommandInput commandInput) {
-        SimpleUser user = (SimpleUser) Admin.getUser(commandInput.getUsername());
+        User user = Admin.getUser(commandInput.getUsername());
         String message = Admin.switchConnectionStatus(commandInput);
 
         ObjectNode objectNode = objectMapper.createObjectNode();
@@ -313,6 +324,17 @@ public class CommandRunner {
 
     public static ObjectNode getOnlineUsers(CommandInput commandInput) {
         List<String> onlineUsers = Admin.getOnlineUsers();
+
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("result", objectMapper.valueToTree(onlineUsers));
+
+        return objectNode;
+    }
+
+    public static ObjectNode getAllUsers(CommandInput commandInput) {
+        List<String> onlineUsers = Admin.getAllUsers();
 
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
@@ -361,6 +383,30 @@ public class CommandRunner {
 
     public static ObjectNode printCurrentPage(CommandInput commandInput) {
         String message = Admin.printCurrentPage(commandInput);
+
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("message", message);
+
+        return objectNode;
+    }
+
+    public static ObjectNode addEvent(CommandInput commandInput) {
+        String message = Admin.addEvent(commandInput);
+
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("message", message);
+
+        return objectNode;
+    }
+
+    public static ObjectNode addMerch(CommandInput commandInput) {
+        String message = Admin.addMerch(commandInput);
 
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.put("command", commandInput.getCommand());

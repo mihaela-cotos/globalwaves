@@ -3,6 +3,8 @@ package app.searchBar;
 
 import app.Admin;
 import app.audio.LibraryEntry;
+import app.user.Artist;
+import app.user.User;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -16,10 +18,13 @@ import static app.searchBar.FilterUtils.filterByFollowers;
 @Setter
 public class SearchBar {
     private List<LibraryEntry> results;
+    private List<User> userResults;
     private final String user;
     private static final Integer MAX_RESULTS = 5;
     private String lastSearchType;
     private LibraryEntry lastSelected;
+    private User lastSelectedUser;
+
 
     public SearchBar(String user) {
         this.results = new ArrayList<>();
@@ -31,7 +36,9 @@ public class SearchBar {
         lastSearchType = null;
     }
     public List<LibraryEntry> search(Filters filters, String type) {
-        List<LibraryEntry> entries;
+        List<LibraryEntry> entries = new ArrayList<>();
+        List<User> hosts = new ArrayList<>(Admin.getHosts());
+        List<User> artists = new ArrayList<>(Admin.getArtists());
 
         switch (type) {
             case "song":
@@ -100,13 +107,58 @@ public class SearchBar {
                 entries = new ArrayList<>();
         }
 
-        while (entries.size() > MAX_RESULTS) {
-            entries.remove(entries.size() - 1);
-        }
+        if (type.equals("song") || type.equals("podcast") || type.equals("playlist")) {
+            while (entries.size() > MAX_RESULTS) {
+                entries.remove(entries.size() - 1);
+            }
 
-        this.results = entries;
+            this.results = entries;
+        } else {
+
+        }
         this.lastSearchType = type;
         return this.results;
+    }
+
+    public List<User> searchUser(Filters filters, String type) {
+        List<User> hosts = new ArrayList<>(Admin.getHosts());
+        List<User> artists = new ArrayList<>(Admin.getArtists());
+
+        switch (type) {
+            case "artist" :
+
+                if (filters.getName() != null) {
+                    artists = filterUsersByName(artists, filters.getName());
+                }
+
+                break;
+            case "host" :
+
+                if (filters.getName() != null) {
+                    hosts = filterUsersByName(hosts, filters.getName());
+                }
+
+                break;
+            default:
+                hosts = new ArrayList<>();
+                artists = new ArrayList<>();
+        }
+
+
+        if (type.equals("artist")) {
+            while (artists.size() > MAX_RESULTS) {
+                artists.remove(artists.size() - 1);
+            }
+            this.userResults = artists;
+        } else {
+            while (hosts.size() > MAX_RESULTS) {
+                hosts.remove(hosts.size() - 1);
+            }
+            this.userResults = hosts;
+        }
+
+        this.lastSearchType = type;
+        return this.userResults;
     }
 
     public LibraryEntry select(Integer itemNumber) {
@@ -119,6 +171,19 @@ public class SearchBar {
             results.clear();
 
             return lastSelected;
+        }
+    }
+
+    public User selectUser(Integer itemNumber) {
+        if (this.userResults.size() < itemNumber) {
+            userResults.clear();
+
+            return null;
+        } else {
+            lastSelectedUser =  this.userResults.get(itemNumber - 1);
+            results.clear();
+
+            return lastSelectedUser;
         }
     }
 }

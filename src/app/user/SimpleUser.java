@@ -6,6 +6,7 @@ import app.audio.Collections.PlaylistOutput;
 import app.audio.Files.AudioFile;
 import app.audio.Files.Song;
 import app.audio.LibraryEntry;
+import app.pages.HomePage;
 import app.player.Player;
 import app.player.PlayerStats;
 import app.searchBar.Filters;
@@ -16,6 +17,7 @@ import fileio.input.CommandInput;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -30,6 +32,7 @@ public class SimpleUser extends User {
     private final Player player;
     private final SearchBar searchBar;
     private boolean lastSearched;
+    private boolean searchedUser;
     private boolean onlineStatus;
 
     public SimpleUser(String username, int age, String city) {
@@ -61,6 +64,26 @@ public class SimpleUser extends User {
         return results;
     }
 
+    public ArrayList<String> searchUser(Filters filters, String type) {
+        if (!onlineStatus) {
+            return new ArrayList<>();
+        }
+        searchBar.clearSelection();
+        player.stop();
+
+        lastSearched = true;
+        searchedUser = true;
+        ArrayList<String> results = new ArrayList<>();
+        List<User> usersSearched = searchBar.searchUser(filters, type);
+
+        for (User user : usersSearched) {
+            results.add(user.getUsername());
+        }
+        return results;
+    }
+
+
+
     public String select(int itemNumber) {
         if (!lastSearched)
             return "Please conduct a search before making a selection.";
@@ -73,6 +96,25 @@ public class SimpleUser extends User {
             return "The selected ID is too high.";
 
         return "Successfully selected %s.".formatted(selected.getName());
+    }
+
+    public String selectUser(int itemNumber) {
+        if (!lastSearched)
+            return "Please conduct a search before making a selection.";
+
+        lastSearched = false;
+
+        User selected = searchBar.selectUser(itemNumber);
+
+        if (selected == null)
+            return "The selected ID is too high.";
+
+        if (selected.getUserType().equals(Enums.UserType.ARTIST)) {
+            setCurrentPage(((Artist)selected).getArtistPage());
+        } else {
+            setCurrentPage(((Host)selected).getHostPage());
+        }
+        return "Successfully selected %s".formatted(selected.getUsername()) + "'s page.";
     }
 
     public String load() {
@@ -175,12 +217,16 @@ public class SimpleUser extends User {
         if (likedSongs.contains(song)) {
             likedSongs.remove(song);
             song.dislike();
-
             return "Unlike registered successfully.";
         }
 
-        likedSongs.add(song);
         song.like();
+        likedSongs.add(song);
+
+        if (getCurrentPage().getName().equals("homePage")) {
+            ((HomePage)getCurrentPage()).update(this);
+        }
+
         return "Like registered successfully.";
     }
 
@@ -310,7 +356,8 @@ public class SimpleUser extends User {
     }
 
     public List<Playlist> getTopLikedPlaylists() {
-        ArrayList<Playlist> sortedPlaylists = followedPlaylists;
+        ArrayList<Playlist> sortedPlaylists = new ArrayList<>();
+        sortedPlaylists.addAll(followedPlaylists);
         sortedPlaylists.sort(Comparator.comparingInt(Playlist::getTotalLikes).reversed());
 
         return sortedPlaylists.subList(0,
@@ -318,7 +365,8 @@ public class SimpleUser extends User {
     }
 
     public List<Song> getTopLikedSongs() {
-        ArrayList<Song> sortedSongs = likedSongs;
+        ArrayList<Song> sortedSongs = new ArrayList<>();
+        sortedSongs.addAll(likedSongs);
         sortedSongs.sort(Comparator.comparingInt(Song::getLikes).reversed());
 
         return sortedSongs.subList(0,

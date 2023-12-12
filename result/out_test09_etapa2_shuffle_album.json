@@ -1,124 +1,493 @@
 [ {
+  "command" : "createPlaylist",
+  "user" : "bob35",
+  "timestamp" : 150,
+  "message" : "Playlist created successfully."
+}, {
   "command" : "search",
-  "user" : "alice22",
-  "timestamp" : 10,
+  "user" : "bob35",
+  "timestamp" : 170,
   "message" : "Search returned 1 results",
-  "results" : [ "Shape of You" ]
+  "results" : [ "Nothing Else Matters" ]
+}, {
+  "command" : "addUser",
+  "user" : "melodymaster",
+  "timestamp" : 171,
+  "message" : "The username melodymaster has been added successfully."
+}, {
+  "command" : "addAlbum",
+  "user" : "melodymaster",
+  "timestamp" : 172,
+  "message" : "melodymaster has added new album successfully."
+}, {
+  "command" : "addEvent",
+  "user" : "melodymaster",
+  "timestamp" : 185,
+  "message" : "melodymaster has added new event successfully."
 }, {
   "command" : "select",
-  "user" : "alice22",
-  "timestamp" : 15,
-  "message" : "Successfully selected Shape of You."
+  "user" : "bob35",
+  "timestamp" : 190,
+  "message" : "Successfully selected Nothing Else Matters."
 }, {
   "command" : "load",
-  "user" : "alice22",
-  "timestamp" : 20,
+  "user" : "bob35",
+  "timestamp" : 195,
+  "message" : "Playback loaded successfully."
+}, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "bob35",
+  "timestamp" : 240,
+  "message" : "Successfully added to playlist."
+}, {
+  "command" : "search",
+  "user" : "carol19",
+  "timestamp" : 270,
+  "message" : "Search returned 3 results",
+  "results" : [ "Don't", "Delicate", "Digital Dreams" ]
+}, {
+  "command" : "search",
+  "user" : "david27",
+  "timestamp" : 270,
+  "message" : "Search returned 1 results",
+  "results" : [ "melodymaster" ]
+}, {
+  "command" : "select",
+  "user" : "bob35",
+  "timestamp" : 290,
+  "message" : "Please conduct a search before making a selection."
+}, {
+  "command" : "load",
+  "user" : "bob35",
+  "timestamp" : 320,
+  "message" : "Please select a source before attempting to load."
+}, {
+  "command" : "select",
+  "user" : "david27",
+  "timestamp" : 320,
+  "message" : "Successfully selected melodymaster's page."
+}, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "bob35",
+  "timestamp" : 340,
+  "message" : "Successfully removed from playlist."
+}, {
+  "command" : "search",
+  "user" : "bob35",
+  "timestamp" : 340,
+  "message" : "Search returned 2 results",
+  "results" : [ "Radio Ga Ga", "Retro Rhythms" ]
+}, {
+  "command" : "select",
+  "user" : "bob35",
+  "timestamp" : 340,
+  "message" : "Successfully selected Retro Rhythms."
+}, {
+  "command" : "load",
+  "user" : "bob35",
+  "timestamp" : 340,
+  "message" : "Playback loaded successfully."
+}, {
+  "command" : "select",
+  "user" : "carol19",
+  "timestamp" : 340,
+  "message" : "Successfully selected Digital Dreams."
+}, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "bob35",
+  "timestamp" : 340,
+  "message" : "Successfully added to playlist."
+}, {
+  "command" : "search",
+  "user" : "bob35",
+  "timestamp" : 370,
+  "message" : "Search returned 1 results",
+  "results" : [ "Elevate" ]
+}, {
+  "command" : "select",
+  "user" : "bob35",
+  "timestamp" : 390,
+  "message" : "Successfully selected Elevate."
+}, {
+  "command" : "addEvent",
+  "user" : "melodymaster",
+  "timestamp" : 395,
+  "message" : "Event for melodymaster does not have a valid date."
+}, {
+  "command" : "load",
+  "user" : "bob35",
+  "timestamp" : 400,
+  "message" : "Playback loaded successfully."
+}, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "bob35",
+  "timestamp" : 430,
+  "message" : "Successfully added to playlist."
+}, {
+  "command" : "printCurrentPage",
+  "user" : "david27",
+  "timestamp" : 430,
+  "message" : "Albums:\n\t[Harmonic Horizons]\n\nMerch:\n\t[]\n\nEvents:\n\t[Event1 - 01-01-2022:\n\tPrimul Event adaugat!]"
+}, {
+  "command" : "search",
+  "user" : "bob35",
+  "timestamp" : 431,
+  "message" : "Search returned 0 results",
+  "results" : [ ]
+}, {
+  "command" : "select",
+  "user" : "bob35",
+  "timestamp" : 432,
+  "message" : "The selected ID is too high."
+}, {
+  "command" : "load",
+  "user" : "bob35",
+  "timestamp" : 433,
+  "message" : "Please select a source before attempting to load."
+}, {
+  "command" : "addMerch",
+  "user" : "melodymaster",
+  "timestamp" : 433,
+  "message" : "melodymaster has added new merchandise successfully."
+}, {
+  "command" : "load",
+  "user" : "carol19",
+  "timestamp" : 434,
   "message" : "Playback loaded successfully."
 }, {
   "command" : "status",
-  "user" : "alice22",
-  "timestamp" : 25,
+  "user" : "bob35",
+  "timestamp" : 434,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 228,
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
+}, {
+  "command" : "shuffle",
+  "user" : "bob35",
+  "timestamp" : 440,
+  "message" : "Please load a source before using the shuffle function."
+}, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 446,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
+}, {
+  "command" : "repeat",
+  "user" : "carol19",
+  "timestamp" : 690,
+  "message" : "Repeat mode changed to repeat once."
+}, {
+  "command" : "addEvent",
+  "user" : "melodymaster",
+  "timestamp" : 785,
+  "message" : "melodymaster has added new event successfully."
+}, {
+  "command" : "repeat",
+  "user" : "carol19",
+  "timestamp" : 950,
+  "message" : "Repeat mode changed to repeat once."
+}, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 1000,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
+}, {
+  "command" : "like",
+  "user" : "carol19",
+  "timestamp" : 1115,
+  "message" : "Like registered successfully."
+}, {
+  "command" : "search",
+  "user" : "carol19",
+  "timestamp" : 1500,
+  "message" : "Search returned 1 results",
+  "results" : [ "My playlist" ]
+}, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 2400,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
+}, {
+  "command" : "select",
+  "user" : "carol19",
+  "timestamp" : 2435,
+  "message" : "Successfully selected My playlist."
+}, {
+  "command" : "search",
+  "user" : "bob35",
+  "timestamp" : 2445,
+  "message" : "Search returned 1 results",
+  "results" : [ "I Don't Wanna Live Forever" ]
+}, {
+  "command" : "select",
+  "user" : "bob35",
+  "timestamp" : 2450,
+  "message" : "Successfully selected I Don't Wanna Live Forever."
+}, {
+  "command" : "printCurrentPage",
+  "user" : "carol19",
+  "timestamp" : 2455,
+  "message" : "Liked songs:\n\t[Digital Dreams]\n\nFollowed playlists:\n\t[]"
+}, {
+  "command" : "load",
+  "user" : "bob35",
+  "timestamp" : 2460,
+  "message" : "Playback loaded successfully."
+}, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "bob35",
+  "timestamp" : 2480,
+  "message" : "Successfully added to playlist."
+}, {
+  "command" : "search",
+  "user" : "bob35",
+  "timestamp" : 2500,
+  "message" : "Search returned 1 results",
+  "results" : [ "Hustle Hard" ]
+}, {
+  "command" : "select",
+  "user" : "bob35",
+  "timestamp" : 2510,
+  "message" : "Successfully selected Hustle Hard."
+}, {
+  "command" : "follow",
+  "user" : "carol19",
+  "timestamp" : 2515,
+  "message" : "Playlist followed successfully."
+}, {
+  "command" : "load",
+  "user" : "bob35",
+  "timestamp" : 2520,
+  "message" : "Playback loaded successfully."
+}, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "bob35",
+  "timestamp" : 2540,
+  "message" : "Successfully added to playlist."
+}, {
+  "command" : "search",
+  "user" : "bob35",
+  "timestamp" : 2590,
+  "message" : "Search returned 1 results",
+  "results" : [ "Begin Again" ]
+}, {
+  "command" : "select",
+  "user" : "bob35",
+  "timestamp" : 2650,
+  "message" : "Successfully selected Begin Again."
+}, {
+  "command" : "load",
+  "user" : "bob35",
+  "timestamp" : 2660,
+  "message" : "Playback loaded successfully."
+}, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "bob35",
+  "timestamp" : 2690,
+  "message" : "Successfully added to playlist."
+}, {
+  "command" : "search",
+  "user" : "bob35",
+  "timestamp" : 2700,
+  "message" : "Search returned 1 results",
+  "results" : [ "My playlist" ]
+}, {
+  "command" : "select",
+  "user" : "bob35",
+  "timestamp" : 2710,
+  "message" : "Successfully selected My playlist."
+}, {
+  "command" : "load",
+  "user" : "bob35",
+  "timestamp" : 2740,
+  "message" : "Playback loaded successfully."
+}, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 2800,
+  "stats" : {
+    "name" : "Retro Rhythms",
+    "remainedTime" : 160,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
   }
 }, {
-  "command" : "switchConnectionStatus",
-  "user" : "alice22",
-  "timestamp" : 240,
-  "message" : "alice22 has changed status successfully."
+  "command" : "shuffle",
+  "user" : "bob35",
+  "timestamp" : 2850,
+  "message" : "Shuffle function activated successfully."
 }, {
-  "command" : "like",
-  "user" : "alice22",
-  "timestamp" : 280,
-  "message" : "alice22 is offline."
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 2900,
+  "stats" : {
+    "name" : "Retro Rhythms",
+    "remainedTime" : 60,
+    "repeat" : "No Repeat",
+    "shuffle" : true,
+    "paused" : false
+  }
 }, {
-  "command" : "addUser",
-  "user" : "melodymaster",
-  "timestamp" : 295,
-  "message" : "The username melodymaster has been added successfully."
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 3250,
+  "stats" : {
+    "name" : "Hustle Hard",
+    "remainedTime" : 167,
+    "repeat" : "No Repeat",
+    "shuffle" : true,
+    "paused" : false
+  }
 }, {
-  "command" : "addAlbum",
-  "user" : "melodymaster",
-  "timestamp" : 305,
-  "message" : "melodymaster has added new album successfully."
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 3600,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
-  "command" : "showAlbums",
-  "user" : "melodymaster",
-  "timestamp" : 350,
-  "result" : [ {
-    "name" : "Harmonic Horizons",
-    "songs" : [ "Vibrant Echoes", "Synth Symphony", "Retro Rhythms", "Digital Dreams", "Night Pulse" ]
-  } ]
+  "command" : "shuffle",
+  "user" : "bob35",
+  "timestamp" : 3610,
+  "message" : "Please load a source before using the shuffle function."
 }, {
-  "command" : "addUser",
-  "user" : "alice22",
-  "timestamp" : 380,
-  "message" : "The username alice22 is already taken."
-}, {
-  "command" : "switchConnectionStatus",
-  "user" : "alice22",
-  "timestamp" : 390,
-  "message" : "alice22 has changed status successfully."
-}, {
-  "command" : "search",
-  "user" : "alice22",
-  "timestamp" : 395,
-  "message" : "Search returned 2 results",
-  "results" : [ "Radio Ga Ga", "Retro Rhythms" ]
-}, {
-  "command" : "addAlbum",
-  "user" : "melodymaster",
-  "timestamp" : 400,
-  "message" : "melodymaster has added new album successfully."
-}, {
-  "command" : "search",
-  "user" : "alice22",
-  "timestamp" : 420,
-  "message" : "Search returned 4 results",
-  "results" : [ "Money Trees", "Maps", "Moves Like Jagger", "Melodic Mirage" ]
-}, {
-  "command" : "select",
-  "user" : "alice22",
-  "timestamp" : 430,
-  "message" : "Successfully selected Melodic Mirage."
-}, {
-  "command" : "load",
-  "user" : "alice22",
-  "timestamp" : 440,
-  "message" : "Playback loaded successfully."
-}, {
-  "command" : "like",
-  "user" : "alice22",
-  "timestamp" : 460,
-  "message" : "Like registered successfully."
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 3660,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "printCurrentPage",
-  "user" : "alice22",
-  "timestamp" : 480,
-  "message" : "Liked songs:\n\t[Melodic Mirage]\\n\\nFollowed playlists:\\n\\]"
+  "user" : "david27",
+  "timestamp" : 3900,
+  "message" : "Albums:\n\t[Harmonic Horizons]\n\nMerch:\n\t[Merch1 - 100:\n\tPrimul Merch adaugat!]\n\nEvents:\n\t[Event1 - 01-01-2022:\n\tPrimul Event adaugat!, Event2 - 05-02-2021:\n\tAl doilea Event adaugat!]"
 }, {
-  "command" : "addAlbum",
-  "user" : "melodymaster",
-  "timestamp" : 515,
-  "message" : "melodymaster has another album with the same name."
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 4000,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
-  "command" : "showAlbums",
-  "user" : "melodymaster",
-  "timestamp" : 550,
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 4350,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
+}, {
+  "command" : "search",
+  "user" : "bob35",
+  "timestamp" : 4351,
+  "message" : "Search returned 1 results",
+  "results" : [ "My playlist" ]
+}, {
+  "command" : "select",
+  "user" : "bob35",
+  "timestamp" : 4352,
+  "message" : "Successfully selected My playlist."
+}, {
+  "command" : "load",
+  "user" : "bob35",
+  "timestamp" : 4353,
+  "message" : "Playback loaded successfully."
+}, {
+  "command" : "shuffle",
+  "user" : "bob35",
+  "timestamp" : 4360,
+  "message" : "Shuffle function activated successfully."
+}, {
+  "command" : "printCurrentPage",
+  "user" : "david27",
+  "timestamp" : 4400,
+  "message" : "Albums:\n\t[Harmonic Horizons]\n\nMerch:\n\t[Merch1 - 100:\n\tPrimul Merch adaugat!]\n\nEvents:\n\t[Event1 - 01-01-2022:\n\tPrimul Event adaugat!, Event2 - 05-02-2021:\n\tAl doilea Event adaugat!]"
+}, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 4410,
+  "stats" : {
+    "name" : "Retro Rhythms",
+    "remainedTime" : 163,
+    "repeat" : "No Repeat",
+    "shuffle" : true,
+    "paused" : false
+  }
+}, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 4750,
+  "stats" : {
+    "name" : "Hustle Hard",
+    "remainedTime" : 55,
+    "repeat" : "No Repeat",
+    "shuffle" : true,
+    "paused" : false
+  }
+}, {
+  "command" : "printCurrentPage",
+  "user" : "carol19",
+  "timestamp" : 5000,
+  "message" : "Liked songs:\n\t[Digital Dreams]\n\nFollowed playlists:\n\t[]"
+}, {
+  "command" : "status",
+  "user" : "bob35",
+  "timestamp" : 5100,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
+}, {
+  "command" : "showPlaylists",
+  "user" : "bob35",
+  "timestamp" : 6000,
   "result" : [ {
-    "name" : "Harmonic Horizons",
-    "songs" : [ "Vibrant Echoes", "Synth Symphony", "Retro Rhythms", "Digital Dreams", "Night Pulse" ]
-  }, {
-    "name" : "Echoes of Harmony",
-    "songs" : [ "Melodic Mirage", "Pop Serenade" ]
+    "name" : "My playlist",
+    "songs" : [ "Retro Rhythms", "Elevate", "I Don't Wanna Live Forever", "Hustle Hard", "Begin Again" ],
+    "visibility" : "public",
+    "followers" : 1,
+    "timestamp" : 150
   } ]
-}, {
-  "command" : "addAlbum",
-  "user" : "melodymaster",
-  "timestamp" : 560,
-  "message" : "melodymaster has the same song at least twice in this album."
 } ]

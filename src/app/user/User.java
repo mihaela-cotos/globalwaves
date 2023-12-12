@@ -22,4 +22,8 @@ public abstract class User {
 
     public User() {
     }
+
+    public boolean matchesName(String name) {
+        return getUsername().toLowerCase().startsWith(name.toLowerCase());
+    }
 }

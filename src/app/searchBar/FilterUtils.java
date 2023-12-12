@@ -1,6 +1,7 @@
 package app.searchBar;
 
 import app.audio.LibraryEntry;
+import app.user.User;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +11,16 @@ public class FilterUtils {
     public static List<LibraryEntry> filterByName(List<LibraryEntry> entries, String name) {
         List<LibraryEntry> result = new ArrayList<>();
         for (LibraryEntry entry : entries) {
+            if (entry.matchesName(name)) {
+                result.add(entry);
+            }
+        }
+        return result;
+    }
+
+    public static List<User> filterUsersByName(List<User> entries, String name) {
+        List<User> result = new ArrayList<>();
+        for (User entry : entries) {
             if (entry.matchesName(name)) {
                 result.add(entry);
             }

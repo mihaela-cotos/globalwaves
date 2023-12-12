@@ -1,124 +1,312 @@
 [ {
+  "command" : "addUser",
+  "user" : "melodymaster",
+  "timestamp" : 1,
+  "message" : "The username melodymaster has been added successfully."
+}, {
+  "command" : "addAlbum",
+  "user" : "melodymaster",
+  "timestamp" : 2,
+  "message" : "melodymaster has added new album successfully."
+}, {
+  "command" : "addUser",
+  "user" : "rhythmicrider58",
+  "timestamp" : 30,
+  "message" : "The username rhythmicrider58 has been added successfully."
+}, {
   "command" : "search",
-  "user" : "alice22",
-  "timestamp" : 10,
+  "user" : "emily30",
+  "timestamp" : 1000,
   "message" : "Search returned 1 results",
-  "results" : [ "Shape of You" ]
+  "results" : [ "Night Pulse" ]
+}, {
+  "command" : "repeat",
+  "user" : "emily30",
+  "timestamp" : 1035,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "select",
-  "user" : "alice22",
-  "timestamp" : 15,
-  "message" : "Successfully selected Shape of You."
+  "user" : "emily30",
+  "timestamp" : 1100,
+  "message" : "Successfully selected Night Pulse."
 }, {
   "command" : "load",
-  "user" : "alice22",
-  "timestamp" : 20,
+  "user" : "emily30",
+  "timestamp" : 1120,
   "message" : "Playback loaded successfully."
 }, {
+  "command" : "search",
+  "user" : "rhythmicrider58",
+  "timestamp" : 1170,
+  "message" : "Search returned 5 results",
+  "results" : [ "Sicko Mode", "Stargazing", "Sicko Mode", "Swimming Pools (Drank)", "Synth Symphony" ]
+}, {
   "command" : "status",
-  "user" : "alice22",
-  "timestamp" : 25,
+  "user" : "emily30",
+  "timestamp" : 1190,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 228,
+    "name" : "Night Pulse",
+    "remainedTime" : 170,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
   }
 }, {
-  "command" : "switchConnectionStatus",
-  "user" : "alice22",
-  "timestamp" : 240,
-  "message" : "alice22 has changed status successfully."
+  "command" : "repeat",
+  "user" : "emily30",
+  "timestamp" : 1191,
+  "message" : "Repeat mode changed to repeat once."
 }, {
-  "command" : "like",
-  "user" : "alice22",
-  "timestamp" : 280,
-  "message" : "alice22 is offline."
+  "command" : "repeat",
+  "user" : "emily30",
+  "timestamp" : 1192,
+  "message" : "Repeat mode changed to repeat infinite."
 }, {
-  "command" : "addUser",
-  "user" : "melodymaster",
-  "timestamp" : 295,
-  "message" : "The username melodymaster has been added successfully."
-}, {
-  "command" : "addAlbum",
-  "user" : "melodymaster",
-  "timestamp" : 305,
-  "message" : "melodymaster has added new album successfully."
-}, {
-  "command" : "showAlbums",
-  "user" : "melodymaster",
-  "timestamp" : 350,
-  "result" : [ {
-    "name" : "Harmonic Horizons",
-    "songs" : [ "Vibrant Echoes", "Synth Symphony", "Retro Rhythms", "Digital Dreams", "Night Pulse" ]
-  } ]
-}, {
-  "command" : "addUser",
-  "user" : "alice22",
-  "timestamp" : 380,
-  "message" : "The username alice22 is already taken."
-}, {
-  "command" : "switchConnectionStatus",
-  "user" : "alice22",
-  "timestamp" : 390,
-  "message" : "alice22 has changed status successfully."
-}, {
-  "command" : "search",
-  "user" : "alice22",
-  "timestamp" : 395,
-  "message" : "Search returned 2 results",
-  "results" : [ "Radio Ga Ga", "Retro Rhythms" ]
-}, {
-  "command" : "addAlbum",
-  "user" : "melodymaster",
-  "timestamp" : 400,
-  "message" : "melodymaster has added new album successfully."
-}, {
-  "command" : "search",
-  "user" : "alice22",
-  "timestamp" : 420,
-  "message" : "Search returned 4 results",
-  "results" : [ "Money Trees", "Maps", "Moves Like Jagger", "Melodic Mirage" ]
+  "command" : "repeat",
+  "user" : "emily30",
+  "timestamp" : 2000,
+  "message" : "Repeat mode changed to no repeat."
 }, {
   "command" : "select",
-  "user" : "alice22",
-  "timestamp" : 430,
-  "message" : "Successfully selected Melodic Mirage."
+  "user" : "rhythmicrider58",
+  "timestamp" : 2050,
+  "message" : "Successfully selected Synth Symphony."
+}, {
+  "command" : "status",
+  "user" : "emily30",
+  "timestamp" : 2100,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
+}, {
+  "command" : "repeat",
+  "user" : "emily30",
+  "timestamp" : 2135,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "load",
-  "user" : "alice22",
-  "timestamp" : 440,
+  "user" : "rhythmicrider58",
+  "timestamp" : 2185,
+  "message" : "Playback loaded successfully."
+}, {
+  "command" : "status",
+  "user" : "emily30",
+  "timestamp" : 2200,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
+}, {
+  "command" : "search",
+  "user" : "emily30",
+  "timestamp" : 2245,
+  "message" : "Search returned 0 results",
+  "results" : [ ]
+}, {
+  "command" : "repeat",
+  "user" : "emily30",
+  "timestamp" : 2290,
+  "message" : "Please load a source before setting the repeat status."
+}, {
+  "command" : "like",
+  "user" : "rhythmicrider58",
+  "timestamp" : 2295,
+  "message" : "Like registered successfully."
+}, {
+  "command" : "repeat",
+  "user" : "rhythmicrider58",
+  "timestamp" : 2480,
+  "message" : "Repeat mode changed to repeat once."
+}, {
+  "command" : "forward",
+  "user" : "rhythmicrider58",
+  "timestamp" : 2555,
+  "message" : "The loaded source is not a podcast."
+}, {
+  "command" : "load",
+  "user" : "emily30",
+  "timestamp" : 3000,
+  "message" : "Please select a source before attempting to load."
+}, {
+  "command" : "status",
+  "user" : "emily30",
+  "timestamp" : 3100,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
+}, {
+  "command" : "createPlaylist",
+  "user" : "emily30",
+  "timestamp" : 3150,
+  "message" : "Playlist created successfully."
+}, {
+  "command" : "search",
+  "user" : "emily30",
+  "timestamp" : 3170,
+  "message" : "Search returned 1 results",
+  "results" : [ "99 Problems" ]
+}, {
+  "command" : "select",
+  "user" : "emily30",
+  "timestamp" : 3190,
+  "message" : "Successfully selected 99 Problems."
+}, {
+  "command" : "search",
+  "user" : "rhythmicrider58",
+  "timestamp" : 3190,
+  "message" : "Search returned 1 results",
+  "results" : [ "My favourite songs" ]
+}, {
+  "command" : "load",
+  "user" : "emily30",
+  "timestamp" : 3195,
+  "message" : "Playback loaded successfully."
+}, {
+  "command" : "repeat",
+  "user" : "emily30",
+  "timestamp" : 3200,
+  "message" : "Repeat mode changed to repeat once."
+}, {
+  "command" : "status",
+  "user" : "emily30",
+  "timestamp" : 3220,
+  "stats" : {
+    "name" : "99 Problems",
+    "remainedTime" : 209,
+    "repeat" : "Repeat Once",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
+  "command" : "select",
+  "user" : "rhythmicrider58",
+  "timestamp" : 3225,
+  "message" : "Successfully selected My favourite songs."
+}, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "emily30",
+  "timestamp" : 3240,
+  "message" : "Successfully added to playlist."
+}, {
+  "command" : "search",
+  "user" : "emily30",
+  "timestamp" : 3260,
+  "message" : "Search returned 1 results",
+  "results" : [ "My favourite songs" ]
+}, {
+  "command" : "repeat",
+  "user" : "emily30",
+  "timestamp" : 3270,
+  "message" : "Please load a source before setting the repeat status."
+}, {
+  "command" : "follow",
+  "user" : "rhythmicrider58",
+  "timestamp" : 3285,
+  "message" : "Playlist followed successfully."
+}, {
+  "command" : "select",
+  "user" : "emily30",
+  "timestamp" : 3290,
+  "message" : "Successfully selected My favourite songs."
+}, {
+  "command" : "repeat",
+  "user" : "emily30",
+  "timestamp" : 3295,
+  "message" : "Please load a source before setting the repeat status."
+}, {
+  "command" : "printCurrentPage",
+  "user" : "rhythmicrider58",
+  "timestamp" : 3300,
+  "message" : "Liked songs:\n\t[Synth Symphony]\n\nFollowed playlists:\n\t[]"
+}, {
+  "command" : "status",
+  "user" : "emily30",
+  "timestamp" : 3310,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
+}, {
+  "command" : "repeat",
+  "user" : "emily30",
+  "timestamp" : 3335,
+  "message" : "Please load a source before setting the repeat status."
+}, {
+  "command" : "search",
+  "user" : "rhythmicrider58",
+  "timestamp" : 3380,
+  "message" : "Search returned 1 results",
+  "results" : [ "Vibrant Echoes" ]
+}, {
+  "command" : "search",
+  "user" : "rhythmicrider58",
+  "timestamp" : 3395,
+  "message" : "Search returned 1 results",
+  "results" : [ "Shape of You" ]
+}, {
+  "command" : "status",
+  "user" : "emily30",
+  "timestamp" : 3400,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
+}, {
+  "command" : "createPlaylist",
+  "user" : "emily30",
+  "timestamp" : 3405,
+  "message" : "A playlist with the same name already exists."
+}, {
+  "command" : "select",
+  "user" : "rhythmicrider58",
+  "timestamp" : 3410,
+  "message" : "Successfully selected Shape of You."
+}, {
+  "command" : "repeat",
+  "user" : "emily30",
+  "timestamp" : 3435,
+  "message" : "Please load a source before setting the repeat status."
+}, {
+  "command" : "showPlaylists",
+  "user" : "emily30",
+  "timestamp" : 3438,
+  "result" : [ {
+    "name" : "My favourite songs",
+    "songs" : [ "99 Problems" ],
+    "visibility" : "public",
+    "followers" : 1,
+    "timestamp" : 3150
+  } ]
+}, {
+  "command" : "load",
+  "user" : "rhythmicrider58",
+  "timestamp" : 3440,
   "message" : "Playback loaded successfully."
 }, {
   "command" : "like",
-  "user" : "alice22",
-  "timestamp" : 460,
+  "user" : "rhythmicrider58",
+  "timestamp" : 3445,
   "message" : "Like registered successfully."
 }, {
   "command" : "printCurrentPage",
-  "user" : "alice22",
-  "timestamp" : 480,
-  "message" : "Liked songs:\n\t[Melodic Mirage]\\n\\nFollowed playlists:\\n\\]"
-}, {
-  "command" : "addAlbum",
-  "user" : "melodymaster",
-  "timestamp" : 515,
-  "message" : "melodymaster has another album with the same name."
-}, {
-  "command" : "showAlbums",
-  "user" : "melodymaster",
-  "timestamp" : 550,
-  "result" : [ {
-    "name" : "Harmonic Horizons",
-    "songs" : [ "Vibrant Echoes", "Synth Symphony", "Retro Rhythms", "Digital Dreams", "Night Pulse" ]
-  }, {
-    "name" : "Echoes of Harmony",
-    "songs" : [ "Melodic Mirage", "Pop Serenade" ]
-  } ]
-}, {
-  "command" : "addAlbum",
-  "user" : "melodymaster",
-  "timestamp" : 560,
-  "message" : "melodymaster has the same song at least twice in this album."
+  "user" : "rhythmicrider58",
+  "timestamp" : 7000,
+  "message" : "Liked songs:\n\t[Synth Symphony, Shape of You]\n\nFollowed playlists:\n\t[My favourite songs]"
 } ]

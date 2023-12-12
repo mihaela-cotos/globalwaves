@@ -73,8 +73,8 @@ public final class Main {
                               final String filePath2) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
         LibraryInput library = objectMapper.readValue(new File(CheckerConstants.TESTS_PATH + "library/library.json"), LibraryInput.class);
-//        CommandInput[] commands = objectMapper.readValue(new File(CheckerConstants.TESTS_PATH + filePath1), CommandInput[].class);
-        CommandInput[] commands = objectMapper.readValue(new File(CheckerConstants.TESTS_PATH + "test02_etapa2.json"), CommandInput[].class);
+        CommandInput[] commands = objectMapper.readValue(new File(CheckerConstants.TESTS_PATH + filePath1), CommandInput[].class);
+//        CommandInput[] commands = objectMapper.readValue(new File(CheckerConstants.TESTS_PATH + "test02_etapa2.json"), CommandInput[].class);
         ArrayNode outputs = objectMapper.createArrayNode();
 
         Admin.setUsers(library.getUsers());
@@ -82,10 +82,7 @@ public final class Main {
         Admin.setPodcasts(library.getPodcasts());
 
         for (CommandInput command : commands) {
-            if (Admin.getUser(command.getUsername()) != null
-                && Admin.getUser(command.getUsername()).getUserType().equals(Enums.UserType.NORMAL)
-                && ((SimpleUser)Admin.getUser(command.getUsername())).isOnlineStatus()) {
-
+            if (Admin.getUser(command.getUsername()) != null) {
                 Admin.updateTimestamp(command.getTimestamp());
             }
 
@@ -119,6 +116,10 @@ public final class Main {
                 case "addAlbum" -> outputs.add(CommandRunner.addAlbum(command));
                 case "showAlbums" -> outputs.add(CommandRunner.showAlbums(command));
                 case "printCurrentPage" -> outputs.add(CommandRunner.printCurrentPage(command));
+                case "addEvent" -> outputs.add(CommandRunner.addEvent(command));
+                case "addMerch" -> outputs.add(CommandRunner.addMerch(command));
+                case "getAllUsers" -> outputs.add(CommandRunner.getAllUsers(command));
+
                 default -> System.out.println("Invalid command " + commandName);
             }
         }

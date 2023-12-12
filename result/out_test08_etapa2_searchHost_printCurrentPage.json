@@ -3,12 +3,12 @@
   "user" : "alice22",
   "timestamp" : 10,
   "message" : "Search returned 1 results",
-  "results" : [ "Shape of You" ]
+  "results" : [ "TED Radio Hour" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 15,
-  "message" : "Successfully selected Shape of You."
+  "message" : "Successfully selected TED Radio Hour."
 }, {
   "command" : "load",
   "user" : "alice22",
@@ -17,108 +17,279 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 25,
+  "timestamp" : 49,
   "stats" : {
-    "name" : "Shape of You",
-    "remainedTime" : 228,
+    "name" : "The Power of Design",
+    "remainedTime" : 3075,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
   }
 }, {
-  "command" : "switchConnectionStatus",
-  "user" : "alice22",
-  "timestamp" : 240,
-  "message" : "alice22 has changed status successfully."
-}, {
-  "command" : "like",
-  "user" : "alice22",
-  "timestamp" : 280,
-  "message" : "alice22 is offline."
-}, {
   "command" : "addUser",
-  "user" : "melodymaster",
-  "timestamp" : 295,
-  "message" : "The username melodymaster has been added successfully."
+  "user" : "soundseeker",
+  "timestamp" : 50,
+  "message" : "The username soundseeker has been added successfully."
 }, {
-  "command" : "addAlbum",
-  "user" : "melodymaster",
-  "timestamp" : 305,
-  "message" : "melodymaster has added new album successfully."
+  "command" : "search",
+  "user" : "jack29",
+  "timestamp" : 50,
+  "message" : "Search returned 1 results",
+  "results" : [ "soundseeker" ]
 }, {
-  "command" : "showAlbums",
-  "user" : "melodymaster",
-  "timestamp" : 350,
-  "result" : [ {
-    "name" : "Harmonic Horizons",
-    "songs" : [ "Vibrant Echoes", "Synth Symphony", "Retro Rhythms", "Digital Dreams", "Night Pulse" ]
-  } ]
+  "command" : "printCurrentPage",
+  "user" : "jack29",
+  "timestamp" : 53,
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
-  "command" : "addUser",
-  "user" : "alice22",
-  "timestamp" : 380,
-  "message" : "The username alice22 is already taken."
-}, {
-  "command" : "switchConnectionStatus",
-  "user" : "alice22",
-  "timestamp" : 390,
-  "message" : "alice22 has changed status successfully."
+  "command" : "select",
+  "user" : "jack29",
+  "timestamp" : 57,
+  "message" : "Successfully selected soundseeker's page."
 }, {
   "command" : "search",
   "user" : "alice22",
-  "timestamp" : 395,
-  "message" : "Search returned 2 results",
-  "results" : [ "Radio Ga Ga", "Retro Rhythms" ]
-}, {
-  "command" : "addAlbum",
-  "user" : "melodymaster",
-  "timestamp" : 400,
-  "message" : "melodymaster has added new album successfully."
-}, {
-  "command" : "search",
-  "user" : "alice22",
-  "timestamp" : 420,
-  "message" : "Search returned 4 results",
-  "results" : [ "Money Trees", "Maps", "Moves Like Jagger", "Melodic Mirage" ]
+  "timestamp" : 60,
+  "message" : "Search returned 1 results",
+  "results" : [ "TED Radio Hour" ]
 }, {
   "command" : "select",
   "user" : "alice22",
-  "timestamp" : 430,
-  "message" : "Successfully selected Melodic Mirage."
+  "timestamp" : 65,
+  "message" : "Successfully selected TED Radio Hour."
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 440,
+  "timestamp" : 70,
   "message" : "Playback loaded successfully."
 }, {
-  "command" : "like",
+  "command" : "status",
   "user" : "alice22",
-  "timestamp" : 460,
-  "message" : "Like registered successfully."
+  "timestamp" : 73,
+  "stats" : {
+    "name" : "The Power of Design",
+    "remainedTime" : 3061,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
+  "command" : "search",
+  "user" : "alice22",
+  "timestamp" : 75,
+  "message" : "Search returned 0 results",
+  "results" : [ ]
+}, {
+  "command" : "select",
+  "user" : "alice22",
+  "timestamp" : 80,
+  "message" : "The selected ID is too high."
+}, {
+  "command" : "load",
+  "user" : "alice22",
+  "timestamp" : 85,
+  "message" : "Please select a source before attempting to load."
+}, {
+  "command" : "status",
+  "user" : "alice22",
+  "timestamp" : 86,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "printCurrentPage",
+  "user" : "jack29",
+  "timestamp" : 90,
+  "message" : "Podcasts:\n\t[]\n\nAnnouncements\n\t["
+}, {
+  "command" : "playPause",
   "user" : "alice22",
-  "timestamp" : 480,
-  "message" : "Liked songs:\n\t[Melodic Mirage]\\n\\nFollowed playlists:\\n\\]"
+  "timestamp" : 3200,
+  "message" : "Please load a source before attempting to pause or resume playback."
 }, {
-  "command" : "addAlbum",
-  "user" : "melodymaster",
-  "timestamp" : 515,
-  "message" : "melodymaster has another album with the same name."
+  "command" : "status",
+  "user" : "alice22",
+  "timestamp" : 3201,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
-  "command" : "showAlbums",
-  "user" : "melodymaster",
-  "timestamp" : 550,
+  "command" : "createPlaylist",
+  "user" : "alice22",
+  "timestamp" : 3210,
+  "message" : "Playlist created successfully."
+}, {
+  "command" : "search",
+  "user" : "alice22",
+  "timestamp" : 3215,
+  "message" : "Search returned 2 results",
+  "results" : [ "Freedom", "Freedom" ]
+}, {
+  "command" : "select",
+  "user" : "alice22",
+  "timestamp" : 3220,
+  "message" : "Successfully selected Freedom."
+}, {
+  "command" : "load",
+  "user" : "alice22",
+  "timestamp" : 3225,
+  "message" : "Playback loaded successfully."
+}, {
+  "command" : "search",
+  "user" : "david27",
+  "timestamp" : 3225,
+  "message" : "Search returned 1 results",
+  "results" : [ "2010 hits" ]
+}, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "alice22",
+  "timestamp" : 3230,
+  "message" : "Successfully added to playlist."
+}, {
+  "command" : "search",
+  "user" : "alice22",
+  "timestamp" : 3235,
+  "message" : "Search returned 1 results",
+  "results" : [ "Happier" ]
+}, {
+  "command" : "select",
+  "user" : "alice22",
+  "timestamp" : 3240,
+  "message" : "Successfully selected Happier."
+}, {
+  "command" : "load",
+  "user" : "alice22",
+  "timestamp" : 3245,
+  "message" : "Playback loaded successfully."
+}, {
+  "command" : "addUser",
+  "user" : "magichost",
+  "timestamp" : 3247,
+  "message" : "The username magichost has been added successfully."
+}, {
+  "command" : "select",
+  "user" : "david27",
+  "timestamp" : 3247,
+  "message" : "Successfully selected 2010 hits."
+}, {
+  "command" : "addUser",
+  "user" : "magichost",
+  "timestamp" : 3247,
+  "message" : "The username magichost has been added successfully."
+}, {
+  "command" : "follow",
+  "user" : "david27",
+  "timestamp" : 3250,
+  "message" : "Playlist followed successfully."
+}, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "alice22",
+  "timestamp" : 3250,
+  "message" : "Successfully added to playlist."
+}, {
+  "command" : "showPlaylists",
+  "user" : "alice22",
+  "timestamp" : 3252,
   "result" : [ {
-    "name" : "Harmonic Horizons",
-    "songs" : [ "Vibrant Echoes", "Synth Symphony", "Retro Rhythms", "Digital Dreams", "Night Pulse" ]
-  }, {
-    "name" : "Echoes of Harmony",
-    "songs" : [ "Melodic Mirage", "Pop Serenade" ]
+    "name" : "2010 hits",
+    "songs" : [ "Freedom", "Happier" ],
+    "visibility" : "public",
+    "followers" : 1,
+    "timestamp" : 3210
   } ]
 }, {
-  "command" : "addAlbum",
-  "user" : "melodymaster",
-  "timestamp" : 560,
-  "message" : "melodymaster has the same song at least twice in this album."
+  "command" : "search",
+  "user" : "alice22",
+  "timestamp" : 3255,
+  "message" : "Search returned 1 results",
+  "results" : [ "2010 hits" ]
+}, {
+  "command" : "select",
+  "user" : "alice22",
+  "timestamp" : 3260,
+  "message" : "Successfully selected 2010 hits."
+}, {
+  "command" : "load",
+  "user" : "alice22",
+  "timestamp" : 3265,
+  "message" : "Playback loaded successfully."
+}, {
+  "command" : "search",
+  "user" : "carol19",
+  "timestamp" : 3267,
+  "message" : "Search returned 0 results",
+  "results" : [ ]
+}, {
+  "command" : "status",
+  "user" : "alice22",
+  "timestamp" : 3270,
+  "stats" : {
+    "name" : "Freedom",
+    "remainedTime" : 173,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
+  "command" : "select",
+  "user" : "carol19",
+  "timestamp" : 3300,
+  "message" : "The selected ID is too high."
+}, {
+  "command" : "status",
+  "user" : "alice22",
+  "timestamp" : 3448,
+  "stats" : {
+    "name" : "Happier",
+    "remainedTime" : 202,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
+  "command" : "load",
+  "user" : "carol19",
+  "timestamp" : 3450,
+  "message" : "Please select a source before attempting to load."
+}, {
+  "command" : "status",
+  "user" : "alice22",
+  "timestamp" : 4000,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
+}, {
+  "command" : "showPlaylists",
+  "user" : "alice22",
+  "timestamp" : 4005,
+  "result" : [ {
+    "name" : "2010 hits",
+    "songs" : [ "Freedom", "Happier" ],
+    "visibility" : "public",
+    "followers" : 1,
+    "timestamp" : 3210
+  } ]
+}, {
+  "command" : "status",
+  "user" : "carol19",
+  "timestamp" : 4500,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 } ]
