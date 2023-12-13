@@ -23,10 +23,14 @@ public class Enums { // diferite enumuri, le-am gurpat pe toate intr-un loc
     }
 
     public enum PlayerSourceType {
-        LIBRARY, PLAYLIST, PODCAST
+        LIBRARY, PLAYLIST, PODCAST, ALBUM
     }
 
     public enum UserType {
         NORMAL, ARTIST, HOST
+    }
+
+    public enum PageType {
+        HOME, LIKED, ARTIST, HOST
     }
 }

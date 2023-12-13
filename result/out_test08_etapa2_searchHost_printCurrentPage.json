@@ -212,6 +212,11 @@
   "message" : "Search returned 1 results",
   "results" : [ "2010 hits" ]
 }, {
+  "command" : "deleteUser",
+  "user" : "david27",
+  "timestamp" : 3257,
+  "message" : "david27 was successfully deleted."
+}, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 3260,
@@ -282,6 +287,11 @@
     "timestamp" : 3210
   } ]
 }, {
+  "command" : "deleteUser",
+  "user" : "soundseeker",
+  "timestamp" : 4010,
+  "message" : null
+}, {
   "command" : "status",
   "user" : "carol19",
   "timestamp" : 4500,
@@ -292,4 +302,9 @@
     "shuffle" : false,
     "paused" : true
   }
+}, {
+  "command" : "deleteUser",
+  "user" : "soundseeker",
+  "timestamp" : 100000,
+  "message" : null
 } ]

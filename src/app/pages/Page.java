@@ -7,7 +7,6 @@ import lombok.Getter;
 
 @Getter
 public abstract class Page {
-    String name;
     ChangePageStrategy change;
     PrintPageStrategy print;
 }

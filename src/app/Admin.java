@@ -5,11 +5,8 @@ import app.audio.Collections.Playlist;
 import app.audio.Collections.Podcast;
 import app.audio.Files.Episode;
 import app.audio.Files.Song;
-import app.pages.ArtistPage;
-import app.pages.HomePage;
-import app.pages.LikedContentPage;
-import app.pages.Page;
 import app.pages.Strategy.*;
+import app.player.PlayerSource;
 import app.user.Artist;
 import app.user.Host;
 import app.user.SimpleUser;
@@ -39,7 +36,7 @@ public class Admin {
             User newUser = factory.create(userInput.getUsername(), userInput.getAge(),
                                                                     userInput.getCity());
             users.add(((SimpleUser) newUser));
-            newUser.setCurrentPage(new HomePage((SimpleUser) newUser));
+            ((SimpleUser) newUser).setPageName(Enums.PageType.HOME);
         }
     }
 
@@ -87,11 +84,16 @@ public class Admin {
         return new ArrayList<>(podcasts);
     }
 
+    public static List<Album> getAlbums() {
+        return new ArrayList<>(albums);
+    }
+
+
     public static List<Playlist> getPlaylists() {
         List<Playlist> playlists = new ArrayList<>();
-        for (User user : users) {
+        for (SimpleUser user : users) {
             if (user.getUserType().equals(Enums.UserType.NORMAL)) {
-                playlists.addAll(((SimpleUser)user).getPlaylists());
+                playlists.addAll(user.getPlaylists());
             }
         }
         return playlists;
@@ -112,6 +114,28 @@ public class Admin {
         for (User user : allUsers) {
             if (user.getUsername().equals(username)) {
                 return user;
+            }
+        }
+        return null;
+    }
+
+    public static Album getAlbum(String name, String username) {
+        List<Album> allAlbums = getAlbums();
+
+        for (Album album : allAlbums) {
+            if (album.getName().equals(name) && album.getOwner().equals(username)) {
+                return album;
+            }
+        }
+        return null;
+    }
+
+    public static Song getSong(String name, String username) {
+        List<Song> allSongs = getSongs();
+
+        for (Song song : songs) {
+            if (song.getName().equals(name) && song.getArtist().equals(username)) {
+                return song;
             }
         }
         return null;
@@ -221,8 +245,7 @@ public class Admin {
             SimpleUserFactory factory = new SimpleUserFactory();
             SimpleUser user = (SimpleUser) factory.create(commandInput.getUsername(), commandInput.getAge(), commandInput.getCity());
             users.add(user);
-            HomePage homePage = new HomePage(user);
-            user.setCurrentPage(homePage);
+            user.setPageName(Enums.PageType.HOME);
         } else if (commandInput.getType().equals("artist")) {
             // artist
             ArtistFactory factory = new ArtistFactory();
@@ -236,6 +259,96 @@ public class Admin {
         }
 
         return "The username " + commandInput.getUsername() + " has been added successfully.";
+    }
+
+    public static String deleteSimpleUser (SimpleUser userToDelete) {
+        List<String> onlineUsersToString = getOnlineUsers();
+        List<SimpleUser> onlineUsers = new ArrayList<>();
+
+        for (String user : onlineUsersToString) {
+            User iterUser = getUser(user);
+            if (iterUser.getUserType().equals(Enums.UserType.NORMAL))
+                onlineUsers.add((SimpleUser) iterUser);
+        }
+
+        for (SimpleUser user : onlineUsers) {
+            PlayerSource source = user.getPlayer().getSource();
+            if (source != null && source.getType().equals(Enums.PlayerSourceType.PLAYLIST)) {
+                Playlist listenedPlaylist = (Playlist) source.getAudioCollection();
+                if (listenedPlaylist.getOwner().equals(userToDelete.getUsername())) {
+                    return userToDelete.getUsername() + " can't be deleted.";
+                }
+            }
+        }
+
+        for (SimpleUser user : users) {
+            // delete playlist from followed
+            ArrayList<Playlist> a = user.getFollowedPlaylists();
+            a.removeAll(userToDelete.getPlaylists());
+            user.setFollowedPlaylists(a);
+        }
+        Admin.users.remove(userToDelete);
+        return userToDelete.getUsername() + " was successfully deleted.";
+    }
+
+    public static String deleteArtist (Artist artistToDelete) {
+        List<String> onlineUsersToString = getOnlineUsers();
+        List<SimpleUser> onlineUsers = new ArrayList<>();
+
+        for (String user : onlineUsersToString) {
+            User iterUser = getUser(user);
+            if (iterUser.getUserType().equals(Enums.UserType.NORMAL))
+                onlineUsers.add((SimpleUser) iterUser);
+        }
+
+        for (SimpleUser user : onlineUsers) {
+            PlayerSource source = user.getPlayer().getSource();
+            if (source != null && source.getType().equals(Enums.PlayerSourceType.ALBUM)) {
+                Album listenedAlbum = (Album) source.getAudioCollection();
+                if (listenedAlbum.getOwner().equals(artistToDelete.getUsername())) {
+                    return artistToDelete.getUsername() + " can't be deleted.";
+                }
+            } else if (source != null && source.getType().equals(Enums.PlayerSourceType.LIBRARY)) {
+                Song listenedSong = (Song) source.getAudioFile();
+                if (listenedSong.getArtist().equals(artistToDelete.getUsername())) {
+                    return artistToDelete.getUsername() + " can't be deleted.";
+                }
+            }
+        }
+
+        for (SimpleUser user : users) {
+            // delete playlist from followed
+            ArrayList<Song> a = user.getLikedSongs();
+            a.removeAll(artistToDelete.getSongs());
+            user.setLikedSongs(a);
+        }
+
+        songs.removeAll(artistToDelete.getSongs());
+        albums.removeAll(artistToDelete.getAlbums());
+        artists.remove(artistToDelete);
+        return artistToDelete.getUsername() + " was successfully deleted.";
+    }
+
+    public static String deleteHost (Host hostToDelete) {
+        return null;
+    }
+
+    public static String deleteUser(CommandInput commandInput) {
+        String searchedUser = commandInput.getUsername();
+        List<User> allUsers = gatherAllUsers();
+
+        if (allUsers.stream().noneMatch(user -> user.getUsername().equals(searchedUser))) {
+            return "The username " + searchedUser + " doesn't exist.";
+        }
+
+        User userToDelete = getUser(commandInput.getUsername());
+        Enums.UserType type = userToDelete.getUserType();
+
+        return switch (type) {
+            case NORMAL -> deleteSimpleUser((SimpleUser) userToDelete);
+            case ARTIST -> deleteArtist((Artist) userToDelete);
+            case HOST -> deleteHost((Host) userToDelete);
+        };
     }
 
     public static String addAlbum(CommandInput commandInput) {
@@ -264,31 +377,32 @@ public class Admin {
             return user.getUsername() + " is offline.";
         }
 
-        Page currentPage = user.getCurrentPage();
         String printMessage;
 
-        if (currentPage == null) {
-            return null;
-        }
-
-        String pageName = currentPage.getName();
+        Enums.PageType pageName = user.getPageName();
 
         switch (pageName) {
-            case "homePage":
+            case HOME:
                 HomePageStrategy homePage = new HomePageStrategy();
-                printMessage = homePage.print(currentPage);
+                printMessage = homePage.print(user);
                 break;
-            case "likedPage":
+            case LIKED:
                 LikedContentPageStrategy likedPage = new LikedContentPageStrategy();
-                printMessage = likedPage.print(currentPage);
+                printMessage = likedPage.print(user);
                 break;
-            case "artistPage":
+            case ARTIST:
                 ArtistPageStrategy artistPage = new ArtistPageStrategy();
-                printMessage = artistPage.print(currentPage);
+                if (((SimpleUser)user).getSelectedUser() != null && ((SimpleUser)user).getSelectedUser().getUserType().equals(Enums.UserType.ARTIST))
+                    printMessage = artistPage.print(((SimpleUser)user).getSelectedUser());
+                else
+                    printMessage = null;
                 break;
-            case "hostPage":
+            case HOST:
                 HostPageStrategy hostPage = new HostPageStrategy();
-                printMessage = hostPage.print(currentPage);
+                if (((SimpleUser)user).getSelectedUser() != null && ((SimpleUser)user).getSelectedUser().getUserType().equals(Enums.UserType.HOST))
+                    printMessage = hostPage.print(((SimpleUser)user).getSelectedUser());
+                else
+                    printMessage = null;
                 break;
             default:
                 printMessage = null;

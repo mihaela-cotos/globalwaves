@@ -356,6 +356,18 @@ public class CommandRunner {
         return objectNode;
     }
 
+    public static ObjectNode deleteUser(CommandInput commandInput) {
+        String message = Admin.deleteUser(commandInput);
+
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("message", message);
+
+        return objectNode;
+    }
+
     public static ObjectNode addAlbum(CommandInput commandInput) {
         String message = Admin.addAlbum(commandInput);
 

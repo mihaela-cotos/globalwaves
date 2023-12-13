@@ -137,6 +137,11 @@
   "timestamp" : 525,
   "message" : "Liked songs:\n\t[Aurora Harmony]\n\nFollowed playlists:\n\t[Playlist bengos]"
 }, {
+  "command" : "deleteUser",
+  "user" : "sonicpainter",
+  "timestamp" : 620,
+  "message" : "sonicpainter can't be deleted."
+}, {
   "command" : "search",
   "user" : "soundseeker21",
   "timestamp" : 625,
@@ -175,28 +180,83 @@
   "message" : "Search returned 1 results",
   "results" : [ "sonicpainter" ]
 }, {
+  "command" : "deleteUser",
+  "user" : "sonicpainter",
+  "timestamp" : 900,
+  "message" : "sonicpainter was successfully deleted."
+}, {
+  "command" : "deleteUser",
+  "user" : "audiosage",
+  "timestamp" : 930,
+  "message" : null
+}, {
+  "command" : "deleteUser",
+  "user" : "melodicwanderer",
+  "timestamp" : 960,
+  "message" : "melodicwanderer can't be deleted."
+}, {
   "command" : "repeat",
   "user" : "carol19",
   "timestamp" : 965,
   "message" : "Repeat mode changed to repeat all."
+}, {
+  "command" : "deleteUser",
+  "user" : "sonicpainter",
+  "timestamp" : 975,
+  "message" : "The username sonicpainter doesn't exist."
+}, {
+  "command" : "deleteUser",
+  "user" : "audiosage",
+  "timestamp" : 1100,
+  "message" : null
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 1225,
   "message" : "Successfully selected sonicpainter's page."
 }, {
+  "command" : "deleteUser",
+  "user" : "melodicwanderer",
+  "timestamp" : 1500,
+  "message" : "melodicwanderer can't be deleted."
+}, {
+  "command" : "deleteUser",
+  "user" : "musicmaven",
+  "timestamp" : 6900,
+  "message" : null
+}, {
   "command" : "repeat",
   "user" : "carol19",
   "timestamp" : 7200,
   "message" : "Repeat mode changed to repeat current song."
+}, {
+  "command" : "deleteUser",
+  "user" : "sonicpainter",
+  "timestamp" : 7225,
+  "message" : "The username sonicpainter doesn't exist."
 }, {
   "command" : "repeat",
   "user" : "carol19",
   "timestamp" : 7505,
   "message" : "Repeat mode changed to no repeat."
 }, {
+  "command" : "deleteUser",
+  "user" : "melodicwanderer",
+  "timestamp" : 7855,
+  "message" : "melodicwanderer was successfully deleted."
+}, {
+  "command" : "deleteUser",
+  "user" : "sonicpainter",
+  "timestamp" : 7860,
+  "message" : "The username sonicpainter doesn't exist."
+}, {
+  "command" : "deleteUser",
+  "user" : "sonicpainter",
+  "timestamp" : 7890,
+  "message" : "The username sonicpainter doesn't exist."
+}, {
   "command" : "printCurrentPage",
   "user" : "bob35",
   "timestamp" : 7900,
-  "message" : "Liked songs:\n\t[Aurora Harmony]\n\nFollowed playlists:\n\t[Playlist bengos]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 } ]

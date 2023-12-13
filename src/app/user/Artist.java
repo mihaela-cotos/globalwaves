@@ -3,16 +3,9 @@ package app.user;
 import app.Admin;
 import app.audio.Collections.Album;
 import app.audio.Collections.AlbumOutput;
-import app.audio.Collections.Playlist;
-import app.audio.Collections.PlaylistOutput;
 import app.audio.Files.Song;
-import app.pages.ArtistPage;
-import app.pages.Page;
 import app.pages.utils.Event;
 import app.pages.utils.Merch;
-import app.user.factory.ArtistFactory;
-import app.user.factory.HostFactory;
-import app.user.factory.SimpleUserFactory;
 import app.utils.Enums;
 import fileio.input.CommandInput;
 import fileio.input.SongInput;
@@ -32,14 +25,14 @@ public class Artist extends User {
     private ArrayList<Song> songs;
     private ArrayList<Event> events;
     private ArrayList<Merch> merch;
-    private ArtistPage artistPage;
+
     public Artist(String username, int age, String city) {
         super(username, age, city);
         albums = new ArrayList<>();
         songs = new ArrayList<>();
         events = new ArrayList<>();
         merch = new ArrayList<>();
-        artistPage = new ArtistPage(this);
+        setPageName(Enums.PageType.ARTIST);
         setUserType(Enums.UserType.ARTIST);
     }
 
@@ -69,7 +62,6 @@ public class Artist extends User {
                 return getUsername() + " has the same song at least twice in this album.";
             }
         }
-//        artistPage.update(this);
         Admin.addSongs(songs);
         Admin.addAlbumToLib(newAlbum);
         return commandInput.getUsername() + " has added new album successfully.";
@@ -93,7 +85,6 @@ public class Artist extends User {
 
         Merch newMerch = new Merch(commandInput.getName(), commandInput.getDescription(), commandInput.getPrice());
         merch.add(newMerch);
-//        artistPage.update(this);
         return getUsername() + " has added new merchandise successfully.";
     }
 
@@ -131,7 +122,6 @@ public class Artist extends User {
 
         Event newEvent = new Event(commandInput.getName(), commandInput.getDescription(), commandInput.getDate());
         events.add(newEvent);
-//        artistPage.update(this);
         return getUsername() + " has added new event successfully.";
     }
 

@@ -34,11 +34,10 @@ public class SearchBar {
     public void clearSelection() {
         lastSelected = null;
         lastSearchType = null;
+        lastSelectedUser = null;
     }
     public List<LibraryEntry> search(Filters filters, String type) {
         List<LibraryEntry> entries = new ArrayList<>();
-        List<User> hosts = new ArrayList<>(Admin.getHosts());
-        List<User> artists = new ArrayList<>(Admin.getArtists());
 
         switch (type) {
             case "song":
@@ -103,19 +102,32 @@ public class SearchBar {
                 }
 
                 break;
+            case "album":
+                entries = new ArrayList<>(Admin.getAlbums());
+
+                if (filters.getName() != null) {
+                    entries = filterByName(entries, filters.getName());
+                }
+
+                if (filters.getOwner() != null) {
+                    entries = filterByOwner(entries, filters.getOwner());
+                }
+
+                if (filters.getDescription() != null) {
+                    entries = filterByDescription(entries, filters.getDescription());
+                }
+
+                break;
             default:
                 entries = new ArrayList<>();
         }
 
-        if (type.equals("song") || type.equals("podcast") || type.equals("playlist")) {
-            while (entries.size() > MAX_RESULTS) {
-                entries.remove(entries.size() - 1);
-            }
 
-            this.results = entries;
-        } else {
-
+        while (entries.size() > MAX_RESULTS) {
+            entries.remove(entries.size() - 1);
         }
+
+        this.results = entries;
         this.lastSearchType = type;
         return this.results;
     }
@@ -167,7 +179,7 @@ public class SearchBar {
 
             return null;
         } else {
-            lastSelected =  this.results.get(itemNumber - 1);
+            lastSelected = this.results.get(itemNumber - 1);
             results.clear();
 
             return lastSelected;

@@ -6,18 +6,15 @@ import app.audio.Collections.PlaylistOutput;
 import app.audio.Files.AudioFile;
 import app.audio.Files.Song;
 import app.audio.LibraryEntry;
-import app.pages.HomePage;
 import app.player.Player;
 import app.player.PlayerStats;
 import app.searchBar.Filters;
 import app.searchBar.SearchBar;
 import app.utils.Enums;
 import app.utils.MagicNumbers;
-import fileio.input.CommandInput;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -34,6 +31,8 @@ public class SimpleUser extends User {
     private boolean lastSearched;
     private boolean searchedUser;
     private boolean onlineStatus;
+    private LibraryEntry selected;
+    private User selectedUser;
 
     public SimpleUser(String username, int age, String city) {
         super(username, age, city);
@@ -45,6 +44,7 @@ public class SimpleUser extends User {
         lastSearched = false;
         onlineStatus = true;
         setUserType(Enums.UserType.NORMAL);
+        setPageName(Enums.PageType.HOME);
     }
 
     public ArrayList<String> search(Filters filters, String type) {
@@ -90,7 +90,7 @@ public class SimpleUser extends User {
 
         lastSearched = false;
 
-        LibraryEntry selected = searchBar.select(itemNumber);
+        selected = searchBar.select(itemNumber);
 
         if (selected == null)
             return "The selected ID is too high.";
@@ -104,17 +104,17 @@ public class SimpleUser extends User {
 
         lastSearched = false;
 
-        User selected = searchBar.selectUser(itemNumber);
+        selectedUser = searchBar.selectUser(itemNumber);
 
-        if (selected == null)
+        if (selectedUser == null)
             return "The selected ID is too high.";
 
-        if (selected.getUserType().equals(Enums.UserType.ARTIST)) {
-            setCurrentPage(((Artist)selected).getArtistPage());
+        if (selectedUser.getUserType().equals(Enums.UserType.ARTIST)) {
+            setPageName(Enums.PageType.ARTIST);
         } else {
-            setCurrentPage(((Host)selected).getHostPage());
+            setPageName(Enums.PageType.HOST);
         }
-        return "Successfully selected %s".formatted(selected.getUsername()) + "'s page.";
+        return "Successfully selected %s".formatted(selectedUser.getUsername()) + "'s page.";
     }
 
     public String load() {
@@ -222,10 +222,6 @@ public class SimpleUser extends User {
 
         song.like();
         likedSongs.add(song);
-
-        if (getCurrentPage().getName().equals("homePage")) {
-            ((HomePage)getCurrentPage()).update(this);
-        }
 
         return "Like registered successfully.";
     }

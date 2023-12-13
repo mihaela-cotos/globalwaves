@@ -13,6 +13,7 @@ public class Player {
     private Enums.RepeatMode repeatMode;
     private boolean shuffle;
     private boolean paused;
+    @Getter
     private PlayerSource source;
     @Getter
     private String type;
@@ -51,7 +52,9 @@ public class Player {
             return new PlayerSource(Enums.PlayerSourceType.PLAYLIST, (AudioCollection) entry);
         } else if ("podcast".equals(type)) {
             return createPodcastSource((AudioCollection) entry, bookmarks);
-        }
+        }  else if ("album".equals(type)) {
+        return new PlayerSource(Enums.PlayerSourceType.ALBUM, (AudioCollection) entry);
+    }
 
         return null;
     }

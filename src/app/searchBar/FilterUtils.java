@@ -56,6 +56,10 @@ public class FilterUtils {
         return filter(entries, entry -> entry.matchesOwner(user));
     }
 
+    public static List<LibraryEntry> filterByDescription(List<LibraryEntry> entries, String description) {
+        return filter(entries, entry -> entry.matchesDescription(description));
+    }
+
     public static List<LibraryEntry> filterByPlaylistVisibility(List<LibraryEntry> entries, String user) {
         return filter(entries, entry -> entry.isVisibleToUser(user));
     }

@@ -55,4 +55,9 @@ public class Album extends AudioCollection {
                     songInput.getReleaseYear(), songInput.getArtist()));
         }
     }
+
+    @Override
+    public boolean matchesDescription(String description) {
+        return getName().toLowerCase().startsWith(description.toLowerCase());
+    }
 }

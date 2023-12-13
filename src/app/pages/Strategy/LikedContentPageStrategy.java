@@ -2,18 +2,17 @@ package app.pages.Strategy;
 
 import app.audio.Collections.Playlist;
 import app.audio.Files.Song;
-import app.pages.HomePage;
-import app.pages.LikedContentPage;
-import app.pages.Page;
+import app.user.SimpleUser;
+import app.user.User;
 
 import java.util.List;
 
 public class LikedContentPageStrategy implements PrintPageStrategy {
 
     @Override
-    public String print(Page page) {
-        List<Song> songs = ((LikedContentPage)page).getSongs();
-        List<Playlist> playlists = ((LikedContentPage)page).getPlaylists();
+    public String print(User currentUser) {
+        List<Song> songs = ((SimpleUser)currentUser).getLikedSongs();
+        List<Playlist> playlists = ((SimpleUser)currentUser).getFollowedPlaylists();;
         String pageLog = "Liked Songs:\n\t[";
         for (int i = 0; i < songs.size(); i++) {
             pageLog += songs.get(i).getName();

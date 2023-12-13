@@ -1,25 +1,22 @@
 package app.pages.Strategy;
 
 import app.audio.Collections.Album;
-import app.audio.Collections.Playlist;
-import app.audio.Files.Song;
-import app.pages.ArtistPage;
-import app.pages.HomePage;
-import app.pages.Page;
 import app.pages.utils.Event;
 import app.pages.utils.Merch;
 import app.user.Artist;
-import app.user.SimpleUser;
+import app.user.User;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ArtistPageStrategy implements PrintPageStrategy {
 
     @Override
-    public String print(Page page) {
-        List<Album> albums = ((ArtistPage)page).getAlbums();
-        List<Merch> merch = ((ArtistPage)page).getMerch();
-        List<Event> events = ((ArtistPage)page).getEvents();
+    public String print(User currentUser) {
+        List<Album> albums = new ArrayList<>();
+        albums.addAll(((Artist)currentUser).getAlbums());
+        List<Merch> merch = ((Artist)currentUser).getMerch();
+        List<Event> events = ((Artist)currentUser).getEvents();
 
         String pageLog = "Albums:\n\t[";
         for (int i = 0; i < albums.size(); i++) {

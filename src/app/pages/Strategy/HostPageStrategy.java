@@ -3,22 +3,19 @@ package app.pages.Strategy;
 
 import app.audio.Collections.Podcast;
 import app.audio.Files.Episode;
-import app.pages.ArtistPage;
-import app.pages.HostPage;
-import app.pages.Page;
 import app.pages.utils.Announcement;
+import app.user.Host;
+import app.user.User;
 
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class HostPageStrategy implements PrintPageStrategy {
 
     @Override
-    public String print(Page page) {
-        List<Podcast> podcasts = ((HostPage)page).getPodcasts();
-        List<Announcement> announcements = ((HostPage)page).getAnnouncements();
-
+    public String print(User currentUser) {
+        List<Podcast> podcasts = ((Host)currentUser).getPodcasts();
+        List<Announcement> announcements = ((Host)currentUser).getAnnouncements();
 
         String pageLog = "Podcasts:\n\t[";
         for (int i = 0; i < podcasts.size(); i++) {

@@ -22,6 +22,7 @@ public abstract class LibraryEntry {
     public boolean matchesArtist(String artist) { return false; }
     public boolean matchesReleaseYear(String releaseYear) { return false; }
     public boolean matchesOwner(String user) { return false; }
+    public boolean matchesDescription(String description) { return false; }
     public boolean isVisibleToUser(String user) { return false; }
     public boolean matchesFollowers(String followers) { return false; }
 }
