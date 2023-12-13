@@ -55,6 +55,7 @@ public class SimpleUser extends User {
         player.stop();
 
         lastSearched = true;
+        searchedUser = false;
         ArrayList<String> results = new ArrayList<>();
         List<LibraryEntry> libraryEntries = searchBar.search(filters, type);
 

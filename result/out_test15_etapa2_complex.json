@@ -17,7 +17,7 @@
   "command" : "addUser",
   "user" : "nancymontgomery",
   "timestamp" : 103,
-  "message" : "The username nancymontgomery has been added successfully."
+  "message" : "The username nancymontgomery is already taken."
 }, {
   "command" : "addUser",
   "user" : "amanda16",
@@ -32,7 +32,7 @@
   "command" : "addUser",
   "user" : "barmstrong",
   "timestamp" : 106,
-  "message" : "The username barmstrong has been added successfully."
+  "message" : "The username barmstrong is already taken."
 }, {
   "command" : "addUser",
   "user" : "cbutler",
@@ -47,7 +47,7 @@
   "command" : "addUser",
   "user" : "jacobdean",
   "timestamp" : 109,
-  "message" : "The username jacobdean has been added successfully."
+  "message" : "The username jacobdean is already taken."
 }, {
   "command" : "addUser",
   "user" : "jenningsbeth",
@@ -57,17 +57,17 @@
   "command" : "addUser",
   "user" : "conniealvarez",
   "timestamp" : 111,
-  "message" : "The username conniealvarez has been added successfully."
+  "message" : "The username conniealvarez is already taken."
 }, {
   "command" : "addUser",
   "user" : "conniealvarez",
   "timestamp" : 112,
-  "message" : "The username conniealvarez has been added successfully."
+  "message" : "The username conniealvarez is already taken."
 }, {
   "command" : "addUser",
   "user" : "nancymontgomery",
   "timestamp" : 113,
-  "message" : "The username nancymontgomery has been added successfully."
+  "message" : "The username nancymontgomery is already taken."
 }, {
   "command" : "addUser",
   "user" : "charlesgarcia",
@@ -77,7 +77,7 @@
   "command" : "addUser",
   "user" : "jenningsbeth",
   "timestamp" : 115,
-  "message" : "The username jenningsbeth has been added successfully."
+  "message" : "The username jenningsbeth is already taken."
 }, {
   "command" : "addUser",
   "user" : "matthewfernandez",
@@ -92,37 +92,37 @@
   "command" : "addUser",
   "user" : "amanda16",
   "timestamp" : 118,
-  "message" : "The username amanda16 has been added successfully."
+  "message" : "The username amanda16 is already taken."
 }, {
   "command" : "addUser",
   "user" : "jacobdean",
   "timestamp" : 119,
-  "message" : "The username jacobdean has been added successfully."
+  "message" : "The username jacobdean is already taken."
 }, {
   "command" : "addUser",
   "user" : "conniealvarez",
   "timestamp" : 120,
-  "message" : "The username conniealvarez has been added successfully."
+  "message" : "The username conniealvarez is already taken."
 }, {
   "command" : "addUser",
   "user" : "leslie27",
   "timestamp" : 121,
-  "message" : "The username leslie27 has been added successfully."
+  "message" : "The username leslie27 is already taken."
 }, {
   "command" : "addUser",
   "user" : "amanda16",
   "timestamp" : 122,
-  "message" : "The username amanda16 has been added successfully."
+  "message" : "The username amanda16 is already taken."
 }, {
   "command" : "addUser",
   "user" : "amanda16",
   "timestamp" : 123,
-  "message" : "The username amanda16 has been added successfully."
+  "message" : "The username amanda16 is already taken."
 }, {
   "command" : "addUser",
   "user" : "matthewfernandez",
   "timestamp" : 124,
-  "message" : "The username matthewfernandez has been added successfully."
+  "message" : "The username matthewfernandez is already taken."
 }, {
   "command" : "addAlbum",
   "user" : "jacobdean",
@@ -132,7 +132,7 @@
   "command" : "addAlbum",
   "user" : "charlesgarcia",
   "timestamp" : 126,
-  "message" : "The username charlesgarcia doesn't exist."
+  "message" : "charlesgarcia is not an artist."
 }, {
   "command" : "addAlbum",
   "user" : "cbutler",
@@ -152,12 +152,12 @@
   "command" : "addAlbum",
   "user" : "jenningsbeth",
   "timestamp" : 130,
-  "message" : "jenningsbeth has the same song at least twice in this album."
+  "message" : "jenningsbeth is not an artist."
 }, {
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 131,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "addAlbum",
   "user" : "leslie27",
@@ -167,7 +167,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 133,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "addAlbum",
   "user" : "matthewfernandez",
@@ -177,17 +177,17 @@
   "command" : "addAlbum",
   "user" : "jenningsbeth",
   "timestamp" : 135,
-  "message" : "jenningsbeth has added new album successfully."
+  "message" : "jenningsbeth is not an artist."
 }, {
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 136,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "addAlbum",
   "user" : "nancymontgomery",
   "timestamp" : 137,
-  "message" : "nancymontgomery has the same song at least twice in this album."
+  "message" : "nancymontgomery is not an artist."
 }, {
   "command" : "addAlbum",
   "user" : "matthewfernandez",
@@ -212,7 +212,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 142,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "addAlbum",
   "user" : "barmstrong",
@@ -237,7 +237,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 147,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "addAlbum",
   "user" : "cbutler",
@@ -247,12 +247,12 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 149,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 150,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "addAlbum",
   "user" : "barmstrong",
@@ -262,7 +262,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 152,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "addAlbum",
   "user" : "matthewfernandez",
@@ -292,7 +292,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 158,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "addAlbum",
   "user" : "cbutler",
@@ -307,7 +307,7 @@
   "command" : "addAlbum",
   "user" : "jenningsbeth",
   "timestamp" : 161,
-  "message" : "jenningsbeth has the same song at least twice in this album."
+  "message" : "jenningsbeth is not an artist."
 }, {
   "command" : "addAlbum",
   "user" : "leslie27",
@@ -322,7 +322,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 164,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "addAlbum",
   "user" : "leslie27",
@@ -332,17 +332,17 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 166,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "addAlbum",
   "user" : "jenningsbeth",
   "timestamp" : 167,
-  "message" : "jenningsbeth has the same song at least twice in this album."
+  "message" : "jenningsbeth is not an artist."
 }, {
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 168,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "addAlbum",
   "user" : "jacobdean",
@@ -357,7 +357,7 @@
   "command" : "addAlbum",
   "user" : "jenningsbeth",
   "timestamp" : 171,
-  "message" : "jenningsbeth has the same song at least twice in this album."
+  "message" : "jenningsbeth is not an artist."
 }, {
   "command" : "addAlbum",
   "user" : "cbutler",
@@ -4941,8 +4941,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 5389,
-  "message" : "Search returned 3 results",
-  "results" : [ "Chill Funeral ", "Chill Funeral ", "Chill Funeral " ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Funeral ", "Chill Funeral " ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -4958,7 +4958,7 @@
   "user" : "alice22",
   "timestamp" : 5404,
   "stats" : {
-    "name" : "Harmony Harmonize",
+    "name" : "Whirlwind Utopia",
     "remainedTime" : 236,
     "repeat" : "No Repeat",
     "shuffle" : false,
@@ -4974,7 +4974,7 @@
   "user" : "alice22",
   "timestamp" : 5414,
   "stats" : {
-    "name" : "Harmony Harmonize",
+    "name" : "Whirlwind Utopia",
     "remainedTime" : 231,
     "repeat" : "No Repeat",
     "shuffle" : false,
@@ -5004,7 +5004,7 @@
   "user" : "alice22",
   "timestamp" : 5434,
   "stats" : {
-    "name" : "Harmony Harmonize",
+    "name" : "Whirlwind Utopia",
     "remainedTime" : 216,
     "repeat" : "No Repeat",
     "shuffle" : false,
@@ -5014,14 +5014,14 @@
   "command" : "next",
   "user" : "alice22",
   "timestamp" : 5435,
-  "message" : "Skipped to next track successfully. The current track is Tranquility Serendipity."
+  "message" : "Skipped to next track successfully. The current track is Paradox Cascade."
 }, {
   "command" : "status",
   "user" : "alice22",
   "timestamp" : 5689,
   "stats" : {
-    "name" : "Tranquility Serendipity",
-    "remainedTime" : 26,
+    "name" : "Paradox Cascade",
+    "remainedTime" : 7,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -5228,8 +5228,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 6322,
-  "message" : "Search returned 4 results",
-  "results" : [ "Electric Technology", "Electric Technology", "Electric Technology", "Electric Technology" ]
+  "message" : "Search returned 3 results",
+  "results" : [ "Electric Technology", "Electric Technology", "Electric Technology" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -5322,8 +5322,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 6633,
-  "message" : "Search returned 3 results",
-  "results" : [ "Chill Funeral ", "Chill Funeral ", "Chill Funeral " ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Funeral ", "Chill Funeral " ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -5339,7 +5339,7 @@
   "user" : "emily30",
   "timestamp" : 6648,
   "stats" : {
-    "name" : "Harmony Harmonize",
+    "name" : "Whirlwind Utopia",
     "remainedTime" : 236,
     "repeat" : "No Repeat",
     "shuffle" : false,
@@ -5355,7 +5355,7 @@
   "user" : "emily30",
   "timestamp" : 6658,
   "stats" : {
-    "name" : "Harmony Harmonize",
+    "name" : "Whirlwind Utopia",
     "remainedTime" : 231,
     "repeat" : "No Repeat",
     "shuffle" : false,
@@ -5385,7 +5385,7 @@
   "user" : "emily30",
   "timestamp" : 6678,
   "stats" : {
-    "name" : "Harmony Harmonize",
+    "name" : "Whirlwind Utopia",
     "remainedTime" : 216,
     "repeat" : "No Repeat",
     "shuffle" : false,
@@ -5395,14 +5395,14 @@
   "command" : "next",
   "user" : "emily30",
   "timestamp" : 6679,
-  "message" : "Skipped to next track successfully. The current track is Tranquility Serendipity."
+  "message" : "Skipped to next track successfully. The current track is Paradox Cascade."
 }, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 6933,
   "stats" : {
-    "name" : "Tranquility Serendipity",
-    "remainedTime" : 26,
+    "name" : "Paradox Cascade",
+    "remainedTime" : 7,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -5698,8 +5698,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 7877,
-  "message" : "Search returned 4 results",
-  "results" : [ "Bad Guide", "Bad Guide", "Bad Guide", "Bad Guide" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Bad Guide", "Bad Guide" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -5715,8 +5715,8 @@
   "user" : "irene33",
   "timestamp" : 7892,
   "stats" : {
-    "name" : "Harmonize Harmony",
-    "remainedTime" : 295,
+    "name" : "Celestial Soul",
+    "remainedTime" : 233,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -5731,8 +5731,8 @@
   "user" : "irene33",
   "timestamp" : 7902,
   "stats" : {
-    "name" : "Harmonize Harmony",
-    "remainedTime" : 290,
+    "name" : "Celestial Soul",
+    "remainedTime" : 228,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -5761,8 +5761,8 @@
   "user" : "irene33",
   "timestamp" : 7922,
   "stats" : {
-    "name" : "Harmonize Harmony",
-    "remainedTime" : 275,
+    "name" : "Celestial Soul",
+    "remainedTime" : 213,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -5771,14 +5771,14 @@
   "command" : "next",
   "user" : "irene33",
   "timestamp" : 7923,
-  "message" : "Skipped to next track successfully. The current track is Rapture Harmonize."
+  "message" : "Skipped to next track successfully. The current track is Utopia Harmony."
 }, {
   "command" : "status",
   "user" : "irene33",
   "timestamp" : 8177,
   "stats" : {
-    "name" : "Voyage Glow",
-    "remainedTime" : 179,
+    "name" : "Utopia Harmony",
+    "remainedTime" : 44,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -9092,8 +9092,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 10309,
-  "message" : "Search returned 3 results",
-  "results" : [ "Chill Funeral ", "Chill Funeral ", "Chill Funeral " ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Funeral ", "Chill Funeral " ]
 }, {
   "command" : "load",
   "user" : "david27",
@@ -9118,7 +9118,7 @@
   "command" : "next",
   "user" : "david27",
   "timestamp" : 10309,
-  "message" : "Skipped to next track successfully. The current track is Tranquility Serendipity."
+  "message" : "Skipped to next track successfully. The current track is Paradox Cascade."
 }, {
   "command" : "like",
   "user" : "david27",
@@ -9194,8 +9194,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 10329,
-  "message" : "Search returned 3 results",
-  "results" : [ "Chill Funeral ", "Chill Funeral ", "Chill Funeral " ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Funeral ", "Chill Funeral " ]
 }, {
   "command" : "load",
   "user" : "frank21",
@@ -9220,7 +9220,7 @@
   "command" : "next",
   "user" : "frank21",
   "timestamp" : 10329,
-  "message" : "Skipped to next track successfully. The current track is Tranquility Serendipity."
+  "message" : "Skipped to next track successfully. The current track is Paradox Cascade."
 }, {
   "command" : "like",
   "user" : "frank21",
@@ -9347,8 +9347,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 10359,
-  "message" : "Search returned 4 results",
-  "results" : [ "Bad Guide", "Bad Guide", "Bad Guide", "Bad Guide" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Bad Guide", "Bad Guide" ]
 }, {
   "command" : "load",
   "user" : "irene33",
@@ -9373,7 +9373,7 @@
   "command" : "next",
   "user" : "irene33",
   "timestamp" : 10359,
-  "message" : "Skipped to next track successfully. The current track is Rapture Harmonize."
+  "message" : "Skipped to next track successfully. The current track is Utopia Harmony."
 }, {
   "command" : "like",
   "user" : "irene33",
@@ -9908,8 +9908,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 10469,
-  "message" : "Search returned 3 results",
-  "results" : [ "Teen Funeral ", "Teen Funeral ", "Teen Funeral " ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Teen Funeral ", "Teen Funeral " ]
 }, {
   "command" : "load",
   "user" : "jack29",
@@ -9934,7 +9934,7 @@
   "command" : "next",
   "user" : "jack29",
   "timestamp" : 10469,
-  "message" : "Skipped to next track successfully. The current track is Harmony Reflection."
+  "message" : "Skipped to next track successfully. The current track is Adventure Whirlwind."
 }, {
   "command" : "like",
   "user" : "jack29",
@@ -9959,8 +9959,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 10479,
-  "message" : "Search returned 4 results",
-  "results" : [ "Bad Guide", "Bad Guide", "Bad Guide", "Bad Guide" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Bad Guide", "Bad Guide" ]
 }, {
   "command" : "load",
   "user" : "alice22",
@@ -9985,7 +9985,7 @@
   "command" : "next",
   "user" : "alice22",
   "timestamp" : 10479,
-  "message" : "Skipped to next track successfully. The current track is Rapture Harmonize."
+  "message" : "Skipped to next track successfully. The current track is Utopia Harmony."
 }, {
   "command" : "like",
   "user" : "alice22",
@@ -10265,8 +10265,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 10539,
-  "message" : "Search returned 3 results",
-  "results" : [ "Teen Funeral ", "Teen Funeral ", "Teen Funeral " ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Teen Funeral ", "Teen Funeral " ]
 }, {
   "command" : "load",
   "user" : "grace25",
@@ -10291,7 +10291,7 @@
   "command" : "next",
   "user" : "grace25",
   "timestamp" : 10539,
-  "message" : "Skipped to next track successfully. The current track is Harmony Reflection."
+  "message" : "Skipped to next track successfully. The current track is Adventure Whirlwind."
 }, {
   "command" : "like",
   "user" : "grace25",
@@ -10418,8 +10418,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 10569,
-  "message" : "Search returned 3 results",
-  "results" : [ "Teen Funeral ", "Teen Funeral ", "Teen Funeral " ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Teen Funeral ", "Teen Funeral " ]
 }, {
   "command" : "load",
   "user" : "jack29",
@@ -10444,7 +10444,7 @@
   "command" : "next",
   "user" : "jack29",
   "timestamp" : 10569,
-  "message" : "Skipped to next track successfully. The current track is Harmony Reflection."
+  "message" : "Skipped to next track successfully. The current track is Adventure Whirlwind."
 }, {
   "command" : "like",
   "user" : "jack29",
@@ -10469,8 +10469,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 10579,
-  "message" : "Search returned 3 results",
-  "results" : [ "Chill View", "Chill View", "Chill View" ]
+  "message" : "Search returned 0 results",
+  "results" : [ ]
 }, {
   "command" : "load",
   "user" : "alice22",
@@ -10480,27 +10480,27 @@
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 10579,
-  "message" : "Successfully selected Chill View."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "alice22",
   "timestamp" : 10579,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "like",
   "user" : "alice22",
   "timestamp" : 10579,
-  "message" : "Loaded source is not a song."
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "next",
   "user" : "alice22",
   "timestamp" : 10579,
-  "message" : "Skipped to next track successfully. The current track is Mystique Pulse."
+  "message" : "Please load a source before skipping to the next track."
 }, {
   "command" : "like",
   "user" : "alice22",
   "timestamp" : 10579,
-  "message" : "Loaded source is not a song."
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "printCurrentPage",
   "user" : "alice22",
@@ -10673,8 +10673,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 10619,
-  "message" : "Search returned 3 results",
-  "results" : [ "Heroic View", "Heroic View", "Heroic View" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Heroic View", "Heroic View" ]
 }, {
   "command" : "load",
   "user" : "emily30",
@@ -10724,8 +10724,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 10629,
-  "message" : "Search returned 3 results",
-  "results" : [ "Heroic View", "Heroic View", "Heroic View" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Heroic View", "Heroic View" ]
 }, {
   "command" : "load",
   "user" : "frank21",
@@ -10928,8 +10928,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 10669,
-  "message" : "Search returned 3 results",
-  "results" : [ "Chill Funeral ", "Chill Funeral ", "Chill Funeral " ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Funeral ", "Chill Funeral " ]
 }, {
   "command" : "load",
   "user" : "jack29",
@@ -10954,7 +10954,7 @@
   "command" : "next",
   "user" : "jack29",
   "timestamp" : 10669,
-  "message" : "Skipped to next track successfully. The current track is Tranquility Serendipity."
+  "message" : "Skipped to next track successfully. The current track is Paradox Cascade."
 }, {
   "command" : "like",
   "user" : "jack29",
@@ -10979,8 +10979,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 10679,
-  "message" : "Search returned 4 results",
-  "results" : [ "Bad Guide", "Bad Guide", "Bad Guide", "Bad Guide" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Bad Guide", "Bad Guide" ]
 }, {
   "command" : "load",
   "user" : "alice22",
@@ -11005,7 +11005,7 @@
   "command" : "next",
   "user" : "alice22",
   "timestamp" : 10679,
-  "message" : "Skipped to next track successfully. The current track is Rapture Harmonize."
+  "message" : "Skipped to next track successfully. The current track is Utopia Harmony."
 }, {
   "command" : "like",
   "user" : "alice22",
@@ -11081,8 +11081,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 10699,
-  "message" : "Search returned 3 results",
-  "results" : [ "Chill View", "Chill View", "Chill View" ]
+  "message" : "Search returned 0 results",
+  "results" : [ ]
 }, {
   "command" : "load",
   "user" : "carol19",
@@ -11092,27 +11092,27 @@
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 10699,
-  "message" : "Successfully selected Chill View."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "carol19",
   "timestamp" : 10699,
-  "message" : "Playback loaded successfully."
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "like",
   "user" : "carol19",
   "timestamp" : 10699,
-  "message" : "Loaded source is not a song."
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "next",
   "user" : "carol19",
   "timestamp" : 10699,
-  "message" : "Skipped to next track successfully. The current track is Mystique Pulse."
+  "message" : "Please load a source before skipping to the next track."
 }, {
   "command" : "like",
   "user" : "carol19",
   "timestamp" : 10699,
-  "message" : "Loaded source is not a song."
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "printCurrentPage",
   "user" : "carol19",
@@ -11132,8 +11132,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 10709,
-  "message" : "Search returned 3 results",
-  "results" : [ "Bad Harmonies", "Bad Harmonies", "Bad Harmonies" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Bad Harmonies", "Bad Harmonies" ]
 }, {
   "command" : "load",
   "user" : "david27",
@@ -11158,7 +11158,7 @@
   "command" : "next",
   "user" : "david27",
   "timestamp" : 10709,
-  "message" : "Skipped to next track successfully. The current track is Bliss Rapture."
+  "message" : "Skipped to next track successfully. The current track is Mystique Sunset."
 }, {
   "command" : "like",
   "user" : "david27",
@@ -11183,8 +11183,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 10719,
-  "message" : "Search returned 3 results",
-  "results" : [ "Heroic View", "Heroic View", "Heroic View" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Heroic View", "Heroic View" ]
 }, {
   "command" : "load",
   "user" : "emily30",
@@ -11744,8 +11744,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 10829,
-  "message" : "Search returned 3 results",
-  "results" : [ "Bad Harmonies", "Bad Harmonies", "Bad Harmonies" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Bad Harmonies", "Bad Harmonies" ]
 }, {
   "command" : "load",
   "user" : "frank21",
@@ -11770,7 +11770,7 @@
   "command" : "next",
   "user" : "frank21",
   "timestamp" : 10829,
-  "message" : "Skipped to next track successfully. The current track is Bliss Rapture."
+  "message" : "Skipped to next track successfully. The current track is Mystique Sunset."
 }, {
   "command" : "like",
   "user" : "frank21",
@@ -11846,8 +11846,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 10849,
-  "message" : "Search returned 4 results",
-  "results" : [ "Bad Guide", "Bad Guide", "Bad Guide", "Bad Guide" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Bad Guide", "Bad Guide" ]
 }, {
   "command" : "load",
   "user" : "henry26",
@@ -11872,7 +11872,7 @@
   "command" : "next",
   "user" : "henry26",
   "timestamp" : 10849,
-  "message" : "Skipped to next track successfully. The current track is Rapture Harmonize."
+  "message" : "Skipped to next track successfully. The current track is Utopia Harmony."
 }, {
   "command" : "like",
   "user" : "henry26",
@@ -12254,8 +12254,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 10929,
-  "message" : "Search returned 3 results",
-  "results" : [ "Teen Funeral ", "Teen Funeral ", "Teen Funeral " ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Teen Funeral ", "Teen Funeral " ]
 }, {
   "command" : "load",
   "user" : "frank21",
@@ -12280,7 +12280,7 @@
   "command" : "next",
   "user" : "frank21",
   "timestamp" : 10929,
-  "message" : "Skipped to next track successfully. The current track is Harmony Reflection."
+  "message" : "Skipped to next track successfully. The current track is Adventure Whirlwind."
 }, {
   "command" : "like",
   "user" : "frank21",
@@ -12458,8 +12458,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 10969,
-  "message" : "Search returned 4 results",
-  "results" : [ "Electric Technology", "Electric Technology", "Electric Technology", "Electric Technology" ]
+  "message" : "Search returned 3 results",
+  "results" : [ "Electric Technology", "Electric Technology", "Electric Technology" ]
 }, {
   "command" : "load",
   "user" : "jack29",
@@ -12662,8 +12662,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 11009,
-  "message" : "Search returned 3 results",
-  "results" : [ "Bad Harmonies", "Bad Harmonies", "Bad Harmonies" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Bad Harmonies", "Bad Harmonies" ]
 }, {
   "command" : "load",
   "user" : "david27",
@@ -12688,7 +12688,7 @@
   "command" : "next",
   "user" : "david27",
   "timestamp" : 11009,
-  "message" : "Skipped to next track successfully. The current track is Bliss Rapture."
+  "message" : "Skipped to next track successfully. The current track is Mystique Sunset."
 }, {
   "command" : "like",
   "user" : "david27",
@@ -12713,8 +12713,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 11019,
-  "message" : "Search returned 3 results",
-  "results" : [ "Heroic View", "Heroic View", "Heroic View" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Heroic View", "Heroic View" ]
 }, {
   "command" : "load",
   "user" : "emily30",
@@ -12815,8 +12815,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 11039,
-  "message" : "Search returned 3 results",
-  "results" : [ "Teen Funeral ", "Teen Funeral ", "Teen Funeral " ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Teen Funeral ", "Teen Funeral " ]
 }, {
   "command" : "load",
   "user" : "grace25",
@@ -12841,7 +12841,7 @@
   "command" : "next",
   "user" : "grace25",
   "timestamp" : 11039,
-  "message" : "Skipped to next track successfully. The current track is Harmony Reflection."
+  "message" : "Skipped to next track successfully. The current track is Adventure Whirlwind."
 }, {
   "command" : "like",
   "user" : "grace25",
@@ -12866,8 +12866,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 11049,
-  "message" : "Search returned 3 results",
-  "results" : [ "Bad Harmonies", "Bad Harmonies", "Bad Harmonies" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Bad Harmonies", "Bad Harmonies" ]
 }, {
   "command" : "load",
   "user" : "henry26",
@@ -12892,7 +12892,7 @@
   "command" : "next",
   "user" : "henry26",
   "timestamp" : 11049,
-  "message" : "Skipped to next track successfully. The current track is Bliss Rapture."
+  "message" : "Skipped to next track successfully. The current track is Mystique Sunset."
 }, {
   "command" : "like",
   "user" : "henry26",
@@ -12968,8 +12968,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 11069,
-  "message" : "Search returned 4 results",
-  "results" : [ "Bad Guide", "Bad Guide", "Bad Guide", "Bad Guide" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Bad Guide", "Bad Guide" ]
 }, {
   "command" : "load",
   "user" : "jack29",
@@ -12994,7 +12994,7 @@
   "command" : "next",
   "user" : "jack29",
   "timestamp" : 11069,
-  "message" : "Skipped to next track successfully. The current track is Rapture Harmonize."
+  "message" : "Skipped to next track successfully. The current track is Utopia Harmony."
 }, {
   "command" : "like",
   "user" : "jack29",
@@ -13223,8 +13223,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 11119,
-  "message" : "Search returned 3 results",
-  "results" : [ "Heroic View", "Heroic View", "Heroic View" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Heroic View", "Heroic View" ]
 }, {
   "command" : "load",
   "user" : "emily30",
@@ -13325,8 +13325,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 11139,
-  "message" : "Search returned 3 results",
-  "results" : [ "Bad Harmonies", "Bad Harmonies", "Bad Harmonies" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Bad Harmonies", "Bad Harmonies" ]
 }, {
   "command" : "load",
   "user" : "grace25",
@@ -13351,7 +13351,7 @@
   "command" : "next",
   "user" : "grace25",
   "timestamp" : 11139,
-  "message" : "Skipped to next track successfully. The current track is Bliss Rapture."
+  "message" : "Skipped to next track successfully. The current track is Mystique Sunset."
 }, {
   "command" : "like",
   "user" : "grace25",
@@ -13376,8 +13376,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 11149,
-  "message" : "Search returned 4 results",
-  "results" : [ "Electric Technology", "Electric Technology", "Electric Technology", "Electric Technology" ]
+  "message" : "Search returned 3 results",
+  "results" : [ "Electric Technology", "Electric Technology", "Electric Technology" ]
 }, {
   "command" : "load",
   "user" : "henry26",
@@ -13733,8 +13733,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 11219,
-  "message" : "Search returned 3 results",
-  "results" : [ "Teen Funeral ", "Teen Funeral ", "Teen Funeral " ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Teen Funeral ", "Teen Funeral " ]
 }, {
   "command" : "load",
   "user" : "emily30",
@@ -13759,7 +13759,7 @@
   "command" : "next",
   "user" : "emily30",
   "timestamp" : 11219,
-  "message" : "Skipped to next track successfully. The current track is Harmony Reflection."
+  "message" : "Skipped to next track successfully. The current track is Adventure Whirlwind."
 }, {
   "command" : "like",
   "user" : "emily30",
@@ -13988,8 +13988,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 11269,
-  "message" : "Search returned 4 results",
-  "results" : [ "Bad Guide", "Bad Guide", "Bad Guide", "Bad Guide" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Bad Guide", "Bad Guide" ]
 }, {
   "command" : "load",
   "user" : "jack29",
@@ -14014,7 +14014,7 @@
   "command" : "next",
   "user" : "jack29",
   "timestamp" : 11269,
-  "message" : "Skipped to next track successfully. The current track is Rapture Harmonize."
+  "message" : "Skipped to next track successfully. The current track is Utopia Harmony."
 }, {
   "command" : "like",
   "user" : "jack29",
@@ -14141,8 +14141,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 11299,
-  "message" : "Search returned 3 results",
-  "results" : [ "Heroic View", "Heroic View", "Heroic View" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Heroic View", "Heroic View" ]
 }, {
   "command" : "load",
   "user" : "carol19",
@@ -14345,8 +14345,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 11339,
-  "message" : "Search returned 4 results",
-  "results" : [ "Bad Guide", "Bad Guide", "Bad Guide", "Bad Guide" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Bad Guide", "Bad Guide" ]
 }, {
   "command" : "load",
   "user" : "grace25",
@@ -14371,7 +14371,7 @@
   "command" : "next",
   "user" : "grace25",
   "timestamp" : 11339,
-  "message" : "Skipped to next track successfully. The current track is Rapture Harmonize."
+  "message" : "Skipped to next track successfully. The current track is Utopia Harmony."
 }, {
   "command" : "like",
   "user" : "grace25",
@@ -14753,8 +14753,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 11419,
-  "message" : "Search returned 3 results",
-  "results" : [ "Heroic View", "Heroic View", "Heroic View" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Heroic View", "Heroic View" ]
 }, {
   "command" : "load",
   "user" : "emily30",
@@ -15212,8 +15212,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 11509,
-  "message" : "Search returned 3 results",
-  "results" : [ "Chill Funeral ", "Chill Funeral ", "Chill Funeral " ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Funeral ", "Chill Funeral " ]
 }, {
   "command" : "load",
   "user" : "david27",
@@ -15238,7 +15238,7 @@
   "command" : "next",
   "user" : "david27",
   "timestamp" : 11509,
-  "message" : "Skipped to next track successfully. The current track is Tranquility Serendipity."
+  "message" : "Skipped to next track successfully. The current track is Paradox Cascade."
 }, {
   "command" : "like",
   "user" : "david27",
@@ -15569,8 +15569,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 11579,
-  "message" : "Search returned 4 results",
-  "results" : [ "Bad Guide", "Bad Guide", "Bad Guide", "Bad Guide" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Bad Guide", "Bad Guide" ]
 }, {
   "command" : "load",
   "user" : "alice22",
@@ -15595,7 +15595,7 @@
   "command" : "next",
   "user" : "alice22",
   "timestamp" : 11579,
-  "message" : "Skipped to next track successfully. The current track is Rapture Harmonize."
+  "message" : "Skipped to next track successfully. The current track is Utopia Harmony."
 }, {
   "command" : "like",
   "user" : "alice22",
@@ -15620,8 +15620,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 11589,
-  "message" : "Search returned 3 results",
-  "results" : [ "Heroic View", "Heroic View", "Heroic View" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Heroic View", "Heroic View" ]
 }, {
   "command" : "load",
   "user" : "bob35",
@@ -15824,8 +15824,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 11629,
-  "message" : "Search returned 4 results",
-  "results" : [ "Bad Guide", "Bad Guide", "Bad Guide", "Bad Guide" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Bad Guide", "Bad Guide" ]
 }, {
   "command" : "load",
   "user" : "frank21",
@@ -15850,7 +15850,7 @@
   "command" : "next",
   "user" : "frank21",
   "timestamp" : 11629,
-  "message" : "Skipped to next track successfully. The current track is Rapture Harmonize."
+  "message" : "Skipped to next track successfully. The current track is Utopia Harmony."
 }, {
   "command" : "like",
   "user" : "frank21",
@@ -15926,8 +15926,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 11649,
-  "message" : "Search returned 3 results",
-  "results" : [ "Chill Funeral ", "Chill Funeral ", "Chill Funeral " ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Funeral ", "Chill Funeral " ]
 }, {
   "command" : "load",
   "user" : "henry26",
@@ -15952,7 +15952,7 @@
   "command" : "next",
   "user" : "henry26",
   "timestamp" : 11649,
-  "message" : "Skipped to next track successfully. The current track is Tranquility Serendipity."
+  "message" : "Skipped to next track successfully. The current track is Paradox Cascade."
 }, {
   "command" : "like",
   "user" : "henry26",
@@ -15977,8 +15977,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 11659,
-  "message" : "Search returned 4 results",
-  "results" : [ "Bad Guide", "Bad Guide", "Bad Guide", "Bad Guide" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Bad Guide", "Bad Guide" ]
 }, {
   "command" : "load",
   "user" : "irene33",
@@ -16003,7 +16003,7 @@
   "command" : "next",
   "user" : "irene33",
   "timestamp" : 11659,
-  "message" : "Skipped to next track successfully. The current track is Rapture Harmonize."
+  "message" : "Skipped to next track successfully. The current track is Utopia Harmony."
 }, {
   "command" : "like",
   "user" : "irene33",
@@ -16079,8 +16079,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 11679,
-  "message" : "Search returned 3 results",
-  "results" : [ "Teen Funeral ", "Teen Funeral ", "Teen Funeral " ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Teen Funeral ", "Teen Funeral " ]
 }, {
   "command" : "load",
   "user" : "alice22",
@@ -16105,7 +16105,7 @@
   "command" : "next",
   "user" : "alice22",
   "timestamp" : 11679,
-  "message" : "Skipped to next track successfully. The current track is Harmony Reflection."
+  "message" : "Skipped to next track successfully. The current track is Adventure Whirlwind."
 }, {
   "command" : "like",
   "user" : "alice22",
@@ -16181,8 +16181,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 11699,
-  "message" : "Search returned 4 results",
-  "results" : [ "Bad Guide", "Bad Guide", "Bad Guide", "Bad Guide" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Bad Guide", "Bad Guide" ]
 }, {
   "command" : "load",
   "user" : "carol19",
@@ -16207,7 +16207,7 @@
   "command" : "next",
   "user" : "carol19",
   "timestamp" : 11699,
-  "message" : "Skipped to next track successfully. The current track is Rapture Harmonize."
+  "message" : "Skipped to next track successfully. The current track is Utopia Harmony."
 }, {
   "command" : "like",
   "user" : "carol19",
@@ -16232,8 +16232,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 11709,
-  "message" : "Search returned 4 results",
-  "results" : [ "Bad Guide", "Bad Guide", "Bad Guide", "Bad Guide" ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Bad Guide", "Bad Guide" ]
 }, {
   "command" : "load",
   "user" : "david27",
@@ -16258,7 +16258,7 @@
   "command" : "next",
   "user" : "david27",
   "timestamp" : 11709,
-  "message" : "Skipped to next track successfully. The current track is Rapture Harmonize."
+  "message" : "Skipped to next track successfully. The current track is Utopia Harmony."
 }, {
   "command" : "like",
   "user" : "david27",
@@ -16538,8 +16538,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 11769,
-  "message" : "Search returned 3 results",
-  "results" : [ "Chill Funeral ", "Chill Funeral ", "Chill Funeral " ]
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Funeral ", "Chill Funeral " ]
 }, {
   "command" : "load",
   "user" : "jack29",
@@ -16564,7 +16564,7 @@
   "command" : "next",
   "user" : "jack29",
   "timestamp" : 11769,
-  "message" : "Skipped to next track successfully. The current track is Tranquility Serendipity."
+  "message" : "Skipped to next track successfully. The current track is Paradox Cascade."
 }, {
   "command" : "like",
   "user" : "jack29",
@@ -16584,8 +16584,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 11769,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -16615,8 +16615,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 11779,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -16646,8 +16646,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 11789,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -16677,8 +16677,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 11799,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -16755,7 +16755,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 11819,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "printCurrentPage",
   "user" : "frank21",
@@ -16770,8 +16770,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 11829,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -16863,8 +16863,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 11859,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -16910,7 +16910,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 11869,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "printCurrentPage",
   "user" : "alice22",
@@ -16925,8 +16925,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 11879,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -16956,8 +16956,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 11889,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -17018,8 +17018,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 11909,
-  "message" : "Search returned 2 results",
-  "results" : [ "leslie27", "leslie27" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "leslie27" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -17049,8 +17049,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 11919,
-  "message" : "Search returned 2 results",
-  "results" : [ "leslie27", "leslie27" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "leslie27" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -17080,8 +17080,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 11929,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -17158,7 +17158,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 11949,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "printCurrentPage",
   "user" : "irene33",
@@ -17204,8 +17204,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 11969,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -17266,8 +17266,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 11989,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -17297,8 +17297,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 11999,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -17359,8 +17359,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 12019,
-  "message" : "Search returned 2 results",
-  "results" : [ "leslie27", "leslie27" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "leslie27" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -17390,8 +17390,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12029,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -17437,7 +17437,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 12039,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "printCurrentPage",
   "user" : "henry26",
@@ -17483,8 +17483,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 12059,
-  "message" : "Search returned 2 results",
-  "results" : [ "leslie27", "leslie27" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "leslie27" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -17514,8 +17514,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 12069,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -17592,7 +17592,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 12089,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "printCurrentPage",
   "user" : "carol19",
@@ -17607,8 +17607,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 12099,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -17638,8 +17638,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12109,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -17685,7 +17685,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 12119,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "printCurrentPage",
   "user" : "frank21",
@@ -17747,7 +17747,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 12139,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "printCurrentPage",
   "user" : "henry26",
@@ -17762,8 +17762,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 12149,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -17809,7 +17809,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 12159,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "printCurrentPage",
   "user" : "jack29",
@@ -17824,8 +17824,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 12169,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -17886,8 +17886,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12189,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -17917,8 +17917,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 12199,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -17948,8 +17948,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12209,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -17979,8 +17979,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 12219,
-  "message" : "Search returned 2 results",
-  "results" : [ "leslie27", "leslie27" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "leslie27" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -18072,8 +18072,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 12249,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -18119,7 +18119,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 12259,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "printCurrentPage",
   "user" : "jack29",
@@ -18165,8 +18165,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 12279,
-  "message" : "Search returned 2 results",
-  "results" : [ "leslie27", "leslie27" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "leslie27" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -18212,7 +18212,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 12289,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "printCurrentPage",
   "user" : "carol19",
@@ -18227,33 +18227,33 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 12299,
-  "message" : "Search returned 1 results",
-  "results" : [ "jenningsbeth" ]
+  "message" : "Search returned 0 results",
+  "results" : [ ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 12299,
-  "message" : "Successfully selected jenningsbeth's page."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "printCurrentPage",
   "user" : "david27",
   "timestamp" : 12299,
-  "message" : "Albums:\n\t[Dynamic Autumn, Chill View, Heroic Hood, Electric Revolution, Alone Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : null
 }, {
   "command" : "addAlbum",
   "user" : "jenningsbeth",
   "timestamp" : 12299,
-  "message" : "jenningsbeth has added new album successfully."
+  "message" : "jenningsbeth is not an artist."
 }, {
   "command" : "printCurrentPage",
   "user" : "david27",
   "timestamp" : 12299,
-  "message" : "Albums:\n\t[Dynamic Autumn, Chill View, Heroic Hood, Electric Revolution, Alone Harmonies, Electric Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : null
 }, {
   "command" : "printCurrentPage",
   "user" : "david27",
   "timestamp" : 12299,
-  "message" : "Albums:\n\t[Dynamic Autumn, Chill View, Heroic Hood, Electric Revolution, Alone Harmonies, Electric Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : null
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -18367,7 +18367,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 12339,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "printCurrentPage",
   "user" : "henry26",
@@ -18382,8 +18382,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 12349,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -18444,8 +18444,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 12369,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -18491,7 +18491,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 12379,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "printCurrentPage",
   "user" : "bob35",
@@ -18568,8 +18568,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12409,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -18661,8 +18661,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 12439,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -18770,7 +18770,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 12469,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "printCurrentPage",
   "user" : "alice22",
@@ -18816,8 +18816,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 12489,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -18863,7 +18863,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 12499,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "printCurrentPage",
   "user" : "david27",
@@ -18894,7 +18894,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 12509,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "printCurrentPage",
   "user" : "emily30",
@@ -18909,8 +18909,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 12519,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -18987,7 +18987,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 12539,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "printCurrentPage",
   "user" : "henry26",
@@ -19018,7 +19018,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 12549,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "printCurrentPage",
   "user" : "irene33",
@@ -19095,8 +19095,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 12579,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -19297,7 +19297,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 12639,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "printCurrentPage",
   "user" : "henry26",
@@ -19405,8 +19405,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 12679,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -19467,8 +19467,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 12699,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -19529,8 +19529,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 12719,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -19576,7 +19576,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 12729,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "printCurrentPage",
   "user" : "grace25",
@@ -19622,8 +19622,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 12749,
-  "message" : "Search returned 2 results",
-  "results" : [ "leslie27", "leslie27" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "leslie27" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -19653,8 +19653,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 12759,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -19777,8 +19777,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 12799,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -19808,8 +19808,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 12809,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -19870,8 +19870,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 12829,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -19963,8 +19963,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 12859,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -20010,7 +20010,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 12869,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "printCurrentPage",
   "user" : "alice22",
@@ -20087,8 +20087,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 12899,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -20211,8 +20211,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 12939,
-  "message" : "Search returned 2 results",
-  "results" : [ "leslie27", "leslie27" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "leslie27" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -20273,8 +20273,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 12959,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -20320,7 +20320,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 12969,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "printCurrentPage",
   "user" : "alice22",
@@ -20335,8 +20335,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 12979,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -20413,7 +20413,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 12999,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "printCurrentPage",
   "user" : "david27",
@@ -20490,8 +20490,8 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 13029,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "grace25",
@@ -20521,8 +20521,8 @@
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 13039,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -20552,8 +20552,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 13049,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -20583,8 +20583,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 13059,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -20645,8 +20645,8 @@
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 13079,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -20738,8 +20738,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 13109,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -20785,7 +20785,7 @@
   "command" : "addAlbum",
   "user" : "conniealvarez",
   "timestamp" : 13119,
-  "message" : "The username conniealvarez doesn't exist."
+  "message" : "conniealvarez is not an artist."
 }, {
   "command" : "printCurrentPage",
   "user" : "frank21",
@@ -20800,39 +20800,39 @@
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 13129,
-  "message" : "Search returned 1 results",
-  "results" : [ "jenningsbeth" ]
+  "message" : "Search returned 0 results",
+  "results" : [ ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 13129,
-  "message" : "Successfully selected jenningsbeth's page."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "printCurrentPage",
   "user" : "grace25",
   "timestamp" : 13129,
-  "message" : "Albums:\n\t[Dynamic Autumn, Chill View, Heroic Hood, Electric Revolution, Alone Harmonies, Electric Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : null
 }, {
   "command" : "addAlbum",
   "user" : "jenningsbeth",
   "timestamp" : 13129,
-  "message" : "jenningsbeth has added new album successfully."
+  "message" : "jenningsbeth is not an artist."
 }, {
   "command" : "printCurrentPage",
   "user" : "grace25",
   "timestamp" : 13129,
-  "message" : "Albums:\n\t[Dynamic Autumn, Chill View, Heroic Hood, Electric Revolution, Alone Harmonies, Electric Autumn, Electric Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : null
 }, {
   "command" : "printCurrentPage",
   "user" : "grace25",
   "timestamp" : 13129,
-  "message" : "Albums:\n\t[Dynamic Autumn, Chill View, Heroic Hood, Electric Revolution, Alone Harmonies, Electric Autumn, Electric Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : null
 }, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 13139,
-  "message" : "Search returned 2 results",
-  "results" : [ "leslie27", "leslie27" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "leslie27" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -20862,8 +20862,8 @@
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 13149,
-  "message" : "Search returned 4 results",
-  "results" : [ "amanda16", "amanda16", "amanda16", "amanda16" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "amanda16" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -20893,8 +20893,8 @@
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 13159,
-  "message" : "Search returned 2 results",
-  "results" : [ "leslie27", "leslie27" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "leslie27" ]
 }, {
   "command" : "select",
   "user" : "jack29",
@@ -20924,8 +20924,8 @@
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 13169,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "alice22",
@@ -20986,8 +20986,8 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 13189,
-  "message" : "Search returned 2 results",
-  "results" : [ "leslie27", "leslie27" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "leslie27" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -21017,8 +21017,8 @@
   "command" : "search",
   "user" : "david27",
   "timestamp" : 13199,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "david27",
@@ -21048,8 +21048,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 13209,
-  "message" : "Search returned 2 results",
-  "results" : [ "leslie27", "leslie27" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "leslie27" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -21079,8 +21079,8 @@
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 13219,
-  "message" : "Search returned 2 results",
-  "results" : [ "jacobdean", "jacobdean" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "jacobdean" ]
 }, {
   "command" : "select",
   "user" : "frank21",
@@ -21240,7 +21240,7 @@
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 13259,
-  "message" : "Successfully selected jacobdean's page."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "alice22",
@@ -21272,12 +21272,12 @@
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 13279,
-  "message" : "Successfully selected leslie27's page."
+  "message" : "Successfully selected Groovy Tracks Expedition #1."
 }, {
   "command" : "follow",
   "user" : "carol19",
   "timestamp" : 13279,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -21304,7 +21304,7 @@
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 13299,
-  "message" : "Successfully selected leslie27's page."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "emily30",
@@ -21320,12 +21320,12 @@
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 13309,
-  "message" : "Successfully selected jacobdean's page."
+  "message" : "Successfully selected Groovy Tracks Expedition #1."
 }, {
   "command" : "follow",
   "user" : "frank21",
   "timestamp" : 13309,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -21352,12 +21352,12 @@
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 13329,
-  "message" : "Successfully selected matthewfernandez's page."
+  "message" : "Successfully selected Vibey Harmonies Odyssey #1."
 }, {
   "command" : "follow",
   "user" : "henry26",
   "timestamp" : 13329,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -21400,12 +21400,12 @@
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 13359,
-  "message" : "Successfully selected jacobdean's page."
+  "message" : "Successfully selected Groovy Tracks Expedition #1."
 }, {
   "command" : "follow",
   "user" : "alice22",
   "timestamp" : 13359,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -21432,7 +21432,7 @@
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 13379,
-  "message" : "Successfully selected leslie27's page."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "carol19",
@@ -21448,12 +21448,12 @@
   "command" : "select",
   "user" : "david27",
   "timestamp" : 13389,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Chill Grooves Quest #2."
 }, {
   "command" : "follow",
   "user" : "david27",
   "timestamp" : 13389,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -21480,7 +21480,7 @@
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 13409,
-  "message" : "Successfully selected jacobdean's page."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "frank21",
@@ -21496,12 +21496,12 @@
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 13419,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Dynamic Rhythms Escape #2."
 }, {
   "command" : "follow",
   "user" : "grace25",
   "timestamp" : 13419,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -21544,12 +21544,12 @@
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 13449,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Breezy Bangers Expedition #2."
 }, {
   "command" : "follow",
   "user" : "jack29",
   "timestamp" : 13449,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "You cannot follow or unfollow your own playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -21560,7 +21560,7 @@
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 13459,
-  "message" : "Successfully selected jacobdean's page."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "alice22",
@@ -21576,12 +21576,12 @@
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 13469,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Breezy Harmonies Odyssey #1."
 }, {
   "command" : "follow",
   "user" : "bob35",
   "timestamp" : 13469,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "You cannot follow or unfollow your own playlist."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -21608,12 +21608,12 @@
   "command" : "select",
   "user" : "david27",
   "timestamp" : 13489,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Chill Grooves Quest #2."
 }, {
   "command" : "follow",
   "user" : "david27",
   "timestamp" : 13489,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -21624,12 +21624,12 @@
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 13499,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Groovy Tracks Expedition #1."
 }, {
   "command" : "follow",
   "user" : "emily30",
   "timestamp" : 13499,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -21640,7 +21640,7 @@
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 13509,
-  "message" : "Successfully selected jacobdean's page."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "frank21",
@@ -21688,12 +21688,12 @@
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 13539,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Dynamic Rhythms Escape #2."
 }, {
   "command" : "follow",
   "user" : "irene33",
   "timestamp" : 13539,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -21720,7 +21720,7 @@
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 13559,
-  "message" : "Successfully selected jacobdean's page."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "alice22",
@@ -21784,12 +21784,12 @@
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 13599,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Epic Vibes Voyage #2."
 }, {
   "command" : "follow",
   "user" : "emily30",
   "timestamp" : 13599,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -21800,7 +21800,7 @@
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 13609,
-  "message" : "Successfully selected jacobdean's page."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "frank21",
@@ -21880,7 +21880,7 @@
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 13659,
-  "message" : "Successfully selected jacobdean's page."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "alice22",
@@ -21928,12 +21928,12 @@
   "command" : "select",
   "user" : "david27",
   "timestamp" : 13689,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Epic Vibes Voyage #2."
 }, {
   "command" : "follow",
   "user" : "david27",
   "timestamp" : 13689,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -22008,12 +22008,12 @@
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 13739,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Chill Grooves Quest #2."
 }, {
   "command" : "follow",
   "user" : "irene33",
   "timestamp" : 13739,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -22104,12 +22104,12 @@
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 13799,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Chill Grooves Quest #2."
 }, {
   "command" : "follow",
   "user" : "emily30",
   "timestamp" : 13799,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -22152,12 +22152,12 @@
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 13829,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Groovy Sounds Journey #1."
 }, {
   "command" : "follow",
   "user" : "henry26",
   "timestamp" : 13829,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -22200,12 +22200,12 @@
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 13859,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Classic Vibes Odyssey #1."
 }, {
   "command" : "follow",
   "user" : "alice22",
   "timestamp" : 13859,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "You cannot follow or unfollow your own playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -22344,12 +22344,12 @@
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 13949,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Breezy Bangers Expedition #2."
 }, {
   "command" : "follow",
   "user" : "jack29",
   "timestamp" : 13949,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "You cannot follow or unfollow your own playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -22536,12 +22536,12 @@
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 14069,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Groovy Sounds Journey #1."
 }, {
   "command" : "follow",
   "user" : "bob35",
   "timestamp" : 14069,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -22552,12 +22552,12 @@
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 14079,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Chill Tracks Dream #2."
 }, {
   "command" : "follow",
   "user" : "carol19",
   "timestamp" : 14079,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "You cannot follow or unfollow your own playlist."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -22648,12 +22648,12 @@
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 14139,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Electric Grooves Journey #1."
 }, {
   "command" : "follow",
   "user" : "irene33",
   "timestamp" : 14139,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "You cannot follow or unfollow your own playlist."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -22680,12 +22680,12 @@
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 14159,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Chill Tunes Safari #2."
 }, {
   "command" : "follow",
   "user" : "alice22",
   "timestamp" : 14159,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -22712,12 +22712,12 @@
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 14179,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Chill Tunes Safari #2."
 }, {
   "command" : "follow",
   "user" : "carol19",
   "timestamp" : 14179,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -22744,12 +22744,12 @@
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 14199,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Chill Grooves Quest #2."
 }, {
   "command" : "follow",
   "user" : "emily30",
   "timestamp" : 14199,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -22824,12 +22824,12 @@
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 14249,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Groovy Sounds Journey #1."
 }, {
   "command" : "follow",
   "user" : "jack29",
   "timestamp" : 14249,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -22936,12 +22936,12 @@
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 14319,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Chill Grooves Quest #2."
 }, {
   "command" : "follow",
   "user" : "grace25",
   "timestamp" : 14319,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -23000,12 +23000,12 @@
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 14359,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Chill Tunes Safari #2."
 }, {
   "command" : "follow",
   "user" : "alice22",
   "timestamp" : 14359,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -23032,12 +23032,12 @@
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 14379,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Chill Tracks Dream #2."
 }, {
   "command" : "follow",
   "user" : "carol19",
   "timestamp" : 14379,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "You cannot follow or unfollow your own playlist."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -23112,12 +23112,12 @@
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 14429,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Dynamic Rhythms Escape #2."
 }, {
   "command" : "follow",
   "user" : "henry26",
   "timestamp" : 14429,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "You cannot follow or unfollow your own playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -23160,12 +23160,12 @@
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 14459,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Groovy Tracks Expedition #1."
 }, {
   "command" : "follow",
   "user" : "alice22",
   "timestamp" : 14459,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -23256,12 +23256,12 @@
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 14519,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Vibey Harmonies Odyssey #1."
 }, {
   "command" : "follow",
   "user" : "grace25",
   "timestamp" : 14519,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -23336,12 +23336,12 @@
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 14569,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Dynamic Rhythms Escape #2."
 }, {
   "command" : "follow",
   "user" : "bob35",
   "timestamp" : 14569,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -23384,12 +23384,12 @@
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 14599,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Groovy Tracks Expedition #1."
 }, {
   "command" : "follow",
   "user" : "emily30",
   "timestamp" : 14599,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "Playlist unfollowed successfully."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -23464,12 +23464,12 @@
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 14649,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Dynamic Rhythms Escape #2."
 }, {
   "command" : "follow",
   "user" : "jack29",
   "timestamp" : 14649,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -23592,12 +23592,12 @@
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 14729,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Dynamic Rhythms Escape #2."
 }, {
   "command" : "follow",
   "user" : "henry26",
   "timestamp" : 14729,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "You cannot follow or unfollow your own playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -23608,12 +23608,12 @@
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 14739,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Groovy Sounds Journey #1."
 }, {
   "command" : "follow",
   "user" : "irene33",
   "timestamp" : 14739,
-  "message" : "Please select a source before following or unfollowing."
+  "message" : "Playlist followed successfully."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -23666,7 +23666,7 @@
     "name" : "Epic Vibes Voyage #2",
     "songs" : [ "Sad But True", "Black Dog", "Love Story", "Blank Space", "Start Me Up", "Under Pressure", "Stairway to Heaven", "Big Pimpin'", "Gimme Shelter" ],
     "visibility" : "public",
-    "followers" : 0,
+    "followers" : 2,
     "timestamp" : 299
   } ]
 }, {
@@ -23682,7 +23682,7 @@
     "name" : "Vibey Harmonies Odyssey #1",
     "songs" : [ "Delicate", "Under Pressure" ],
     "visibility" : "public",
-    "followers" : 0,
+    "followers" : 2,
     "timestamp" : 209
   }, {
     "name" : "Chill Tracks Dream #2",
@@ -23732,7 +23732,7 @@
     "name" : "Chill Tunes Safari #2",
     "songs" : [ "Begin Again", "Gimme Shelter", "Delicate", "Happier", "Don't" ],
     "visibility" : "public",
-    "followers" : 0,
+    "followers" : 1,
     "timestamp" : 329
   } ]
 }, {
@@ -23748,13 +23748,13 @@
     "name" : "Groovy Sounds Journey #1",
     "songs" : [ "Don't", "Begin Again", "Maps", "Dream On" ],
     "visibility" : "public",
-    "followers" : 0,
+    "followers" : 4,
     "timestamp" : 239
   }, {
     "name" : "Chill Grooves Quest #2",
     "songs" : [ "Whatever You Need", "Stairway to Heaven" ],
     "visibility" : "public",
-    "followers" : 0,
+    "followers" : 2,
     "timestamp" : 339
   } ]
 }, {
@@ -23770,7 +23770,7 @@
     "name" : "Groovy Tracks Expedition #1",
     "songs" : [ "Thinking Out Loud", "Black Dog", "Under Pressure", "Blank Space", "Whatever You Need" ],
     "visibility" : "public",
-    "followers" : 0,
+    "followers" : 2,
     "timestamp" : 249
   }, {
     "name" : "Epic Melodies Safari #2",
@@ -23798,7 +23798,7 @@
     "name" : "Dynamic Rhythms Escape #2",
     "songs" : [ "Angie", "Stairway to Heaven", "Delicate", "Paint It Black", "Begin Again" ],
     "visibility" : "public",
-    "followers" : 0,
+    "followers" : 4,
     "timestamp" : 359
   } ]
 }, {
@@ -23853,11 +23853,11 @@
 }, {
   "command" : "getAllUsers",
   "timestamp" : 14849,
-  "result" : [ "alice22", "bob35", "carol19", "david27", "emily30", "frank21", "grace25", "henry26", "irene33", "jack29", "barmstrong", "matthewporter", "nancymontgomery", "amanda16", "cbutler", "jacobdean", "jacobdean", "jenningsbeth", "matthewfernandez", "leslie27", "amanda16", "leslie27", "amanda16", "amanda16", "nancymontgomery", "conniealvarez", "barmstrong", "jenningsbeth", "conniealvarez", "conniealvarez", "nancymontgomery", "charlesgarcia", "jacobdean", "conniealvarez", "matthewfernandez" ]
+  "result" : [ "alice22", "bob35", "carol19", "david27", "emily30", "frank21", "grace25", "henry26", "irene33", "jack29", "barmstrong", "matthewporter", "amanda16", "cbutler", "jacobdean", "matthewfernandez", "leslie27", "nancymontgomery", "conniealvarez", "jenningsbeth", "charlesgarcia" ]
 }, {
   "command" : "getTop5Playlists",
   "timestamp" : 14849,
-  "result" : [ "Classic Vibes Odyssey #1", "Breezy Harmonies Odyssey #1", "Vibey Harmonies Odyssey #1", "Mellow Rhythms Odyssey #1", "Breezy Melodies Expedition #1" ]
+  "result" : [ "Groovy Sounds Journey #1", "Dynamic Rhythms Escape #2", "Vibey Harmonies Odyssey #1", "Groovy Tracks Expedition #1", "Epic Vibes Voyage #2" ]
 }, {
   "command" : "getTop5Songs",
   "timestamp" : 14849,

@@ -3,6 +3,7 @@ package app;
 import app.audio.Collections.Album;
 import app.audio.Collections.Playlist;
 import app.audio.Collections.Podcast;
+import app.audio.Files.AudioFile;
 import app.audio.Files.Episode;
 import app.audio.Files.Song;
 import app.pages.Strategy.*;
@@ -55,6 +56,11 @@ public class Admin {
 
     public static void addAlbumToLib(Album album) {
         Admin.albums.add(album);
+    }
+
+
+    public static void addPodcastToLib(Podcast podcast) {
+        Admin.podcasts.add(podcast);
     }
 
     public static void setPodcasts(List<PodcastInput> podcastInputList) {
@@ -236,7 +242,7 @@ public class Admin {
     }
 
     public static String addUser(CommandInput commandInput) {
-        if (users.stream().anyMatch(user -> user.getUsername().equals(commandInput.getUsername())))
+        if (getAllUsers().stream().anyMatch(user -> user.equals(commandInput.getUsername())))
             return "The username " + commandInput.getUsername() + " is already taken.";
 
         // create new user
@@ -354,7 +360,7 @@ public class Admin {
     public static String addAlbum(CommandInput commandInput) {
         User user = getUser(commandInput.getUsername());
 
-        if (artists.stream().noneMatch(iterUser -> iterUser.getUsername()
+        if (getAllUsers().stream().noneMatch(iterUser -> iterUser
                         .equals(commandInput.getUsername())) || user == null)
 
             return "The username " + commandInput.getUsername() + " doesn't exist.";
@@ -368,6 +374,21 @@ public class Admin {
 
     public static String removeAlbum(CommandInput commandInput) {
         return null;
+    }
+
+    public static String addPodcast(CommandInput commandInput) {
+        User user = getUser(commandInput.getUsername());
+
+        if (getAllUsers().stream().noneMatch(iterUser -> iterUser
+                .equals(commandInput.getUsername())) || user == null)
+
+            return "The username " + commandInput.getUsername() + " doesn't exist.";
+
+        if (!user.getUserType().equals(Enums.UserType.HOST))
+            return commandInput.getUsername() + " is not a host.";
+
+
+        return ((Host)user).addPodcast(commandInput);
     }
 
     public static String printCurrentPage(CommandInput commandInput) {
@@ -459,5 +480,33 @@ public class Admin {
         }
 
         return checkArtist;
+    }
+
+    public static String addAnnouncement(CommandInput commandInput) {
+        User user = Admin.getUser(commandInput.getUsername());
+
+        if (getAllUsers().stream().noneMatch(iterUser -> iterUser
+                .equals(commandInput.getUsername())) || user == null)
+            return "The username " + commandInput.getUsername() + " doesn't exist.";
+
+        if (!user.getUserType().equals(Enums.UserType.HOST))
+            return commandInput.getUsername() + " is not a host.";
+
+
+        return ((Host)user).addAnnouncement(commandInput);
+    }
+
+    public static String removeAnnouncement(CommandInput commandInput) {
+        User user = Admin.getUser(commandInput.getUsername());
+
+        if (getAllUsers().stream().noneMatch(iterUser -> iterUser
+                .equals(commandInput.getUsername())) || user == null)
+            return "The username " + commandInput.getUsername() + " doesn't exist.";
+
+        if (!user.getUserType().equals(Enums.UserType.HOST))
+            return commandInput.getUsername() + " is not a host.";
+
+
+        return ((Host)user).removeAnnouncement(commandInput);
     }
 }

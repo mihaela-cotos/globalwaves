@@ -1,13 +1,16 @@
 package app.pages.Strategy;
 
 
+import app.Admin;
 import app.audio.Collections.Podcast;
+import app.audio.Files.AudioFile;
 import app.audio.Files.Episode;
 import app.pages.utils.Announcement;
 import app.user.Host;
 import app.user.User;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class HostPageStrategy implements PrintPageStrategy {
@@ -19,35 +22,37 @@ public class HostPageStrategy implements PrintPageStrategy {
 
         String pageLog = "Podcasts:\n\t[";
         for (int i = 0; i < podcasts.size(); i++) {
+            List<Episode> podcastEpisodes = podcasts.get(i).getEpisodes();
+
             pageLog += podcasts.get(i).getName();
             pageLog += ":\n\t[";
-            List<Episode> episodes = podcasts.get(i).getEpisodes();
-            for (int j = 0; j < episodes.size(); j++) {
-                pageLog += episodes.get(i).getName();
-                pageLog += " - ";
-                pageLog += episodes.get(i).getDescription();
 
-                if (j != episodes.size() - 1) {
+            for (int j = 0; j < podcastEpisodes.size(); j++) {
+                pageLog += podcastEpisodes.get(j).getName();
+                pageLog += " - ";
+                pageLog += podcastEpisodes.get(j).getDescription();
+
+                if (j != podcastEpisodes.size() - 1) {
                     pageLog += ", ";
                 }
             }
-            pageLog += ']';
+            pageLog += "]\n";
 
             if (i != podcasts.size() - 1) {
                 pageLog += ", ";
             }
         }
 
-        pageLog += "]\n\nAnnouncements\n\t[";
+        pageLog += "]\n\nAnnouncements:\n\t[";
         for (int i = 0; i < announcements.size(); i++) {
             pageLog += announcements.get(i).getName();
-            pageLog += " - ";
+            pageLog += ":\n\t";
             pageLog += announcements.get(i).getDescription();
 
             if (i != announcements.size() - 1) {
                 pageLog += ", ";
             } else {
-                pageLog += "]";
+                pageLog += "\n]";
             }
         }
 
