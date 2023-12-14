@@ -213,7 +213,7 @@
   "command" : "deleteUser",
   "user" : "audiosage",
   "timestamp" : 930,
-  "message" : null
+  "message" : "audiosage can't be deleted."
 }, {
   "command" : "changePage",
   "user" : "soundseeker21",
@@ -235,10 +235,15 @@
   "timestamp" : 975,
   "message" : "The username sonicpainter doesn't exist."
 }, {
+  "command" : "removePodcast",
+  "user" : "musicmaven",
+  "timestamp" : 980,
+  "message" : "musicmaven can't delete this podcast."
+}, {
   "command" : "deleteUser",
   "user" : "audiosage",
   "timestamp" : 1100,
-  "message" : null
+  "message" : "audiosage can't be deleted."
 }, {
   "command" : "select",
   "user" : "david27",
@@ -253,7 +258,7 @@
   "command" : "deleteUser",
   "user" : "musicmaven",
   "timestamp" : 6900,
-  "message" : null
+  "message" : "musicmaven can't be deleted."
 }, {
   "command" : "repeat",
   "user" : "carol19",

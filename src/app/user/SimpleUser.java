@@ -1,9 +1,12 @@
 package app.user;
 
+import app.Admin;
 import app.audio.Collections.AudioCollection;
 import app.audio.Collections.Playlist;
 import app.audio.Collections.PlaylistOutput;
+import app.audio.Collections.Podcast;
 import app.audio.Files.AudioFile;
+import app.audio.Files.Episode;
 import app.audio.Files.Song;
 import app.audio.LibraryEntry;
 import app.player.Player;
@@ -168,8 +171,8 @@ public class SimpleUser extends User {
         if (player.getCurrentAudioFile() == null)
             return "Please load a source before using the shuffle function.";
 
-        if (!player.getType().equals("playlist"))
-            return "The loaded source is not a playlist.";
+        if (!player.getType().equals("playlist") && !player.getType().equals("album"))
+            return "The loaded source is not a playlist or an album.";
 
         player.shuffle(seed);
 
@@ -396,6 +399,47 @@ public class SimpleUser extends User {
 
     public void simulateTime(int time) {
         player.simulatePlayer(time);
+    }
+
+    public String deleteUser(List<SimpleUser> allUsers) {
+        if (myPlaylistIsPlaying()) {
+            return getUsername() + " can't be deleted.";
+        }
+
+        for(Playlist playlist : followedPlaylists) {
+            playlist.decreaseFollowers();
+        }
+
+        for (SimpleUser user : allUsers) {
+            ArrayList<Playlist> updatePlaylists = user.getPlaylists();
+            updatePlaylists.removeAll(playlists);
+            user.setFollowedPlaylists(updatePlaylists);
+        }
+        Admin.updateUsers(this);
+        return getUsername() + " was successfully deleted.";
+    }
+
+    public List<Playlist> allPlayingPlaylists() {
+        List<Playlist> playingPlaylists = new ArrayList<>();
+        List<SimpleUser> users = new ArrayList<>();
+        users.addAll(Admin.getSimpleUsers());
+
+        for (SimpleUser user : users) {
+            if (user.getPlayer().getCurrentAudioFile() != null && user.getPlayer().getType().equals("playlist")) {
+                playingPlaylists.add((Playlist) user.getPlayer().getSource().getAudioCollection());
+            }
+        }
+        return playingPlaylists;
+    }
+
+    public boolean myPlaylistIsPlaying() {
+        for (Playlist playlist : allPlayingPlaylists()) {
+            if (playlists.stream().anyMatch(playlist1 -> playlist1.getName().equals(playlist.getName()))
+                                                     && playlist.getOwner().equals(getUsername())) {
+                return true;
+            }
+        }
+        return false;
     }
 
 }

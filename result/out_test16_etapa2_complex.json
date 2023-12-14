@@ -378,17 +378,11 @@
   "user" : "jsimpson",
   "timestamp" : 175,
   "result" : [ {
-    "name" : "Chill Hood",
-    "songs" : [ "Sunset Dream", "Sunset Dream" ]
-  }, {
     "name" : "Teen Technology",
     "songs" : [ "Harmony Love", "Harmony Pandora", "Enigma Heart", "Harmony Crescendo", "Infinity Velvet", "Aurora Lullaby", "Reflection Utopia", "Infinity Rhythm", "Infinity Dream", "Aurora Cascade" ]
   }, {
     "name" : "Electric View",
     "songs" : [ "Whisper Rapture", "Heart Dance", "Solitude Enigma", "Zephyr Bliss", "Serendipity Pinnacle", "Euphoria Night", "Starlight Luminescence", "Mystique Ethereal", "Night Soul", "Bliss Melody", "Infinity Infinity" ]
-  }, {
-    "name" : "Electric Harmonies",
-    "songs" : [ "Dance Melody", "Dance Melody" ]
   } ]
 }, {
   "command" : "showAlbums",
@@ -398,17 +392,11 @@
     "name" : "Bad Revolution",
     "songs" : [ "Rapture Echo", "Essence Crescendo", "Eclipse Tranquility", "Serendipity Serenade", "Adventure Eclipse", "Serendipity Radiance", "Heart Night", "Adventure Solitude", "Celestial Utopia" ]
   }, {
-    "name" : "Electric Dirt",
-    "songs" : [ "Mystique Euphoria", "Mystique Euphoria" ]
-  }, {
     "name" : "Groovy Harmonies",
     "songs" : [ "Night Aurora", "Sunset Celestial", "Pinnacle Bliss", "Dream Radiance", "Odyssey Cascade", "Cascade Harmony", "Solitude Dance", "Eclipse Heart", "Soul Pulse", "Reflection Lullaby", "Radiance Paradox", "Colors Enigma", "Glow Whisper" ]
   }, {
     "name" : "Teen Harmonies",
     "songs" : [ "Mystique Echo", "Pandora Odyssey", "Paradox Dance", "Cascade Glow", "Dance Twilight", "Pulse Crescendo", "Melody Soul", "Mystique Euphoria", "Solitude Harmonize", "Pinnacle Odyssey" ]
-  }, {
-    "name" : "Chill Funeral ",
-    "songs" : [ "Lullaby Harmony", "Lullaby Harmony" ]
   } ]
 }, {
   "command" : "showAlbums",
@@ -418,34 +406,22 @@
     "name" : "Bad Revolution",
     "songs" : [ "Rapture Echo", "Essence Crescendo", "Eclipse Tranquility", "Serendipity Serenade", "Adventure Eclipse", "Serendipity Radiance", "Heart Night", "Adventure Solitude", "Celestial Utopia" ]
   }, {
-    "name" : "Electric Dirt",
-    "songs" : [ "Mystique Euphoria", "Mystique Euphoria" ]
-  }, {
     "name" : "Groovy Harmonies",
     "songs" : [ "Night Aurora", "Sunset Celestial", "Pinnacle Bliss", "Dream Radiance", "Odyssey Cascade", "Cascade Harmony", "Solitude Dance", "Eclipse Heart", "Soul Pulse", "Reflection Lullaby", "Radiance Paradox", "Colors Enigma", "Glow Whisper" ]
   }, {
     "name" : "Teen Harmonies",
     "songs" : [ "Mystique Echo", "Pandora Odyssey", "Paradox Dance", "Cascade Glow", "Dance Twilight", "Pulse Crescendo", "Melody Soul", "Mystique Euphoria", "Solitude Harmonize", "Pinnacle Odyssey" ]
-  }, {
-    "name" : "Chill Funeral ",
-    "songs" : [ "Lullaby Harmony", "Lullaby Harmony" ]
   } ]
 }, {
   "command" : "showAlbums",
   "user" : "glester",
   "timestamp" : 178,
   "result" : [ {
-    "name" : "Chill Guide",
-    "songs" : [ "Adventure Cascade", "Adventure Cascade" ]
-  }, {
     "name" : "Alone Hood",
     "songs" : [ "Heart Mystique", "Essence Rapture", "Paradox Harmony", "Rapture Dance", "Echo Melody", "Sunset Utopia", "Colors Harmony", "Starlight Twilight" ]
   }, {
     "name" : "Teen Revolution",
     "songs" : [ "Starlight Rapture", "Pinnacle Cascade", "Reflection Dream", "Echo Pandora", "Tranquility Whisper", "Harmonize Mystique", "Mystique Adventure", "Heart Reflection", "Pinnacle Odyssey", "Rhythm Echo", "Enigma Sunset", "Bliss Starlight", "Love Pulse" ]
-  }, {
-    "name" : "Chill Harmonies",
-    "songs" : [ "Eclipse Pulse", "Eclipse Pulse" ]
   } ]
 }, {
   "command" : "showAlbums",
@@ -455,51 +431,30 @@
     "name" : "Bad Revolution",
     "songs" : [ "Rapture Echo", "Essence Crescendo", "Eclipse Tranquility", "Serendipity Serenade", "Adventure Eclipse", "Serendipity Radiance", "Heart Night", "Adventure Solitude", "Celestial Utopia" ]
   }, {
-    "name" : "Electric Dirt",
-    "songs" : [ "Mystique Euphoria", "Mystique Euphoria" ]
-  }, {
     "name" : "Groovy Harmonies",
     "songs" : [ "Night Aurora", "Sunset Celestial", "Pinnacle Bliss", "Dream Radiance", "Odyssey Cascade", "Cascade Harmony", "Solitude Dance", "Eclipse Heart", "Soul Pulse", "Reflection Lullaby", "Radiance Paradox", "Colors Enigma", "Glow Whisper" ]
   }, {
     "name" : "Teen Harmonies",
     "songs" : [ "Mystique Echo", "Pandora Odyssey", "Paradox Dance", "Cascade Glow", "Dance Twilight", "Pulse Crescendo", "Melody Soul", "Mystique Euphoria", "Solitude Harmonize", "Pinnacle Odyssey" ]
-  }, {
-    "name" : "Chill Funeral ",
-    "songs" : [ "Lullaby Harmony", "Lullaby Harmony" ]
   } ]
 }, {
   "command" : "showAlbums",
   "user" : "jsimpson",
   "timestamp" : 181,
   "result" : [ {
-    "name" : "Chill Hood",
-    "songs" : [ "Sunset Dream", "Sunset Dream" ]
-  }, {
     "name" : "Teen Technology",
     "songs" : [ "Harmony Love", "Harmony Pandora", "Enigma Heart", "Harmony Crescendo", "Infinity Velvet", "Aurora Lullaby", "Reflection Utopia", "Infinity Rhythm", "Infinity Dream", "Aurora Cascade" ]
   }, {
     "name" : "Electric View",
     "songs" : [ "Whisper Rapture", "Heart Dance", "Solitude Enigma", "Zephyr Bliss", "Serendipity Pinnacle", "Euphoria Night", "Starlight Luminescence", "Mystique Ethereal", "Night Soul", "Bliss Melody", "Infinity Infinity" ]
-  }, {
-    "name" : "Electric Harmonies",
-    "songs" : [ "Dance Melody", "Dance Melody" ]
   } ]
 }, {
   "command" : "showAlbums",
   "user" : "anthony22",
   "timestamp" : 184,
   "result" : [ {
-    "name" : "Alone Guide",
-    "songs" : [ "Pinnacle Pinnacle", "Pinnacle Pinnacle" ]
-  }, {
-    "name" : "Chill Funeral ",
-    "songs" : [ "Serendipity Love", "Serendipity Love" ]
-  }, {
     "name" : "Blue Technology",
     "songs" : [ "Twilight Velvet", "Velvet Pulse", "Whisper Cascade", "Luminescence Reflection", "Harmony Ethereal", "Ethereal Radiance", "Radiance Celestial" ]
-  }, {
-    "name" : "Blue Guide",
-    "songs" : [ "Whisper Serenade", "Whisper Serenade" ]
   } ]
 }, {
   "command" : "showAlbums",
@@ -509,20 +464,11 @@
     "name" : "Electric Funeral ",
     "songs" : [ "Voyage Paradox", "Night Harmony", "Colors Melody", "Ethereal Heart", "Serenade Dance", "Tranquility Serenade", "Essence Pandora", "Odyssey Love", "Pinnacle Colors", "Night Velvet", "Whirlwind Aurora" ]
   }, {
-    "name" : "Alone Technology",
-    "songs" : [ "Utopia Eclipse", "Utopia Eclipse" ]
-  }, {
     "name" : "Bad Dirt",
     "songs" : [ "Soul Pandora", "Adventure Infinity", "Night Ethereal", "Heart Adventure", "Paradox Pulse", "Velvet Dance", "Soul Paradox", "Harmony Rapture", "Cascade Pulse", "Harmony Velvet", "Rhythm Bliss", "Eclipse Glow" ]
   }, {
     "name" : "Bad Dreams",
     "songs" : [ "Crescendo Twilight", "Odyssey Reflection", "Euphoria Harmonize", "Adventure Reflection", "Lullaby Starlight", "Zephyr Enigma", "Pandora Adventure", "Radiance Mystique", "Pinnacle Soul", "Voyage Reflection", "Starlight Pinnacle", "Love Aurora" ]
-  }, {
-    "name" : "Teen Dreams",
-    "songs" : [ "Cascade Utopia", "Cascade Utopia" ]
-  }, {
-    "name" : "Chill Dreams",
-    "songs" : [ "Glow Twilight", "Glow Twilight" ]
   }, {
     "name" : "Dynamic Dirt",
     "songs" : [ "Adventure Rhythm", "Pandora Utopia", "Adventure Serendipity", "Whisper Infinity", "Serendipity Pulse", "Celestial Serenade", "Velvet Zephyr", "Luminescence Enigma", "Eclipse Bliss", "Radiance Dream", "Aurora Voyage", "Mystique Whisper", "Infinity Solitude" ]
@@ -532,26 +478,14 @@
   "user" : "anthony22",
   "timestamp" : 186,
   "result" : [ {
-    "name" : "Alone Guide",
-    "songs" : [ "Pinnacle Pinnacle", "Pinnacle Pinnacle" ]
-  }, {
-    "name" : "Chill Funeral ",
-    "songs" : [ "Serendipity Love", "Serendipity Love" ]
-  }, {
     "name" : "Blue Technology",
     "songs" : [ "Twilight Velvet", "Velvet Pulse", "Whisper Cascade", "Luminescence Reflection", "Harmony Ethereal", "Ethereal Radiance", "Radiance Celestial" ]
-  }, {
-    "name" : "Blue Guide",
-    "songs" : [ "Whisper Serenade", "Whisper Serenade" ]
   } ]
 }, {
   "command" : "showAlbums",
   "user" : "amanda16",
   "timestamp" : 187,
   "result" : [ {
-    "name" : "Dynamic Technology",
-    "songs" : [ "Odyssey Adventure", "Odyssey Adventure" ]
-  }, {
     "name" : "Groovy Hood",
     "songs" : [ "Dream Bliss", "Bliss Sunset", "Cascade Soul", "Colors Velvet", "Velvet Odyssey", "Enigma Cascade", "Whisper Aurora", "Zephyr Paradox" ]
   }, {
@@ -5353,7 +5287,7 @@
   "command" : "shuffle",
   "user" : "emily30",
   "timestamp" : 6674,
-  "message" : "The loaded source is not a playlist."
+  "message" : "Shuffle function activated successfully."
 }, {
   "command" : "removeAlbum",
   "user" : "jacobdean",
@@ -5367,23 +5301,23 @@
     "name" : "Soul Pandora",
     "remainedTime" : 172,
     "repeat" : "No Repeat",
-    "shuffle" : false,
+    "shuffle" : true,
     "paused" : false
   }
 }, {
   "command" : "next",
   "user" : "emily30",
   "timestamp" : 6680,
-  "message" : "Skipped to next track successfully. The current track is Adventure Infinity."
+  "message" : "Skipped to next track successfully. The current track is Cascade Pulse."
 }, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 6934,
   "stats" : {
-    "name" : "Night Ethereal",
-    "remainedTime" : 229,
+    "name" : "Harmony Rapture",
+    "remainedTime" : 205,
     "repeat" : "No Repeat",
-    "shuffle" : false,
+    "shuffle" : true,
     "paused" : false
   }
 }, {
@@ -5452,7 +5386,7 @@
   "command" : "shuffle",
   "user" : "frank21",
   "timestamp" : 6985,
-  "message" : "The loaded source is not a playlist."
+  "message" : "Shuffle function activated successfully."
 }, {
   "command" : "removeAlbum",
   "user" : "jacobdean",
@@ -5466,30 +5400,30 @@
     "name" : "Crescendo Twilight",
     "remainedTime" : 205,
     "repeat" : "No Repeat",
-    "shuffle" : false,
+    "shuffle" : true,
     "paused" : false
   }
 }, {
   "command" : "next",
   "user" : "frank21",
   "timestamp" : 6991,
-  "message" : "Skipped to next track successfully. The current track is Odyssey Reflection."
+  "message" : "Skipped to next track successfully. The current track is Zephyr Enigma."
 }, {
   "command" : "status",
   "user" : "frank21",
   "timestamp" : 7245,
   "stats" : {
-    "name" : "Odyssey Reflection",
-    "remainedTime" : 18,
+    "name" : "",
+    "remainedTime" : 0,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : false
+    "paused" : true
   }
 }, {
   "command" : "like",
   "user" : "frank21",
   "timestamp" : 7246,
-  "message" : "Loaded source is not a song."
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -5551,7 +5485,7 @@
   "command" : "shuffle",
   "user" : "grace25",
   "timestamp" : 7296,
-  "message" : "The loaded source is not a playlist."
+  "message" : "Shuffle function activated successfully."
 }, {
   "command" : "removeAlbum",
   "user" : "jsimpson",
@@ -5565,23 +5499,23 @@
     "name" : "Harmony Love",
     "remainedTime" : 272,
     "repeat" : "No Repeat",
-    "shuffle" : false,
+    "shuffle" : true,
     "paused" : false
   }
 }, {
   "command" : "next",
   "user" : "grace25",
   "timestamp" : 7302,
-  "message" : "Skipped to next track successfully. The current track is Harmony Pandora."
+  "message" : "Skipped to next track successfully. The current track is Reflection Utopia."
 }, {
   "command" : "status",
   "user" : "grace25",
   "timestamp" : 7556,
   "stats" : {
     "name" : "Harmony Pandora",
-    "remainedTime" : 23,
+    "remainedTime" : 265,
     "repeat" : "No Repeat",
-    "shuffle" : false,
+    "shuffle" : true,
     "paused" : false
   }
 }, {
@@ -5749,7 +5683,7 @@
   "command" : "shuffle",
   "user" : "irene33",
   "timestamp" : 7918,
-  "message" : "The loaded source is not a playlist."
+  "message" : "Shuffle function activated successfully."
 }, {
   "command" : "removeAlbum",
   "user" : "mccarthyluis",
@@ -5763,23 +5697,23 @@
     "name" : "Night Aurora",
     "remainedTime" : 250,
     "repeat" : "No Repeat",
-    "shuffle" : false,
+    "shuffle" : true,
     "paused" : false
   }
 }, {
   "command" : "next",
   "user" : "irene33",
   "timestamp" : 7924,
-  "message" : "Skipped to next track successfully. The current track is Sunset Celestial."
+  "message" : "Skipped to next track successfully. The current track is Solitude Dance."
 }, {
   "command" : "status",
   "user" : "irene33",
   "timestamp" : 8178,
   "stats" : {
-    "name" : "Sunset Celestial",
-    "remainedTime" : 34,
+    "name" : "Solitude Dance",
+    "remainedTime" : 32,
     "repeat" : "No Repeat",
-    "shuffle" : false,
+    "shuffle" : true,
     "paused" : false
   }
 }, {
@@ -18068,7 +18002,7 @@
   "command" : "printCurrentPage",
   "user" : "bob35",
   "timestamp" : 11780,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "jacobdean",
@@ -18078,7 +18012,7 @@
   "command" : "printCurrentPage",
   "user" : "bob35",
   "timestamp" : 11780,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "bob35",
@@ -18176,7 +18110,7 @@
   "command" : "printCurrentPage",
   "user" : "emily30",
   "timestamp" : 11810,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "mccarthyluis",
@@ -18186,7 +18120,7 @@
   "command" : "printCurrentPage",
   "user" : "emily30",
   "timestamp" : 11810,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "emily30",
@@ -18284,7 +18218,7 @@
   "command" : "printCurrentPage",
   "user" : "henry26",
   "timestamp" : 11840,
-  "message" : "Albums:\n\t[Chill Hood, Teen Technology, Electric View, Electric Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Teen Technology, Electric View]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "jsimpson",
@@ -18294,7 +18228,7 @@
   "command" : "printCurrentPage",
   "user" : "henry26",
   "timestamp" : 11840,
-  "message" : "Albums:\n\t[Chill Hood, Teen Technology, Electric View, Electric Harmonies, Teen Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Teen Technology, Electric View, Teen Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "henry26",
@@ -18320,7 +18254,7 @@
   "command" : "printCurrentPage",
   "user" : "irene33",
   "timestamp" : 11850,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "mccarthyluis",
@@ -18330,7 +18264,7 @@
   "command" : "printCurrentPage",
   "user" : "irene33",
   "timestamp" : 11850,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "irene33",
@@ -18392,7 +18326,7 @@
   "command" : "printCurrentPage",
   "user" : "alice22",
   "timestamp" : 11870,
-  "message" : "Albums:\n\t[Chill Guide, Alone Hood, Teen Revolution, Chill Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Alone Hood, Teen Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "glester",
@@ -18402,7 +18336,7 @@
   "command" : "printCurrentPage",
   "user" : "alice22",
   "timestamp" : 11870,
-  "message" : "Albums:\n\t[Chill Guide, Alone Hood, Teen Revolution, Chill Harmonies, Blue Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "alice22",
@@ -18644,7 +18578,7 @@
   "command" : "printCurrentPage",
   "user" : "henry26",
   "timestamp" : 11940,
-  "message" : "Albums:\n\t[Alone Guide, Chill Funeral , Blue Technology, Blue Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Blue Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "anthony22",
@@ -18654,7 +18588,7 @@
   "command" : "printCurrentPage",
   "user" : "henry26",
   "timestamp" : 11940,
-  "message" : "Albums:\n\t[Alone Guide, Chill Funeral , Blue Technology, Blue Guide, Groovy Dreams]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Blue Technology, Groovy Dreams]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "henry26",
@@ -18680,7 +18614,7 @@
   "command" : "printCurrentPage",
   "user" : "irene33",
   "timestamp" : 11950,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "mccarthyluis",
@@ -18690,7 +18624,7 @@
   "command" : "printCurrentPage",
   "user" : "irene33",
   "timestamp" : 11950,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "irene33",
@@ -18788,7 +18722,7 @@
   "command" : "printCurrentPage",
   "user" : "bob35",
   "timestamp" : 11980,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "jacobdean",
@@ -18798,7 +18732,7 @@
   "command" : "printCurrentPage",
   "user" : "bob35",
   "timestamp" : 11980,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "bob35",
@@ -18860,7 +18794,7 @@
   "command" : "printCurrentPage",
   "user" : "david27",
   "timestamp" : 12000,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "mccarthyluis",
@@ -18870,7 +18804,7 @@
   "command" : "printCurrentPage",
   "user" : "david27",
   "timestamp" : 12000,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "david27",
@@ -18896,7 +18830,7 @@
   "command" : "printCurrentPage",
   "user" : "emily30",
   "timestamp" : 12010,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "mccarthyluis",
@@ -18906,7 +18840,7 @@
   "command" : "printCurrentPage",
   "user" : "emily30",
   "timestamp" : 12010,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "emily30",
@@ -18932,7 +18866,7 @@
   "command" : "printCurrentPage",
   "user" : "frank21",
   "timestamp" : 12020,
-  "message" : "Albums:\n\t[Chill Guide, Alone Hood, Teen Revolution, Chill Harmonies, Blue Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "glester",
@@ -18942,7 +18876,7 @@
   "command" : "printCurrentPage",
   "user" : "frank21",
   "timestamp" : 12020,
-  "message" : "Albums:\n\t[Chill Guide, Alone Hood, Teen Revolution, Chill Harmonies, Blue Technology, Groovy Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "frank21",
@@ -19004,7 +18938,7 @@
   "command" : "printCurrentPage",
   "user" : "henry26",
   "timestamp" : 12040,
-  "message" : "Albums:\n\t[Chill Guide, Alone Hood, Teen Revolution, Chill Harmonies, Blue Technology, Groovy Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "glester",
@@ -19014,7 +18948,7 @@
   "command" : "printCurrentPage",
   "user" : "henry26",
   "timestamp" : 12040,
-  "message" : "Albums:\n\t[Chill Guide, Alone Hood, Teen Revolution, Chill Harmonies, Blue Technology, Groovy Harmonies, Electric Dreams]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "henry26",
@@ -19076,7 +19010,7 @@
   "command" : "printCurrentPage",
   "user" : "jack29",
   "timestamp" : 12060,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "jacobdean",
@@ -19086,7 +19020,7 @@
   "command" : "printCurrentPage",
   "user" : "jack29",
   "timestamp" : 12060,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "jack29",
@@ -19148,7 +19082,7 @@
   "command" : "printCurrentPage",
   "user" : "bob35",
   "timestamp" : 12080,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "jacobdean",
@@ -19158,7 +19092,7 @@
   "command" : "printCurrentPage",
   "user" : "bob35",
   "timestamp" : 12080,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "bob35",
@@ -19184,7 +19118,7 @@
   "command" : "printCurrentPage",
   "user" : "carol19",
   "timestamp" : 12090,
-  "message" : "Albums:\n\t[Chill Hood, Teen Technology, Electric View, Electric Harmonies, Teen Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Teen Technology, Electric View, Teen Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "jsimpson",
@@ -19194,7 +19128,7 @@
   "command" : "printCurrentPage",
   "user" : "carol19",
   "timestamp" : 12090,
-  "message" : "Albums:\n\t[Chill Hood, Teen Technology, Electric View, Electric Harmonies, Teen Hood, Alone View]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Teen Technology, Electric View, Teen Hood, Alone View]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "carol19",
@@ -19256,7 +19190,7 @@
   "command" : "printCurrentPage",
   "user" : "emily30",
   "timestamp" : 12110,
-  "message" : "Albums:\n\t[Chill Guide, Alone Hood, Teen Revolution, Chill Harmonies, Blue Technology, Groovy Harmonies, Electric Dreams]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "glester",
@@ -19266,7 +19200,7 @@
   "command" : "printCurrentPage",
   "user" : "emily30",
   "timestamp" : 12110,
-  "message" : "Albums:\n\t[Chill Guide, Alone Hood, Teen Revolution, Chill Harmonies, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "emily30",
@@ -19400,7 +19334,7 @@
   "command" : "printCurrentPage",
   "user" : "irene33",
   "timestamp" : 12150,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "jacobdean",
@@ -19410,7 +19344,7 @@
   "command" : "printCurrentPage",
   "user" : "irene33",
   "timestamp" : 12150,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "irene33",
@@ -19436,7 +19370,7 @@
   "command" : "printCurrentPage",
   "user" : "jack29",
   "timestamp" : 12160,
-  "message" : "Albums:\n\t[Chill Guide, Alone Hood, Teen Revolution, Chill Harmonies, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "glester",
@@ -19446,7 +19380,7 @@
   "command" : "printCurrentPage",
   "user" : "jack29",
   "timestamp" : 12160,
-  "message" : "Albums:\n\t[Chill Guide, Alone Hood, Teen Revolution, Chill Harmonies, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "jack29",
@@ -19544,7 +19478,7 @@
   "command" : "printCurrentPage",
   "user" : "carol19",
   "timestamp" : 12190,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "mccarthyluis",
@@ -19554,7 +19488,7 @@
   "command" : "printCurrentPage",
   "user" : "carol19",
   "timestamp" : 12190,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "carol19",
@@ -19796,7 +19730,7 @@
   "command" : "printCurrentPage",
   "user" : "jack29",
   "timestamp" : 12260,
-  "message" : "Albums:\n\t[Alone Guide, Chill Funeral , Blue Technology, Blue Guide, Groovy Dreams]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Blue Technology, Groovy Dreams]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "anthony22",
@@ -19806,7 +19740,7 @@
   "command" : "printCurrentPage",
   "user" : "jack29",
   "timestamp" : 12260,
-  "message" : "Albums:\n\t[Alone Guide, Chill Funeral , Blue Technology, Blue Guide, Groovy Dreams, Alone Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Blue Technology, Groovy Dreams, Alone Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "jack29",
@@ -19976,7 +19910,7 @@
   "command" : "printCurrentPage",
   "user" : "emily30",
   "timestamp" : 12310,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "jacobdean",
@@ -19986,7 +19920,7 @@
   "command" : "printCurrentPage",
   "user" : "emily30",
   "timestamp" : 12310,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "emily30",
@@ -20084,7 +20018,7 @@
   "command" : "printCurrentPage",
   "user" : "henry26",
   "timestamp" : 12340,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "mccarthyluis",
@@ -20094,7 +20028,7 @@
   "command" : "printCurrentPage",
   "user" : "henry26",
   "timestamp" : 12340,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "henry26",
@@ -20192,7 +20126,7 @@
   "command" : "printCurrentPage",
   "user" : "alice22",
   "timestamp" : 12370,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "mccarthyluis",
@@ -20202,7 +20136,7 @@
   "command" : "printCurrentPage",
   "user" : "alice22",
   "timestamp" : 12370,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "alice22",
@@ -20228,7 +20162,7 @@
   "command" : "printCurrentPage",
   "user" : "bob35",
   "timestamp" : 12380,
-  "message" : "Albums:\n\t[Chill Guide, Alone Hood, Teen Revolution, Chill Harmonies, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "glester",
@@ -20238,7 +20172,7 @@
   "command" : "printCurrentPage",
   "user" : "bob35",
   "timestamp" : 12380,
-  "message" : "Albums:\n\t[Chill Guide, Alone Hood, Teen Revolution, Chill Harmonies, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "bob35",
@@ -20336,7 +20270,7 @@
   "command" : "printCurrentPage",
   "user" : "emily30",
   "timestamp" : 12410,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "jacobdean",
@@ -20346,7 +20280,7 @@
   "command" : "printCurrentPage",
   "user" : "emily30",
   "timestamp" : 12410,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "emily30",
@@ -20444,7 +20378,7 @@
   "command" : "printCurrentPage",
   "user" : "henry26",
   "timestamp" : 12440,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "mccarthyluis",
@@ -20454,7 +20388,7 @@
   "command" : "printCurrentPage",
   "user" : "henry26",
   "timestamp" : 12440,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "henry26",
@@ -20552,7 +20486,7 @@
   "command" : "printCurrentPage",
   "user" : "alice22",
   "timestamp" : 12470,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "jacobdean",
@@ -20562,7 +20496,7 @@
   "command" : "printCurrentPage",
   "user" : "alice22",
   "timestamp" : 12470,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "alice22",
@@ -20696,7 +20630,7 @@
   "command" : "printCurrentPage",
   "user" : "emily30",
   "timestamp" : 12510,
-  "message" : "Albums:\n\t[Chill Guide, Alone Hood, Teen Revolution, Chill Harmonies, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "glester",
@@ -20706,7 +20640,7 @@
   "command" : "printCurrentPage",
   "user" : "emily30",
   "timestamp" : 12510,
-  "message" : "Albums:\n\t[Chill Guide, Alone Hood, Teen Revolution, Chill Harmonies, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "emily30",
@@ -20840,7 +20774,7 @@
   "command" : "printCurrentPage",
   "user" : "irene33",
   "timestamp" : 12550,
-  "message" : "Albums:\n\t[Chill Guide, Alone Hood, Teen Revolution, Chill Harmonies, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "glester",
@@ -20850,7 +20784,7 @@
   "command" : "printCurrentPage",
   "user" : "irene33",
   "timestamp" : 12550,
-  "message" : "Albums:\n\t[Chill Guide, Alone Hood, Teen Revolution, Chill Harmonies, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "irene33",
@@ -20912,7 +20846,7 @@
   "command" : "printCurrentPage",
   "user" : "alice22",
   "timestamp" : 12570,
-  "message" : "Albums:\n\t[Chill Guide, Alone Hood, Teen Revolution, Chill Harmonies, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "glester",
@@ -20922,7 +20856,7 @@
   "command" : "printCurrentPage",
   "user" : "alice22",
   "timestamp" : 12570,
-  "message" : "Albums:\n\t[Chill Guide, Alone Hood, Teen Revolution, Chill Harmonies, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View, Electric Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View, Electric Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "alice22",
@@ -20984,7 +20918,7 @@
   "command" : "printCurrentPage",
   "user" : "carol19",
   "timestamp" : 12590,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "jacobdean",
@@ -20994,7 +20928,7 @@
   "command" : "printCurrentPage",
   "user" : "carol19",
   "timestamp" : 12590,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "carol19",
@@ -21020,7 +20954,7 @@
   "command" : "printCurrentPage",
   "user" : "david27",
   "timestamp" : 12600,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "mccarthyluis",
@@ -21030,7 +20964,7 @@
   "command" : "printCurrentPage",
   "user" : "david27",
   "timestamp" : 12600,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "david27",
@@ -21092,7 +21026,7 @@
   "command" : "printCurrentPage",
   "user" : "frank21",
   "timestamp" : 12620,
-  "message" : "Albums:\n\t[Chill Guide, Alone Hood, Teen Revolution, Chill Harmonies, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View, Electric Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View, Electric Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "glester",
@@ -21102,7 +21036,7 @@
   "command" : "printCurrentPage",
   "user" : "frank21",
   "timestamp" : 12620,
-  "message" : "Albums:\n\t[Chill Guide, Alone Hood, Teen Revolution, Chill Harmonies, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View, Electric Technology, Heroic Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View, Electric Technology, Heroic Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "frank21",
@@ -21308,7 +21242,7 @@
   "command" : "printCurrentPage",
   "user" : "bob35",
   "timestamp" : 12680,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "jacobdean",
@@ -21318,7 +21252,7 @@
   "command" : "printCurrentPage",
   "user" : "bob35",
   "timestamp" : 12680,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "bob35",
@@ -21344,7 +21278,7 @@
   "command" : "printCurrentPage",
   "user" : "carol19",
   "timestamp" : 12690,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "jacobdean",
@@ -21354,7 +21288,7 @@
   "command" : "printCurrentPage",
   "user" : "carol19",
   "timestamp" : 12690,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "carol19",
@@ -21632,7 +21566,7 @@
   "command" : "printCurrentPage",
   "user" : "alice22",
   "timestamp" : 12770,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "mccarthyluis",
@@ -21642,7 +21576,7 @@
   "command" : "printCurrentPage",
   "user" : "alice22",
   "timestamp" : 12770,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "alice22",
@@ -21668,7 +21602,7 @@
   "command" : "printCurrentPage",
   "user" : "bob35",
   "timestamp" : 12780,
-  "message" : "Albums:\n\t[Alone Guide, Chill Funeral , Blue Technology, Blue Guide, Groovy Dreams, Alone Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Blue Technology, Groovy Dreams, Alone Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "anthony22",
@@ -21678,7 +21612,7 @@
   "command" : "printCurrentPage",
   "user" : "bob35",
   "timestamp" : 12780,
-  "message" : "Albums:\n\t[Alone Guide, Chill Funeral , Blue Technology, Blue Guide, Groovy Dreams, Alone Autumn, Breezy Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Blue Technology, Groovy Dreams, Alone Autumn, Breezy Revolution]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "bob35",
@@ -21740,7 +21674,7 @@
   "command" : "printCurrentPage",
   "user" : "david27",
   "timestamp" : 12800,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "mccarthyluis",
@@ -21750,7 +21684,7 @@
   "command" : "printCurrentPage",
   "user" : "david27",
   "timestamp" : 12800,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "david27",
@@ -21776,7 +21710,7 @@
   "command" : "printCurrentPage",
   "user" : "emily30",
   "timestamp" : 12810,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "jacobdean",
@@ -21786,7 +21720,7 @@
   "command" : "printCurrentPage",
   "user" : "emily30",
   "timestamp" : 12810,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "emily30",
@@ -21848,7 +21782,7 @@
   "command" : "printCurrentPage",
   "user" : "grace25",
   "timestamp" : 12830,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "mccarthyluis",
@@ -21858,7 +21792,7 @@
   "command" : "printCurrentPage",
   "user" : "grace25",
   "timestamp" : 12830,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "grace25",
@@ -21884,7 +21818,7 @@
   "command" : "printCurrentPage",
   "user" : "henry26",
   "timestamp" : 12840,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "mccarthyluis",
@@ -21894,7 +21828,7 @@
   "command" : "printCurrentPage",
   "user" : "henry26",
   "timestamp" : 12840,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "henry26",
@@ -21920,7 +21854,7 @@
   "command" : "printCurrentPage",
   "user" : "irene33",
   "timestamp" : 12850,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "jacobdean",
@@ -21930,7 +21864,7 @@
   "command" : "printCurrentPage",
   "user" : "irene33",
   "timestamp" : 12850,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide, Bad Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide, Bad Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "irene33",
@@ -22064,7 +21998,7 @@
   "command" : "printCurrentPage",
   "user" : "carol19",
   "timestamp" : 12890,
-  "message" : "Albums:\n\t[Chill Guide, Alone Hood, Teen Revolution, Chill Harmonies, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View, Electric Technology, Heroic Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View, Electric Technology, Heroic Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "glester",
@@ -22074,7 +22008,7 @@
   "command" : "printCurrentPage",
   "user" : "carol19",
   "timestamp" : 12890,
-  "message" : "Albums:\n\t[Chill Guide, Alone Hood, Teen Revolution, Chill Harmonies, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View, Electric Technology, Heroic Harmonies, Heroic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View, Electric Technology, Heroic Harmonies, Heroic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "carol19",
@@ -22136,7 +22070,7 @@
   "command" : "printCurrentPage",
   "user" : "emily30",
   "timestamp" : 12910,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "mccarthyluis",
@@ -22146,7 +22080,7 @@
   "command" : "printCurrentPage",
   "user" : "emily30",
   "timestamp" : 12910,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn, Alone Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn, Alone Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "emily30",
@@ -22316,7 +22250,7 @@
   "command" : "printCurrentPage",
   "user" : "jack29",
   "timestamp" : 12960,
-  "message" : "Albums:\n\t[Chill Hood, Teen Technology, Electric View, Electric Harmonies, Teen Hood, Alone View]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Teen Technology, Electric View, Teen Hood, Alone View]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "jsimpson",
@@ -22326,7 +22260,7 @@
   "command" : "printCurrentPage",
   "user" : "jack29",
   "timestamp" : 12960,
-  "message" : "Albums:\n\t[Chill Hood, Teen Technology, Electric View, Electric Harmonies, Teen Hood, Alone View, Teen Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Teen Technology, Electric View, Teen Hood, Alone View, Teen Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "jack29",
@@ -22424,7 +22358,7 @@
   "command" : "printCurrentPage",
   "user" : "carol19",
   "timestamp" : 12990,
-  "message" : "Albums:\n\t[Chill Guide, Alone Hood, Teen Revolution, Chill Harmonies, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View, Electric Technology, Heroic Harmonies, Heroic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View, Electric Technology, Heroic Harmonies, Heroic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "glester",
@@ -22434,7 +22368,7 @@
   "command" : "printCurrentPage",
   "user" : "carol19",
   "timestamp" : 12990,
-  "message" : "Albums:\n\t[Chill Guide, Alone Hood, Teen Revolution, Chill Harmonies, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View, Electric Technology, Heroic Harmonies, Heroic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View, Electric Technology, Heroic Harmonies, Heroic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "carol19",
@@ -22604,7 +22538,7 @@
   "command" : "printCurrentPage",
   "user" : "henry26",
   "timestamp" : 13040,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide, Bad Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide, Bad Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "jacobdean",
@@ -22614,7 +22548,7 @@
   "command" : "printCurrentPage",
   "user" : "henry26",
   "timestamp" : 13040,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide, Bad Hood, Heroic View]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide, Bad Hood, Heroic View]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "henry26",
@@ -22640,7 +22574,7 @@
   "command" : "printCurrentPage",
   "user" : "irene33",
   "timestamp" : 13050,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn, Alone Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn, Alone Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "mccarthyluis",
@@ -22650,7 +22584,7 @@
   "command" : "printCurrentPage",
   "user" : "irene33",
   "timestamp" : 13050,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn, Alone Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn, Alone Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "irene33",
@@ -22676,7 +22610,7 @@
   "command" : "printCurrentPage",
   "user" : "jack29",
   "timestamp" : 13060,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide, Bad Hood, Heroic View]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide, Bad Hood, Heroic View]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "jacobdean",
@@ -22686,7 +22620,7 @@
   "command" : "printCurrentPage",
   "user" : "jack29",
   "timestamp" : 13060,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide, Bad Hood, Heroic View, Teen Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide, Bad Hood, Heroic View, Teen Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "jack29",
@@ -22784,7 +22718,7 @@
   "command" : "printCurrentPage",
   "user" : "carol19",
   "timestamp" : 13090,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn, Alone Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn, Alone Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "mccarthyluis",
@@ -22794,7 +22728,7 @@
   "command" : "printCurrentPage",
   "user" : "carol19",
   "timestamp" : 13090,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn, Alone Guide, Blue Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn, Alone Guide, Blue Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "carol19",
@@ -23000,7 +22934,7 @@
   "command" : "printCurrentPage",
   "user" : "irene33",
   "timestamp" : 13150,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn, Alone Guide, Blue Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn, Alone Guide, Blue Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "mccarthyluis",
@@ -23010,7 +22944,7 @@
   "command" : "printCurrentPage",
   "user" : "irene33",
   "timestamp" : 13150,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn, Alone Guide, Blue Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn, Alone Guide, Blue Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "irene33",
@@ -23036,7 +22970,7 @@
   "command" : "printCurrentPage",
   "user" : "jack29",
   "timestamp" : 13160,
-  "message" : "Albums:\n\t[Chill Guide, Alone Hood, Teen Revolution, Chill Harmonies, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View, Electric Technology, Heroic Harmonies, Heroic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View, Electric Technology, Heroic Harmonies, Heroic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "glester",
@@ -23046,7 +22980,7 @@
   "command" : "printCurrentPage",
   "user" : "jack29",
   "timestamp" : 13160,
-  "message" : "Albums:\n\t[Chill Guide, Alone Hood, Teen Revolution, Chill Harmonies, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View, Electric Technology, Heroic Harmonies, Heroic Autumn, Chill Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View, Electric Technology, Heroic Harmonies, Heroic Autumn, Chill Hood]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "jack29",
@@ -23180,7 +23114,7 @@
   "command" : "printCurrentPage",
   "user" : "david27",
   "timestamp" : 13200,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn, Alone Guide, Blue Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn, Alone Guide, Blue Dirt]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "mccarthyluis",
@@ -23190,7 +23124,7 @@
   "command" : "printCurrentPage",
   "user" : "david27",
   "timestamp" : 13200,
-  "message" : "Albums:\n\t[Bad Revolution, Electric Dirt, Groovy Harmonies, Teen Harmonies, Chill Funeral , Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn, Alone Guide, Blue Dirt, Groovy Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn, Alone Guide, Blue Dirt, Groovy Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "david27",
@@ -23252,17 +23186,17 @@
   "command" : "printCurrentPage",
   "user" : "frank21",
   "timestamp" : 13220,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide, Bad Hood, Heroic View, Teen Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide, Bad Hood, Heroic View, Teen Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "jacobdean",
   "timestamp" : 13220,
-  "message" : "jacobdean has another album with the same name."
+  "message" : "jacobdean has added new album successfully."
 }, {
   "command" : "printCurrentPage",
   "user" : "frank21",
   "timestamp" : 13220,
-  "message" : "Albums:\n\t[Electric Funeral , Alone Technology, Bad Dirt, Bad Dreams, Teen Dreams, Chill Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide, Bad Hood, Heroic View, Teen Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide, Bad Hood, Heroic View, Teen Technology, Chill Dreams]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "frank21",
@@ -23324,7 +23258,7 @@
   "command" : "printCurrentPage",
   "user" : "henry26",
   "timestamp" : 13240,
-  "message" : "Albums:\n\t[Dynamic Technology, Groovy Hood, Teen Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Groovy Hood, Teen Guide]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "addAlbum",
   "user" : "amanda16",
@@ -23334,7 +23268,7 @@
   "command" : "printCurrentPage",
   "user" : "henry26",
   "timestamp" : 13240,
-  "message" : "Albums:\n\t[Dynamic Technology, Groovy Hood, Teen Guide, Alone Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
+  "message" : "Albums:\n\t[Groovy Hood, Teen Guide, Alone Technology]\n\nMerch:\n\t[]\n\nEvents:\n\t["
 }, {
   "command" : "changePage",
   "user" : "henry26",

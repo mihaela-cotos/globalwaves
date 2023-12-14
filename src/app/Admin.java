@@ -17,12 +17,14 @@ import app.user.factory.HostFactory;
 import app.user.factory.SimpleUserFactory;
 import app.utils.Enums;
 import fileio.input.*;
+import lombok.Getter;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
 public class Admin {
     private static List<SimpleUser> users = new ArrayList<>();
+    @Getter
     private static List<Artist> artists = new ArrayList<>();
     private static List<Host> hosts = new ArrayList<>();
     private static List<Song> songs = new ArrayList<>();
@@ -78,12 +80,9 @@ public class Admin {
         return new ArrayList<>(songs);
     }
 
-    public static List<Artist> getArtists() {
-        return new ArrayList<>(artists);
-    }
-
     public static List<SimpleUser> getSimpleUsers() {
-        return new ArrayList<>(users);
+        //return new ArrayList<>(users);
+        return users;
     }
 
     public static List<Host> getHosts() {
@@ -283,33 +282,13 @@ public class Admin {
     }
 
     public static String deleteSimpleUser (SimpleUser userToDelete) {
-        List<String> onlineUsersToString = getOnlineUsers();
-        List<SimpleUser> onlineUsers = new ArrayList<>();
+        List<SimpleUser> users = getSimpleUsers();
 
-        for (String user : onlineUsersToString) {
-            User iterUser = getUser(user);
-            if (iterUser.getUserType().equals(Enums.UserType.NORMAL))
-                onlineUsers.add((SimpleUser) iterUser);
+        if (users.stream().noneMatch(user -> user.getUsername().equals(userToDelete.getUsername()))) {
+            return "The username " + userToDelete.getUsername() + " doesn't exist.";
         }
 
-        for (SimpleUser user : onlineUsers) {
-            PlayerSource source = user.getPlayer().getSource();
-            if (source != null && source.getType().equals(Enums.PlayerSourceType.PLAYLIST)) {
-                Playlist listenedPlaylist = (Playlist) source.getAudioCollection();
-                if (listenedPlaylist.getOwner().equals(userToDelete.getUsername())) {
-                    return userToDelete.getUsername() + " can't be deleted.";
-                }
-            }
-        }
-
-        for (SimpleUser user : users) {
-            // delete playlist from followed
-            ArrayList<Playlist> a = user.getFollowedPlaylists();
-            a.removeAll(userToDelete.getPlaylists());
-            user.setFollowedPlaylists(a);
-        }
-        Admin.users.remove(userToDelete);
-        return userToDelete.getUsername() + " was successfully deleted.";
+        return userToDelete.deleteUser(users);
     }
 
     public static String deleteArtist (Artist artistToDelete) {
@@ -364,7 +343,14 @@ public class Admin {
     }
 
     public static String deleteHost (Host hostToDelete) {
-        return null;
+        List<SimpleUser> listeners = getSimpleUsers();
+        List<Host> hosts = getHosts();
+
+        if (hosts.stream().noneMatch(host -> host.getUsername().equals(hostToDelete.getUsername()))) {
+            return "The username " + hostToDelete.getUsername() + " doesn't exist.";
+        }
+
+        return hostToDelete.deleteHost(listeners);
     }
 
     public static String deleteUser(CommandInput commandInput) {
@@ -419,6 +405,18 @@ public class Admin {
         albums.remove(album);
     }
 
+    public static void updatePodcasts(Podcast podcast) {
+        podcasts.remove(podcast);
+    }
+
+    public static void updateUsers(SimpleUser user) {
+        users.remove(user);
+    }
+
+    public static void updateHosts(Host user) {
+        hosts.remove(user);
+    }
+
     public static String addPodcast(CommandInput commandInput) {
         User user = getUser(commandInput.getUsername());
 
@@ -432,6 +430,21 @@ public class Admin {
 
 
         return ((Host)user).addPodcast(commandInput);
+    }
+
+    public static String removePodcast(CommandInput commandInput) {
+        User user = getUser(commandInput.getUsername());
+
+        if (getAllUsers().stream().noneMatch(iterUser -> iterUser
+                .equals(commandInput.getUsername())) || user == null)
+
+            return "The username " + commandInput.getUsername() + " doesn't exist.";
+
+        if (!user.getUserType().equals(Enums.UserType.HOST))
+            return commandInput.getUsername() + " is not a host.";
+
+
+        return ((Host)user).removePodcast(commandInput);
     }
 
     public static String printCurrentPage(CommandInput commandInput) {

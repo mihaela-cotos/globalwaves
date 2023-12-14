@@ -1,10 +1,7 @@
 package app.user;
 
 import app.Admin;
-import app.audio.Collections.Album;
-import app.audio.Collections.AlbumOutput;
-import app.audio.Collections.Podcast;
-import app.audio.Collections.PodcastOutput;
+import app.audio.Collections.*;
 import app.audio.Files.Episode;
 import app.audio.Files.Song;
 import app.pages.utils.Announcement;
@@ -107,5 +104,103 @@ public class Host extends User {
 
         return podcastOutputs;
     }
+
+    public String removePodcast(CommandInput commandInput) {
+        if (podcasts.stream().noneMatch(podcast -> podcast.getName()
+                .equals(commandInput.getName()))) {
+            return getUsername() + " doesn't have a podcast with the given name.";
+        } else if (checkValidDeletion(getPodcastFromList(commandInput.getName()))) {
+            return getUsername() + " can't delete this podcast.";
+        }
+
+        Podcast podcastToRemove = getPodcastFromList(commandInput.getName());
+        podcasts.remove(podcastToRemove);
+        Admin.updatePodcasts(podcastToRemove);
+        return getUsername() + " deleted the podcast successfully.";
+    }
+
+    public List<Episode> allPlayingEpisodes() {
+        List<Episode> playingEpisodes = new ArrayList<>();
+        List<SimpleUser> users = new ArrayList<>();
+        users.addAll(Admin.getSimpleUsers());
+
+        for (SimpleUser user : users) {
+            if (user.getPlayer().getCurrentAudioFile() != null && user.getPlayer().getType().equals("podcast")) {
+                playingEpisodes.add((Episode) user.getPlayer().getCurrentAudioFile());
+            }
+        }
+        return playingEpisodes;
+    }
+
+    public Podcast getPodcastFromList (String name) {
+        for (Podcast podcast : this.podcasts) {
+            if (podcast.getName().equals(name)) {
+                return podcast;
+            }
+        }
+        return null;
+    }
+
+    public boolean checkValidDeletion(Podcast podcast) {
+        List<Episode> playingEpisodes = this.allPlayingEpisodes();
+        return hasEpisodesFromPodcast(podcast, playingEpisodes);
+    }
+
+    public boolean hasEpisodesFromPodcast(Podcast podcast, List<Episode> allPlayingEpisodes) {
+        for (Episode episode : podcast.getEpisodes()) {
+            if (allPlayingEpisodes().contains(episode)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public String deleteHost(List<SimpleUser> listeners) {
+        if (myPodcastIsPlaying() || pageIsVisited(listeners)) {
+            return getUsername() + " can't be deleted.";
+        }
+
+        for (Podcast podcast : podcasts) {
+            Admin.updatePodcasts(podcast);
+        }
+        Admin.updateHosts(this);
+        return getUsername() + " was successfully deleted.";
+    }
+
+    public List<Podcast> allPlayingPodcasts() {
+        List<Podcast> playingPodcasts = new ArrayList<>();
+        List<SimpleUser> users = new ArrayList<>();
+        users.addAll(Admin.getSimpleUsers());
+
+        for (SimpleUser user : users) {
+            if (user.getPlayer().getCurrentAudioFile() != null && user.getPlayer().getType().equals("podcast")) {
+                playingPodcasts.add((Podcast) user.getPlayer().getSource().getAudioCollection());
+            }
+        }
+        return playingPodcasts;
+    }
+
+    public boolean myPodcastIsPlaying() {
+        for (Podcast podcast : allPlayingPodcasts()) {
+            if (podcasts.stream().anyMatch(podcast1 -> podcast1.getName().equals(podcast.getName()))
+                    && podcast.getOwner().equals(getUsername())) {
+                System.out.println("cineva ma ascultaaa ");
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean pageIsVisited(List<SimpleUser> listeners) {
+        System.out.println("here i ammmmm");
+        for (SimpleUser listener : listeners) {
+            if (listener.getSelectedUser() != null && listener.getSelectedUser().equals(this)) {
+                System.out.println("cineva ma viziteaza   ");
+                return true;
+            }
+        }
+        return false;
+    }
+
 
 }

@@ -493,6 +493,30 @@ public class CommandRunner {
         return objectNode;
     }
 
+    public static ObjectNode removePodcast(CommandInput commandInput) {
+        String message = Admin.removePodcast(commandInput);
+
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("message", message);
+
+        return objectNode;
+    }
+
+    public static ObjectNode removeEvent(CommandInput commandInput) {
+        String message = Admin.removeEvent(commandInput);
+
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("message", message);
+
+        return objectNode;
+    }
+
     public static ObjectNode changePage(CommandInput commandInput) {
         String message = Admin.changePage(commandInput);
 

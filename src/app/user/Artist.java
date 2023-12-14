@@ -3,6 +3,7 @@ package app.user;
 import app.Admin;
 import app.audio.Collections.Album;
 import app.audio.Collections.AlbumOutput;
+import app.audio.Collections.Playlist;
 import app.audio.Files.Song;
 import app.pages.utils.Event;
 import app.pages.utils.Merch;
@@ -16,7 +17,9 @@ import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Getter
 @Setter
@@ -34,36 +37,33 @@ public class Artist extends User {
         setUserType(Enums.UserType.ARTIST);
     }
 
-    public ArrayList<Song> getSongs(List<SongInput> songInputList) {
-        ArrayList<Song> songs = new ArrayList<>();
-        for (SongInput songInput : songInputList) {
-            songs.add(new Song(songInput.getName(), songInput.getDuration(), songInput.getAlbum(),
-                    songInput.getTags(), songInput.getLyrics(), songInput.getGenre(),
-                    songInput.getReleaseYear(), songInput.getArtist()));
-        }
-        return songs;
-    }
-
     public String addAlbum(CommandInput commandInput) {
 
         if (albums.stream().anyMatch(album -> album.getName().equals(commandInput.getName())))
             return this.getUsername() + " has another album with the same name.";
 
-        // create a new album
-        Album newAlbum = new Album(commandInput.getName(), commandInput.getUsername(),
-                                   commandInput.getSongs(), commandInput.getTimestamp(),
-                                   commandInput.getDescription(), commandInput.getReleaseYear());
-        this.albums.add(newAlbum);
-//        setSongs(commandInput.getSongs());
+        for (int i = 0; i < commandInput.getSongs().size(); i++) {
+            int count = 0;
+            for (int j = 0; j < commandInput.getSongs().size(); j++) {
+                SongInput songI = commandInput.getSongs().get(i);
+                SongInput songJ = commandInput.getSongs().get(j);
+                if (songI.getName().equals(songJ.getName())) {
+                    count++;
+                }
+            }
 
-        for (SongInput song : commandInput.getSongs()) {
-            boolean contains = newAlbum.containsSong(song);
-            if (contains) {
-                return getUsername() + " has the same song at least twice in this album.";
+            if (count > 1) {
+                return commandInput.getUsername() + " has the same song at least twice in this album.";
             }
         }
-        System.out.println("nume " + newAlbum.getName());
-        Admin.addSongs(getSongs(commandInput.getSongs()));
+
+        // create a new album
+        Album newAlbum = new Album(commandInput.getName(), commandInput.getUsername(),
+                commandInput.getSongs(), commandInput.getTimestamp(),
+                commandInput.getDescription(), commandInput.getReleaseYear());
+
+        albums.add(newAlbum);
+        Admin.addSongs(newAlbum.getSongs());
         Admin.addAlbumToLib(newAlbum);
         return commandInput.getUsername() + " has added new album successfully.";
     }
@@ -150,9 +150,10 @@ public class Artist extends User {
                 .equals(commandInput.getName()))) {
             return getUsername() + " doesn't have an album with the given name.";
         } else if (checkValidDeletion(getAlbumFromList(commandInput.getName()))) {
+            System.out.println("can't delete album " + commandInput.getName());
             return getUsername() + " can't delete this album.";
         }
-
+        System.out.println("we are gonna delete album " + commandInput.getName());
         Album albumToRemove = getAlbumFromList(commandInput.getName());
         albums.remove(albumToRemove);
         Admin.updateAlbums(albumToRemove);
@@ -172,17 +173,32 @@ public class Artist extends User {
         return playingSongs;
     }
 
-    public boolean checkValidDeletion(Album album) {
-        List<Song> playingSongs = this.allPlayingSongs();
-        return hasSongsFromAlbum(album, playingSongs);
+    public List<Song> allPlaylistSongs() {
+        List<SimpleUser> users = Admin.getSimpleUsers();
+
+        return users.stream().map(user -> user.getPlaylists()).flatMap(Collection::stream)
+                             .map(playlist -> playlist.getSongs()).flatMap(Collection::stream)
+                             .collect(Collectors.toList());
+
     }
 
-    public boolean hasSongsFromAlbum(Album album, List<Song> allPlayingSongs) {
-        for (Song song : album.getSongs()) {
-            if (allPlayingSongs.contains(song)) {
+    public boolean checkValidDeletion(Album album) {
+        for (Song song : allPlayingSongs()) {
+            if (album.getSongs().contains(song)) {
+                System.out.println("plays song from " + album.getName());
                 return true;
             }
         }
+        List<String> songNames = album.getSongs().stream().map(Song::getName).toList();
+        System.out.println("Album songs : " + album.getSongs());
+        for (Song song : allPlaylistSongs()) {
+            System.out.println("allPlaylistSongs : " + song);
+            if (album.getSongs().contains(song)) {
+                System.out.println("has playlists with songs from " + album.getName());
+                return true;
+            }
+        }
+
         return false;
     }
 
