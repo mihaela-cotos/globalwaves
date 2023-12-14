@@ -254,8 +254,7 @@
     "name" : "2010 hits",
     "songs" : [ "Freedom", "Happier" ],
     "visibility" : "public",
-    "followers" : 1,
-    "timestamp" : 3210
+    "followers" : 1
   } ]
 }, {
   "command" : "search",
@@ -335,8 +334,7 @@
     "name" : "2010 hits",
     "songs" : [ "Freedom", "Happier" ],
     "visibility" : "public",
-    "followers" : 1,
-    "timestamp" : 3210
+    "followers" : 1
   } ]
 }, {
   "command" : "deleteUser",

@@ -229,6 +229,7 @@ public class CommandRunner {
         SimpleUser user = (SimpleUser) Admin.getUser(commandInput.getUsername());
         ArrayList<PlaylistOutput> playlists = user.showPlaylists();
 
+
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
@@ -399,7 +400,6 @@ public class CommandRunner {
     public static ObjectNode showPodcasts(CommandInput commandInput) {
         Host user = (Host) Admin.getUser(commandInput.getUsername());
         ArrayList<PodcastOutput> podcasts = user.showPodcasts();
-
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
@@ -471,6 +471,30 @@ public class CommandRunner {
 
     public static ObjectNode removeAnnouncement(CommandInput commandInput) {
         String message = Admin.removeAnnouncement(commandInput);
+
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("message", message);
+
+        return objectNode;
+    }
+
+    public static ObjectNode removeAlbum(CommandInput commandInput) {
+        String message = Admin.removeAlbum(commandInput);
+
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("message", message);
+
+        return objectNode;
+    }
+
+    public static ObjectNode changePage(CommandInput commandInput) {
+        String message = Admin.changePage(commandInput);
 
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.put("command", commandInput.getCommand());

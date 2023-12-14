@@ -74,7 +74,7 @@ public final class Main {
         ObjectMapper objectMapper = new ObjectMapper();
         LibraryInput library = objectMapper.readValue(new File(CheckerConstants.TESTS_PATH + "library/library.json"), LibraryInput.class);
         CommandInput[] commands = objectMapper.readValue(new File(CheckerConstants.TESTS_PATH + filePath1), CommandInput[].class);
-//        CommandInput[] commands = objectMapper.readValue(new File(CheckerConstants.TESTS_PATH + "test05_etapa2_playPause_playlist_podcast.json"), CommandInput[].class);
+//        CommandInput[] commands = objectMapper.readValue(new File(CheckerConstants.TESTS_PATH + "test07_etapa2_repeat_error.json"), CommandInput[].class);
         ArrayNode outputs = objectMapper.createArrayNode();
 
         Admin.setUsers(library.getUsers());
@@ -124,7 +124,8 @@ public final class Main {
                 case "deleteUser" -> outputs.add(CommandRunner.deleteUser(command));
                 case "addAnnouncement" -> outputs.add(CommandRunner.addAnnouncement(command));
                 case "removeAnnouncement" -> outputs.add(CommandRunner.removeAnnouncement(command));
-
+                case "removeAlbum" -> outputs.add(CommandRunner.removeAlbum(command));
+                case "changePage" -> outputs.add(CommandRunner.changePage(command));
 
                 default -> System.out.println("Invalid command " + commandName);
             }

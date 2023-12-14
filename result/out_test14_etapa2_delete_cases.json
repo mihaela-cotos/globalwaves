@@ -215,6 +215,11 @@
   "timestamp" : 930,
   "message" : null
 }, {
+  "command" : "changePage",
+  "user" : "soundseeker21",
+  "timestamp" : 955,
+  "message" : "soundseeker21 accessed Home successfully."
+}, {
   "command" : "deleteUser",
   "user" : "melodicwanderer",
   "timestamp" : 960,
@@ -274,6 +279,11 @@
   "user" : "sonicpainter",
   "timestamp" : 7860,
   "message" : "The username sonicpainter doesn't exist."
+}, {
+  "command" : "changePage",
+  "user" : "david27",
+  "timestamp" : 7885,
+  "message" : "david27 accessed Home successfully."
 }, {
   "command" : "deleteUser",
   "user" : "sonicpainter",

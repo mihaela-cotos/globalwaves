@@ -13,7 +13,7 @@ public class LikedContentPageStrategy implements PrintPageStrategy {
     public String print(User currentUser) {
         List<Song> songs = ((SimpleUser)currentUser).getLikedSongs();
         List<Playlist> playlists = ((SimpleUser)currentUser).getFollowedPlaylists();;
-        String pageLog = "Liked Songs:\n\t[";
+        String pageLog = "Liked songs:\n\t[";
         for (int i = 0; i < songs.size(); i++) {
             pageLog += songs.get(i).getName();
             pageLog += " - ";

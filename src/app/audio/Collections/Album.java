@@ -37,7 +37,7 @@ public class Album extends AudioCollection {
         return songs.get(index);
     }
 
-    public boolean containsSong(Song song) {
+    public boolean containsSong(SongInput song) {
         int count = 0;
         for (Song iterSong : songs) {
             if (iterSong.getName().equals(song.getName())) {

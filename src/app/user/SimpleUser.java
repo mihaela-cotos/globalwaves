@@ -296,6 +296,7 @@ public class SimpleUser extends User {
         ArrayList<PlaylistOutput> playlistOutputs = new ArrayList<>();
         for (Playlist playlist : playlists) {
             playlistOutputs.add(new PlaylistOutput(playlist));
+            System.out.println("aici avem timestamp " + playlist.getTimestamp());
         }
 
         return playlistOutputs;

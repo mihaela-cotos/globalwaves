@@ -82,6 +82,10 @@ public class Admin {
         return new ArrayList<>(artists);
     }
 
+    public static List<SimpleUser> getSimpleUsers() {
+        return new ArrayList<>(users);
+    }
+
     public static List<Host> getHosts() {
         return new ArrayList<>(hosts);
     }
@@ -118,6 +122,16 @@ public class Admin {
         ArrayList<User> allUsers = gatherAllUsers();
 
         for (User user : allUsers) {
+            if (user.getUsername().equals(username)) {
+                return user;
+            }
+        }
+        return null;
+    }
+
+    public static SimpleUser getSimpleUser(String username) {
+
+        for (SimpleUser user : users) {
             if (user.getUsername().equals(username)) {
                 return user;
             }
@@ -194,6 +208,7 @@ public class Admin {
         podcasts = new ArrayList<>();
         artists = new ArrayList<>();
         hosts = new ArrayList<>();
+        albums = new ArrayList<>();
         timestamp = 0;
     }
 
@@ -324,15 +339,28 @@ public class Admin {
 
         for (SimpleUser user : users) {
             // delete playlist from followed
-            ArrayList<Song> a = user.getLikedSongs();
-            a.removeAll(artistToDelete.getSongs());
-            user.setLikedSongs(a);
+            ArrayList<Song> likedSongs = user.getLikedSongs();
+            ArrayList<Song> deleteSongs = getSongsFromArtist(artistToDelete);
+            likedSongs.removeAll(deleteSongs);
+            //            a.removeAll(artistToDelete.getSongs());
+//            user.getLikedSongs().removeAll(getSongsFromArtist(artistToDelete));
+            user.setLikedSongs(likedSongs);
         }
 
-        songs.removeAll(artistToDelete.getSongs());
+        songs.removeAll(getSongsFromArtist(artistToDelete));
         albums.removeAll(artistToDelete.getAlbums());
         artists.remove(artistToDelete);
         return artistToDelete.getUsername() + " was successfully deleted.";
+    }
+
+    public static ArrayList<Song> getSongsFromArtist(Artist artist) {
+        ArrayList<Song> artistSongs = new ArrayList<>();
+        for (Song song : songs) {
+            if (song.getArtist().equals(artist.getUsername())) {
+                artistSongs.add(song);
+            }
+        }
+        return artistSongs;
     }
 
     public static String deleteHost (Host hostToDelete) {
@@ -373,7 +401,22 @@ public class Admin {
     }
 
     public static String removeAlbum(CommandInput commandInput) {
-        return null;
+        User user = getUser(commandInput.getUsername());
+
+        if (getAllUsers().stream().noneMatch(iterUser -> iterUser
+                .equals(commandInput.getUsername())) || user == null)
+
+            return "The username " + commandInput.getUsername() + " doesn't exist.";
+
+        if (!user.getUserType().equals(Enums.UserType.ARTIST))
+            return commandInput.getUsername() + " is not an artist.";
+
+
+        return ((Artist)user).removeAlbum(commandInput);
+    }
+
+    public static void updateAlbums(Album album) {
+        albums.remove(album);
     }
 
     public static String addPodcast(CommandInput commandInput) {
@@ -508,5 +551,29 @@ public class Admin {
 
 
         return ((Host)user).removeAnnouncement(commandInput);
+    }
+
+    public static String changePage(CommandInput commandInput) {
+        SimpleUser user = getSimpleUser(commandInput.getUsername());
+        Enums.PageType currentPage = user.getPageName();
+        String nextPage = commandInput.getNextPage();
+
+        switch (nextPage) {
+            case "Home":
+                user.setPageName(Enums.PageType.HOME);
+                break;
+            case "LikedContent":
+                user.setPageName(Enums.PageType.LIKED);
+                break;
+            case "Artist":
+                user.setPageName(Enums.PageType.ARTIST);
+                break;
+            case "Host" :
+                user.setPageName(Enums.PageType.HOST);
+                break;
+            default:
+                return user.getUsername() + " is trying to access a non-existent page.";
+        }
+        return user.getUsername() + " accessed " + nextPage + " successfully.";
     }
 }

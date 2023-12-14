@@ -22,26 +22,26 @@ import java.util.List;
 @Setter
 public class Artist extends User {
     private ArrayList<Album> albums;
-    private ArrayList<Song> songs;
     private ArrayList<Event> events;
     private ArrayList<Merch> merch;
 
     public Artist(String username, int age, String city) {
         super(username, age, city);
         albums = new ArrayList<>();
-        songs = new ArrayList<>();
         events = new ArrayList<>();
         merch = new ArrayList<>();
         setPageName(Enums.PageType.ARTIST);
         setUserType(Enums.UserType.ARTIST);
     }
 
-    public void setSongs(List<SongInput> songInputList) {
+    public ArrayList<Song> getSongs(List<SongInput> songInputList) {
+        ArrayList<Song> songs = new ArrayList<>();
         for (SongInput songInput : songInputList) {
             songs.add(new Song(songInput.getName(), songInput.getDuration(), songInput.getAlbum(),
                     songInput.getTags(), songInput.getLyrics(), songInput.getGenre(),
                     songInput.getReleaseYear(), songInput.getArtist()));
         }
+        return songs;
     }
 
     public String addAlbum(CommandInput commandInput) {
@@ -50,19 +50,20 @@ public class Artist extends User {
             return this.getUsername() + " has another album with the same name.";
 
         // create a new album
-        setSongs(commandInput.getSongs());
         Album newAlbum = new Album(commandInput.getName(), commandInput.getUsername(),
                                    commandInput.getSongs(), commandInput.getTimestamp(),
                                    commandInput.getDescription(), commandInput.getReleaseYear());
-        albums.add(newAlbum);
+        this.albums.add(newAlbum);
+//        setSongs(commandInput.getSongs());
 
-        for (Song song : songs) {
+        for (SongInput song : commandInput.getSongs()) {
             boolean contains = newAlbum.containsSong(song);
             if (contains) {
                 return getUsername() + " has the same song at least twice in this album.";
             }
         }
-        Admin.addSongs(songs);
+        System.out.println("nume " + newAlbum.getName());
+        Admin.addSongs(getSongs(commandInput.getSongs()));
         Admin.addAlbumToLib(newAlbum);
         return commandInput.getUsername() + " has added new album successfully.";
     }
@@ -125,6 +126,15 @@ public class Artist extends User {
         return getUsername() + " has added new event successfully.";
     }
 
+    public Album getAlbumFromList (String name) {
+        for (Album album : this.albums) {
+            if (album.getName().equals(name)) {
+                return album;
+            }
+        }
+        return null;
+    }
+
     public Event getEvent(String name) {
         for (Event event : events) {
             if (event.getName().equals(name)) {
@@ -133,6 +143,47 @@ public class Artist extends User {
         }
 
         return null;
+    }
+
+    public String removeAlbum(CommandInput commandInput) {
+        if (albums.stream().noneMatch(album -> album.getName()
+                .equals(commandInput.getName()))) {
+            return getUsername() + " doesn't have an album with the given name.";
+        } else if (checkValidDeletion(getAlbumFromList(commandInput.getName()))) {
+            return getUsername() + " can't delete this album.";
+        }
+
+        Album albumToRemove = getAlbumFromList(commandInput.getName());
+        albums.remove(albumToRemove);
+        Admin.updateAlbums(albumToRemove);
+        return getUsername() + " deleted the album successfully.";
+    }
+
+    public List<Song> allPlayingSongs() {
+        List<Song> playingSongs = new ArrayList<>();
+        List<SimpleUser> users = new ArrayList<>();
+        users.addAll(Admin.getSimpleUsers());
+
+        for (SimpleUser user : users) {
+            if (user.getPlayer().getCurrentAudioFile() != null && !user.getPlayer().getType().equals("podcast")) {
+                playingSongs.add((Song) user.getPlayer().getCurrentAudioFile());
+            }
+        }
+        return playingSongs;
+    }
+
+    public boolean checkValidDeletion(Album album) {
+        List<Song> playingSongs = this.allPlayingSongs();
+        return hasSongsFromAlbum(album, playingSongs);
+    }
+
+    public boolean hasSongsFromAlbum(Album album, List<Song> allPlayingSongs) {
+        for (Song song : album.getSongs()) {
+            if (allPlayingSongs.contains(song)) {
+                return true;
+            }
+        }
+        return false;
     }
 
 
