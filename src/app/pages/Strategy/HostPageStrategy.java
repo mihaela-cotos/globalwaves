@@ -51,11 +51,9 @@ public class HostPageStrategy implements PrintPageStrategy {
 
             if (i != announcements.size() - 1) {
                 pageLog += ", ";
-            } else {
-                pageLog += "\n]";
             }
         }
-
+        pageLog += "\n]";
         return pageLog;
     }
 }

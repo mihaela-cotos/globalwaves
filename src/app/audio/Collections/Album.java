@@ -26,6 +26,13 @@ public class Album extends AudioCollection {
         this.releaseYear = releaseYear;
     }
 
+    public int getNumberOfLikes() {
+        int likes = 0;
+        for (Song song : songs) {
+            likes += song.getLikes();
+        }
+        return likes;
+    }
 
     @Override
     public int getNumberOfTracks() {

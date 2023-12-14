@@ -3,11 +3,9 @@ package app;
 import app.audio.Collections.Album;
 import app.audio.Collections.Playlist;
 import app.audio.Collections.Podcast;
-import app.audio.Files.AudioFile;
 import app.audio.Files.Episode;
 import app.audio.Files.Song;
 import app.pages.Strategy.*;
-import app.player.PlayerSource;
 import app.user.Artist;
 import app.user.Host;
 import app.user.SimpleUser;
@@ -22,6 +20,9 @@ import lombok.Getter;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * The type Admin.
+ */
 public class Admin {
     private static List<SimpleUser> users = new ArrayList<>();
     @Getter
@@ -32,18 +33,23 @@ public class Admin {
     private static List<Album> albums = new ArrayList<>();
     private static int timestamp = 0;
 
-    public static void setUsers(List<UserInput> userInputList) {
+    /**
+     * Sets users.
+     *
+     * @param userInputList the user input list
+     */
+    public static void setUsers(final List<UserInput> userInputList) {
         users = new ArrayList<>();
         SimpleUserFactory factory = new SimpleUserFactory();
         for (UserInput userInput : userInputList) {
-            User newUser = factory.create(userInput.getUsername(), userInput.getAge(),
-                                                                    userInput.getCity());
-            users.add(((SimpleUser) newUser));
-            ((SimpleUser) newUser).setPageName(Enums.PageType.HOME);
+            User newUser = factory.create(userInput.getUsername(),
+                                          userInput.getAge(), userInput.getCity());
+            users.add((SimpleUser) newUser);
+            newUser.setPageName(Enums.PageType.HOME);
         }
     }
 
-    public static void setSongs(List<SongInput> songInputList) {
+    public static void setSongs(final List<SongInput> songInputList) {
         songs = new ArrayList<>();
         for (SongInput songInput : songInputList) {
             songs.add(new Song(songInput.getName(), songInput.getDuration(), songInput.getAlbum(),
@@ -52,20 +58,20 @@ public class Admin {
         }
     }
 
-    public static void addSongs(List<Song> songs) {
+    public static void addSongs(final List<Song> songs) {
         Admin.songs.addAll(songs);
     }
 
-    public static void addAlbumToLib(Album album) {
+    public static void addAlbumToLib(final Album album) {
         Admin.albums.add(album);
     }
 
 
-    public static void addPodcastToLib(Podcast podcast) {
+    public static void addPodcastToLib(final Podcast podcast) {
         Admin.podcasts.add(podcast);
     }
 
-    public static void setPodcasts(List<PodcastInput> podcastInputList) {
+    public static void setPodcasts(final List<PodcastInput> podcastInputList) {
         podcasts = new ArrayList<>();
         for (PodcastInput podcastInput : podcastInputList) {
             List<Episode> episodes = new ArrayList<>();
@@ -117,7 +123,7 @@ public class Admin {
         return allUsers;
     }
 
-    public static User getUser(String username) {
+    public static User getUser(final String username) {
         ArrayList<User> allUsers = gatherAllUsers();
 
         for (User user : allUsers) {
@@ -128,7 +134,7 @@ public class Admin {
         return null;
     }
 
-    public static SimpleUser getSimpleUser(String username) {
+    public static SimpleUser getSimpleUser(final String username) {
 
         for (SimpleUser user : users) {
             if (user.getUsername().equals(username)) {
@@ -137,30 +143,7 @@ public class Admin {
         }
         return null;
     }
-
-    public static Album getAlbum(String name, String username) {
-        List<Album> allAlbums = getAlbums();
-
-        for (Album album : allAlbums) {
-            if (album.getName().equals(name) && album.getOwner().equals(username)) {
-                return album;
-            }
-        }
-        return null;
-    }
-
-    public static Song getSong(String name, String username) {
-        List<Song> allSongs = getSongs();
-
-        for (Song song : songs) {
-            if (song.getName().equals(name) && song.getArtist().equals(username)) {
-                return song;
-            }
-        }
-        return null;
-    }
-
-    public static void updateTimestamp(int newTimestamp) {
+    public static void updateTimestamp(final int newTimestamp) {
         int elapsed = newTimestamp - timestamp;
         timestamp = newTimestamp;
         if (elapsed == 0) {
@@ -201,6 +184,33 @@ public class Admin {
         return topPlaylists;
     }
 
+    public static List<String> getTop5Albums() {
+        List<Album> sortedAlbums = new ArrayList<>(getAlbums());
+        sortedAlbums.sort(Comparator.comparingInt(Album::getNumberOfLikes).reversed()
+                .thenComparing(Album::getName, Comparator.naturalOrder()));
+        List<String> topAlbums = new ArrayList<>();
+        int count = 0;
+        for (Album album : sortedAlbums) {
+            if (count >= 5) break;
+            topAlbums.add(album.getName());
+            count++;
+        }
+        return topAlbums;
+    }
+
+    public static List<String> getTop5Artists() {
+        List<Artist> sortedArtists = new ArrayList<>(getArtists());
+        sortedArtists.sort(Comparator.comparingInt(Artist::getNumberOfLikes).reversed());
+        List<String> topArtists = new ArrayList<>();
+        int count = 0;
+        for (Artist artist : sortedArtists) {
+            if (count >= 5) break;
+            topArtists.add(artist.getUsername());
+            count++;
+        }
+        return topArtists;
+    }
+
     public static void reset() {
         users = new ArrayList<>();
         songs = new ArrayList<>();
@@ -211,7 +221,7 @@ public class Admin {
         timestamp = 0;
     }
 
-    public static String switchConnectionStatus (CommandInput commandInput) {
+    public static String switchConnectionStatus (final CommandInput commandInput) {
         User user = getUser(commandInput.getUsername());
 
         if (user == null) {
@@ -281,7 +291,7 @@ public class Admin {
         return "The username " + commandInput.getUsername() + " has been added successfully.";
     }
 
-    public static String deleteSimpleUser (SimpleUser userToDelete) {
+    public static String deleteSimpleUser (final SimpleUser userToDelete) {
         List<SimpleUser> users = getSimpleUsers();
 
         if (users.stream().noneMatch(user -> user.getUsername().equals(userToDelete.getUsername()))) {
@@ -291,58 +301,7 @@ public class Admin {
         return userToDelete.deleteUser(users);
     }
 
-    public static String deleteArtist (Artist artistToDelete) {
-        List<String> onlineUsersToString = getOnlineUsers();
-        List<SimpleUser> onlineUsers = new ArrayList<>();
-
-        for (String user : onlineUsersToString) {
-            User iterUser = getUser(user);
-            if (iterUser.getUserType().equals(Enums.UserType.NORMAL))
-                onlineUsers.add((SimpleUser) iterUser);
-        }
-
-        for (SimpleUser user : onlineUsers) {
-            PlayerSource source = user.getPlayer().getSource();
-            if (source != null && source.getType().equals(Enums.PlayerSourceType.ALBUM)) {
-                Album listenedAlbum = (Album) source.getAudioCollection();
-                if (listenedAlbum.getOwner().equals(artistToDelete.getUsername())) {
-                    return artistToDelete.getUsername() + " can't be deleted.";
-                }
-            } else if (source != null && source.getType().equals(Enums.PlayerSourceType.LIBRARY)) {
-                Song listenedSong = (Song) source.getAudioFile();
-                if (listenedSong.getArtist().equals(artistToDelete.getUsername())) {
-                    return artistToDelete.getUsername() + " can't be deleted.";
-                }
-            }
-        }
-
-        for (SimpleUser user : users) {
-            // delete playlist from followed
-            ArrayList<Song> likedSongs = user.getLikedSongs();
-            ArrayList<Song> deleteSongs = getSongsFromArtist(artistToDelete);
-            likedSongs.removeAll(deleteSongs);
-            //            a.removeAll(artistToDelete.getSongs());
-//            user.getLikedSongs().removeAll(getSongsFromArtist(artistToDelete));
-            user.setLikedSongs(likedSongs);
-        }
-
-        songs.removeAll(getSongsFromArtist(artistToDelete));
-        albums.removeAll(artistToDelete.getAlbums());
-        artists.remove(artistToDelete);
-        return artistToDelete.getUsername() + " was successfully deleted.";
-    }
-
-    public static ArrayList<Song> getSongsFromArtist(Artist artist) {
-        ArrayList<Song> artistSongs = new ArrayList<>();
-        for (Song song : songs) {
-            if (song.getArtist().equals(artist.getUsername())) {
-                artistSongs.add(song);
-            }
-        }
-        return artistSongs;
-    }
-
-    public static String deleteHost (Host hostToDelete) {
+    public static String deleteHost (final Host hostToDelete) {
         List<SimpleUser> listeners = getSimpleUsers();
         List<Host> hosts = getHosts();
 
@@ -353,7 +312,17 @@ public class Admin {
         return hostToDelete.deleteHost(listeners);
     }
 
-    public static String deleteUser(CommandInput commandInput) {
+    public static String deleteArtist (final Artist artistToDelete) {
+        List<Artist> artists = getArtists();
+
+        if (artists.stream().noneMatch(artist -> artist.getUsername().equals(artistToDelete.getUsername()))) {
+            return "The username " + artistToDelete.getUsername() + " doesn't exist.";
+        }
+
+        return artistToDelete.deleteArtist();
+    }
+
+    public static String deleteUser(final CommandInput commandInput) {
         String searchedUser = commandInput.getUsername();
         List<User> allUsers = gatherAllUsers();
 
@@ -371,7 +340,7 @@ public class Admin {
         };
     }
 
-    public static String addAlbum(CommandInput commandInput) {
+    public static String addAlbum(final CommandInput commandInput) {
         User user = getUser(commandInput.getUsername());
 
         if (getAllUsers().stream().noneMatch(iterUser -> iterUser
@@ -386,7 +355,7 @@ public class Admin {
         return ((Artist)user).addAlbum(commandInput);
     }
 
-    public static String removeAlbum(CommandInput commandInput) {
+    public static String removeAlbum(final CommandInput commandInput) {
         User user = getUser(commandInput.getUsername());
 
         if (getAllUsers().stream().noneMatch(iterUser -> iterUser
@@ -401,23 +370,31 @@ public class Admin {
         return ((Artist)user).removeAlbum(commandInput);
     }
 
-    public static void updateAlbums(Album album) {
+    public static void updateAlbums(final Album album) {
         albums.remove(album);
     }
 
-    public static void updatePodcasts(Podcast podcast) {
+    public static void updateArtists(final Artist artist) {
+        artists.remove(artist);
+    }
+
+    public static void updateSongs(final List<Song> removedSongs) {
+        songs.removeAll(removedSongs);
+    }
+
+    public static void updatePodcasts(final Podcast podcast) {
         podcasts.remove(podcast);
     }
 
-    public static void updateUsers(SimpleUser user) {
+    public static void updateUsers(final SimpleUser user) {
         users.remove(user);
     }
 
-    public static void updateHosts(Host user) {
+    public static void updateHosts(final Host user) {
         hosts.remove(user);
     }
 
-    public static String addPodcast(CommandInput commandInput) {
+    public static String addPodcast(final CommandInput commandInput) {
         User user = getUser(commandInput.getUsername());
 
         if (getAllUsers().stream().noneMatch(iterUser -> iterUser
@@ -432,7 +409,7 @@ public class Admin {
         return ((Host)user).addPodcast(commandInput);
     }
 
-    public static String removePodcast(CommandInput commandInput) {
+    public static String removePodcast(final CommandInput commandInput) {
         User user = getUser(commandInput.getUsername());
 
         if (getAllUsers().stream().noneMatch(iterUser -> iterUser
@@ -447,7 +424,7 @@ public class Admin {
         return ((Host)user).removePodcast(commandInput);
     }
 
-    public static String printCurrentPage(CommandInput commandInput) {
+    public static String printCurrentPage(final CommandInput commandInput) {
         User user = getUser(commandInput.getUsername());
 
         if (user.getUserType().equals(Enums.UserType.NORMAL) && !((SimpleUser)user).isOnlineStatus()) {
@@ -488,7 +465,7 @@ public class Admin {
         return printMessage;
     }
 
-    public static String checkArtist(CommandInput commandInput) {
+    public static String checkArtist(final CommandInput commandInput) {
         ArrayList<User> allUsers = gatherAllUsers();
         if (allUsers.stream().noneMatch(user -> user.getUsername()
                 .equals(commandInput.getUsername()))) {
@@ -502,7 +479,7 @@ public class Admin {
         }
     }
 
-    public static String addMerch(CommandInput commandInput) {
+    public static String addMerch(final CommandInput commandInput) {
         String checkArtist = checkArtist(commandInput);
         if (checkArtist.equals("Valid artist.")) {
             Artist currentArtist = (Artist) Admin.getUser(commandInput.getUsername());
@@ -512,7 +489,7 @@ public class Admin {
         return checkArtist;
     }
 
-    public static String addEvent(CommandInput commandInput) {
+    public static String addEvent(final CommandInput commandInput) {
         String checkArtist = checkArtist(commandInput);
         if (checkArtist.equals("Valid artist.")) {
             Artist currentArtist = (Artist) Admin.getUser(commandInput.getUsername());
@@ -522,7 +499,7 @@ public class Admin {
         return checkArtist;
     }
 
-    public static String removeEvent(CommandInput commandInput) {
+    public static String removeEvent(final CommandInput commandInput) {
         String checkArtist = checkArtist(commandInput);
         if (checkArtist.equals("Valid artist.")) {
             Artist currentArtist = (Artist) Admin.getUser(commandInput.getUsername());
@@ -538,7 +515,7 @@ public class Admin {
         return checkArtist;
     }
 
-    public static String addAnnouncement(CommandInput commandInput) {
+    public static String addAnnouncement(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
 
         if (getAllUsers().stream().noneMatch(iterUser -> iterUser
@@ -552,7 +529,7 @@ public class Admin {
         return ((Host)user).addAnnouncement(commandInput);
     }
 
-    public static String removeAnnouncement(CommandInput commandInput) {
+    public static String removeAnnouncement(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
 
         if (getAllUsers().stream().noneMatch(iterUser -> iterUser
@@ -566,9 +543,8 @@ public class Admin {
         return ((Host)user).removeAnnouncement(commandInput);
     }
 
-    public static String changePage(CommandInput commandInput) {
+    public static String changePage(final CommandInput commandInput) {
         SimpleUser user = getSimpleUser(commandInput.getUsername());
-        Enums.PageType currentPage = user.getPageName();
         String nextPage = commandInput.getNextPage();
 
         switch (nextPage) {

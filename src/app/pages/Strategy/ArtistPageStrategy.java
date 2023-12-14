@@ -47,10 +47,9 @@ public class ArtistPageStrategy implements PrintPageStrategy {
             pageLog += events.get(i).getDescription();
             if (i != events.size() - 1) {
                 pageLog += ", ";
-            } else {
-                pageLog += "]";
             }
         }
+        pageLog += "]";
         return pageLog;
     }
 

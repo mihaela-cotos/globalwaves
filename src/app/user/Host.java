@@ -184,7 +184,6 @@ public class Host extends User {
         for (Podcast podcast : allPlayingPodcasts()) {
             if (podcasts.stream().anyMatch(podcast1 -> podcast1.getName().equals(podcast.getName()))
                     && podcast.getOwner().equals(getUsername())) {
-                System.out.println("cineva ma ascultaaa ");
                 return true;
             }
         }
@@ -192,10 +191,10 @@ public class Host extends User {
     }
 
     public boolean pageIsVisited(List<SimpleUser> listeners) {
-        System.out.println("here i ammmmm");
         for (SimpleUser listener : listeners) {
-            if (listener.getSelectedUser() != null && listener.getSelectedUser().equals(this)) {
-                System.out.println("cineva ma viziteaza   ");
+            if (listener.getSelectedUser() != null
+                    && listener.getSelectedUser().equals(this)
+                    && listener.getPageName().equals(Enums.PageType.HOST)) {
                 return true;
             }
         }

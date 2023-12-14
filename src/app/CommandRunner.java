@@ -313,6 +313,28 @@ public class CommandRunner {
         return objectNode;
     }
 
+    public static ObjectNode getTop5Albums(CommandInput commandInput) {
+        List<String> playlists = Admin.getTop5Albums();
+
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("result", objectMapper.valueToTree(playlists));
+
+        return objectNode;
+    }
+
+    public static ObjectNode getTop5Artists(CommandInput commandInput) {
+        List<String> playlists = Admin.getTop5Artists();
+
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("result", objectMapper.valueToTree(playlists));
+
+        return objectNode;
+    }
+
     public static ObjectNode switchConnectionStatus(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
         String message = Admin.switchConnectionStatus(commandInput);

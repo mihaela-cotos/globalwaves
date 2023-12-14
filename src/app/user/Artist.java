@@ -4,6 +4,7 @@ import app.Admin;
 import app.audio.Collections.Album;
 import app.audio.Collections.AlbumOutput;
 import app.audio.Collections.Playlist;
+import app.audio.Collections.Podcast;
 import app.audio.Files.Song;
 import app.pages.utils.Event;
 import app.pages.utils.Merch;
@@ -35,6 +36,15 @@ public class Artist extends User {
         merch = new ArrayList<>();
         setPageName(Enums.PageType.ARTIST);
         setUserType(Enums.UserType.ARTIST);
+    }
+
+    public int getNumberOfLikes() {
+        int likes = 0;
+        List<Integer> albumsLikes = albums.stream().map(Album::getNumberOfLikes).toList();
+        for (Integer nrLikes : albumsLikes) {
+            likes += nrLikes;
+        }
+        return likes;
     }
 
     public String addAlbum(CommandInput commandInput) {
@@ -153,7 +163,7 @@ public class Artist extends User {
             System.out.println("can't delete album " + commandInput.getName());
             return getUsername() + " can't delete this album.";
         }
-        System.out.println("we are gonna delete album " + commandInput.getName());
+
         Album albumToRemove = getAlbumFromList(commandInput.getName());
         albums.remove(albumToRemove);
         Admin.updateAlbums(albumToRemove);
@@ -185,16 +195,12 @@ public class Artist extends User {
     public boolean checkValidDeletion(Album album) {
         for (Song song : allPlayingSongs()) {
             if (album.getSongs().contains(song)) {
-                System.out.println("plays song from " + album.getName());
                 return true;
             }
         }
-        List<String> songNames = album.getSongs().stream().map(Song::getName).toList();
-        System.out.println("Album songs : " + album.getSongs());
+
         for (Song song : allPlaylistSongs()) {
-            System.out.println("allPlaylistSongs : " + song);
             if (album.getSongs().contains(song)) {
-                System.out.println("has playlists with songs from " + album.getName());
                 return true;
             }
         }
@@ -202,5 +208,51 @@ public class Artist extends User {
         return false;
     }
 
+    public List<Song> mySongs() {
+        return albums.stream().map(album -> album.getSongs())
+                              .flatMap(Collection::stream)
+                              .collect(Collectors.toList());
+    }
+
+    public String deleteArtist() {
+        if (mySongIsPlaying() || pageIsVisited()) {
+            return getUsername() + " can't be deleted.";
+        }
+
+        for (SimpleUser user : Admin.getSimpleUsers()) {
+            ArrayList<Song> updateUserSongs = user.getLikedSongs();
+            updateUserSongs.removeAll(mySongs());
+            user.setLikedSongs(updateUserSongs);
+        }
+
+        Admin.updateArtists(this);
+
+        for (Album album : albums) {
+            Admin.updateAlbums(album);
+        }
+
+        Admin.updateSongs(mySongs());
+        return getUsername() + " was successfully deleted.";
+    }
+
+    public boolean pageIsVisited() {
+        for (SimpleUser user : Admin.getSimpleUsers()) {
+            if (user.getSelectedUser() != null
+                    && user.getSelectedUser().equals(this)
+                    && user.getPageName().equals(Enums.PageType.ARTIST)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean mySongIsPlaying() {
+        for (Song song : mySongs()) {
+            if (allPlayingSongs().contains(song)) {
+                return true;
+            }
+        }
+        return false;
+    }
 
 }

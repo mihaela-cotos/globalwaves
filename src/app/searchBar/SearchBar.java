@@ -1,9 +1,7 @@
 package app.searchBar;
 
-
 import app.Admin;
 import app.audio.LibraryEntry;
-import app.user.Artist;
 import app.user.User;
 import lombok.Getter;
 import lombok.Setter;
@@ -12,7 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static app.searchBar.FilterUtils.*;
-import static app.searchBar.FilterUtils.filterByFollowers;
 
 @Getter
 @Setter
