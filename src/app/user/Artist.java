@@ -217,7 +217,6 @@ public final class Artist extends User {
                 .equals(commandInput.getName()))) {
             return getUsername() + " doesn't have an album with the given name.";
         } else if (checkValidDeletion(getAlbumFromList(commandInput.getName()))) {
-            System.out.println("can't delete album " + commandInput.getName());
             return getUsername() + " can't delete this album.";
         }
 

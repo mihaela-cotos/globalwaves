@@ -15,7 +15,6 @@ public final class HomePageStrategy implements PrintPageStrategy {
         List<Song> songs = ((SimpleUser) currentUser).getTopLikedSongs();
         String pageLog = "Liked songs:\n\t[";
 
-        System.out.println("size" + songs.size());
         for (int i = 0; i < songs.size(); i++) {
             pageLog += songs.get(i).getName();
             if (i != songs.size() - 1) {
