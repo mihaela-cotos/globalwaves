@@ -7,12 +7,12 @@ import app.user.User;
 
 import java.util.List;
 
-public class LikedContentPageStrategy implements PrintPageStrategy {
+public final class LikedContentPageStrategy implements PrintPageStrategy {
 
     @Override
-    public String print(User currentUser) {
-        List<Song> songs = ((SimpleUser)currentUser).getLikedSongs();
-        List<Playlist> playlists = ((SimpleUser)currentUser).getFollowedPlaylists();;
+    public String print(final User currentUser) {
+        List<Song> songs = ((SimpleUser) currentUser).getLikedSongs();
+        List<Playlist> playlists = ((SimpleUser) currentUser).getFollowedPlaylists();
         String pageLog = "Liked songs:\n\t[";
         for (int i = 0; i < songs.size(); i++) {
             pageLog += songs.get(i).getName();

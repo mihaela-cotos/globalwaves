@@ -255,10 +255,10 @@
     }
   },
   {
-  "command": "select",
-  "username": "bob35",
-  "timestamp": 355,
-  "itemNumber": 1
+    "command": "select",
+    "username": "bob35",
+    "timestamp": 355,
+    "itemNumber": 1
   },
   {
     "command": "follow",

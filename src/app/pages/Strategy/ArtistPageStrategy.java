@@ -9,14 +9,14 @@ import app.user.User;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ArtistPageStrategy implements PrintPageStrategy {
+public final class ArtistPageStrategy implements PrintPageStrategy {
 
     @Override
-    public String print(User currentUser) {
+    public String print(final User currentUser) {
         List<Album> albums = new ArrayList<>();
-        albums.addAll(((Artist)currentUser).getAlbums());
-        List<Merch> merch = ((Artist)currentUser).getMerch();
-        List<Event> events = ((Artist)currentUser).getEvents();
+        albums.addAll(((Artist) currentUser).getAlbums());
+        List<Merch> merch = ((Artist) currentUser).getMerch();
+        List<Event> events = ((Artist) currentUser).getEvents();
 
         String pageLog = "Albums:\n\t[";
         for (int i = 0; i < albums.size(); i++) {
@@ -52,5 +52,4 @@ public class ArtistPageStrategy implements PrintPageStrategy {
         pageLog += "]";
         return pageLog;
     }
-
 }

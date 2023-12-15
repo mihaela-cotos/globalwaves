@@ -3,10 +3,10 @@ package app.user.factory;
 import app.user.Host;
 import app.user.User;
 
-public class HostFactory extends UserFactory {
+public final class HostFactory extends UserFactory {
 
     @Override
-    public User create(String username, int age, String city) {
+    public User create(final String username, final int age, final String city) {
         return new Host(username, age, city);
     }
 }

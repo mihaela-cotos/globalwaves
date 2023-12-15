@@ -4,36 +4,63 @@ import app.Admin;
 import app.audio.LibraryEntry;
 import app.user.User;
 import lombok.Getter;
-import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static app.searchBar.FilterUtils.*;
+import static app.searchBar.FilterUtils.filterByAlbum;
+import static app.searchBar.FilterUtils.filterByArtist;
+import static app.searchBar.FilterUtils.filterByFollowers;
+import static app.searchBar.FilterUtils.filterByGenre;
+import static app.searchBar.FilterUtils.filterByLyrics;
+import static app.searchBar.FilterUtils.filterByName;
+import static app.searchBar.FilterUtils.filterByOwner;
+import static app.searchBar.FilterUtils.filterByPlaylistVisibility;
+import static app.searchBar.FilterUtils.filterByReleaseYear;
+import static app.searchBar.FilterUtils.filterByTags;
+import static app.searchBar.FilterUtils.filterByDescription;
+import static app.searchBar.FilterUtils.filterUsersByName;
 
+/**
+ * The type Search bar.
+ */
 @Getter
-@Setter
-public class SearchBar {
+public final class SearchBar {
     private List<LibraryEntry> results;
-    private List<User> userResults;
     private final String user;
     private static final Integer MAX_RESULTS = 5;
     private String lastSearchType;
     private LibraryEntry lastSelected;
     private User lastSelectedUser;
+    private List<User> userResults;
 
-
-    public SearchBar(String user) {
+    /**
+     * Instantiates a new Search bar.
+     *
+     * @param user the user
+     */
+    public SearchBar(final String user) {
         this.results = new ArrayList<>();
         this.user = user;
     }
 
+    /**
+     * Clear selection.
+     */
     public void clearSelection() {
         lastSelected = null;
         lastSearchType = null;
         lastSelectedUser = null;
     }
-    public List<LibraryEntry> search(Filters filters, String type) {
+
+    /**
+     * Search a library entry.
+     *
+     * @param filters the filters
+     * @param type    the type
+     * @return the list
+     */
+    public List<LibraryEntry> search(final Filters filters, final String type) {
         List<LibraryEntry> entries = new ArrayList<>();
 
         switch (type) {
@@ -129,7 +156,14 @@ public class SearchBar {
         return this.results;
     }
 
-    public List<User> searchUser(Filters filters, String type) {
+    /**
+     * Search a user (an artist or a host).
+     *
+     * @param filters the filters
+     * @param type    the type
+     * @return the list
+     */
+    public List<User> searchUser(final Filters filters, final String type) {
         List<User> hosts = new ArrayList<>(Admin.getHosts());
         List<User> artists = new ArrayList<>(Admin.getArtists());
 
@@ -170,7 +204,13 @@ public class SearchBar {
         return this.userResults;
     }
 
-    public LibraryEntry select(Integer itemNumber) {
+    /**
+     * Select library entry.
+     *
+     * @param itemNumber the item number
+     * @return the library entry
+     */
+    public LibraryEntry select(final Integer itemNumber) {
         if (this.results.size() < itemNumber) {
             results.clear();
 
@@ -183,7 +223,13 @@ public class SearchBar {
         }
     }
 
-    public User selectUser(Integer itemNumber) {
+    /**
+     * Select a user from search result.
+     *
+     * @param itemNumber the item number
+     * @return the selected user
+     */
+    public User selectUser(final Integer itemNumber) {
         if (this.userResults.size() < itemNumber) {
             userResults.clear();
 

@@ -1,6 +1,5 @@
 package app.audio.Collections;
 
-import app.utils.Enums;
 import lombok.Getter;
 
 import java.util.ArrayList;
@@ -11,7 +10,7 @@ public class AlbumOutput {
     private final ArrayList<String> songs;
 
 
-    public AlbumOutput(Album album) {
+    public AlbumOutput(final Album album) {
         this.name = album.getName();
         this.songs = new ArrayList<>();
         for (int i = 0; i < album.getSongs().size(); i++) {

@@ -227,8 +227,8 @@
     "timestamp": 115
   },
   {
-  "command": "printCurrentPage",
-  "username": "bob35",
-  "timestamp": 120
+    "command": "printCurrentPage",
+    "username": "bob35",
+    "timestamp": 120
   }
 ]

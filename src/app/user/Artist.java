@@ -3,8 +3,6 @@ package app.user;
 import app.Admin;
 import app.audio.Collections.Album;
 import app.audio.Collections.AlbumOutput;
-import app.audio.Collections.Playlist;
-import app.audio.Collections.Podcast;
 import app.audio.Files.Song;
 import app.pages.utils.Event;
 import app.pages.utils.Merch;
@@ -22,14 +20,26 @@ import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * The type Artist.
+ */
 @Getter
 @Setter
-public class Artist extends User {
+public final class Artist extends User {
     private ArrayList<Album> albums;
     private ArrayList<Event> events;
     private ArrayList<Merch> merch;
 
-    public Artist(String username, int age, String city) {
+    private static final int LOWERBOUND = 1900;
+    private static final int UPPERBOUND = 2023;
+    private static final int FEBRUARY = 2;
+    private static final int LASTDAY = 28;
+
+
+    /**
+     * Instantiates a new Artist.
+     */
+    public Artist(final String username, final int age, final String city) {
         super(username, age, city);
         albums = new ArrayList<>();
         events = new ArrayList<>();
@@ -38,6 +48,10 @@ public class Artist extends User {
         setUserType(Enums.UserType.ARTIST);
     }
 
+    /**
+     * Computes total number of likes.
+     * @return total number of likes
+     */
     public int getNumberOfLikes() {
         int likes = 0;
         List<Integer> albumsLikes = albums.stream().map(Album::getNumberOfLikes).toList();
@@ -47,10 +61,16 @@ public class Artist extends User {
         return likes;
     }
 
-    public String addAlbum(CommandInput commandInput) {
+    /**
+     * Add album to album list string.
+     * @param commandInput command
+     * @return the string
+     */
+    public String addAlbum(final CommandInput commandInput) {
 
-        if (albums.stream().anyMatch(album -> album.getName().equals(commandInput.getName())))
+        if (albums.stream().anyMatch(album -> album.getName().equals(commandInput.getName()))) {
             return this.getUsername() + " has another album with the same name.";
+        }
 
         for (int i = 0; i < commandInput.getSongs().size(); i++) {
             int count = 0;
@@ -63,7 +83,8 @@ public class Artist extends User {
             }
 
             if (count > 1) {
-                return commandInput.getUsername() + " has the same song at least twice in this album.";
+                return commandInput.getUsername()
+                       + " has the same song at least twice in this album.";
             }
         }
 
@@ -78,6 +99,10 @@ public class Artist extends User {
         return commandInput.getUsername() + " has added new album successfully.";
     }
 
+    /**
+     * Show albums array list.
+     * @return the array list
+     */
     public ArrayList<AlbumOutput> showAlbums() {
         ArrayList<AlbumOutput> albumOutputs = new ArrayList<>();
         for (Album album : albums) {
@@ -87,19 +112,30 @@ public class Artist extends User {
         return albumOutputs;
     }
 
-    public String addMerch(CommandInput commandInput) {
+    /**
+     * Add merch to artist page string.
+     * @param commandInput command
+     * @return the string
+     */
+    public String addMerch(final CommandInput commandInput) {
         if (merch.stream().anyMatch(item -> item.getName().equals(commandInput.getName()))) {
             return getUsername() + " has merchandise with the same name.";
         } else if (commandInput.getPrice() < 0) {
             return "Price for merchandise can not be negative.";
         }
 
-        Merch newMerch = new Merch(commandInput.getName(), commandInput.getDescription(), commandInput.getPrice());
+        Merch newMerch = new Merch(commandInput.getName(), commandInput.getDescription(),
+                                   commandInput.getPrice());
         merch.add(newMerch);
         return getUsername() + " has added new merchandise successfully.";
     }
 
-    public boolean checkValidDate(String eventDate) {
+    /**
+     * Check valid date for event boolean.
+     * @param eventDate event date
+     * @return  if valid
+     */
+    public boolean checkValidDate(final String eventDate) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 
         try {
@@ -108,9 +144,9 @@ public class Artist extends User {
             int month = date.getMonthValue();
             int year = date.getYear();
 
-            if (day >= 1 && day <= 31 && month >= 1 && month <= 12 && year >= 1900 && year <= 2023) {
-                if (month == 2) {
-                    if (day > 28) {
+            if (year >= LOWERBOUND && year <= UPPERBOUND) {
+                if (month == FEBRUARY) {
+                    if (day > LASTDAY) {
                         return false;
                     }
                 }
@@ -123,20 +159,31 @@ public class Artist extends User {
         }
     }
 
-    public String addEvent(CommandInput commandInput) {
+    /**
+     * Add event to artist page string.
+     * @param commandInput command
+     * @return the string
+     */
+    public String addEvent(final CommandInput commandInput) {
         if (events.stream().anyMatch(event -> event.getName()
                 .equals(commandInput.getName()))) {
             return getUsername() + " has another event with the same name.";
         } else if (!checkValidDate(commandInput.getDate())) {
-            return "Event for " +getUsername() + " does not have a valid date.";
+            return "Event for " + getUsername() + " does not have a valid date.";
         }
 
-        Event newEvent = new Event(commandInput.getName(), commandInput.getDescription(), commandInput.getDate());
+        Event newEvent = new Event(commandInput.getName(), commandInput.getDescription(),
+                                   commandInput.getDate());
         events.add(newEvent);
         return getUsername() + " has added new event successfully.";
     }
 
-    public Album getAlbumFromList (String name) {
+    /**
+     * Searches an album with given name in all albums.
+     * @param name searched album name
+     * @return the album
+     */
+    public Album getAlbumFromList(final String name) {
         for (Album album : this.albums) {
             if (album.getName().equals(name)) {
                 return album;
@@ -145,7 +192,12 @@ public class Artist extends User {
         return null;
     }
 
-    public Event getEvent(String name) {
+    /**
+     * Searches an event with specified name in all events.
+     * @param name searched event name
+     * @return the event
+     */
+    public Event getEvent(final String name) {
         for (Event event : events) {
             if (event.getName().equals(name)) {
                 return event;
@@ -155,7 +207,12 @@ public class Artist extends User {
         return null;
     }
 
-    public String removeAlbum(CommandInput commandInput) {
+    /**
+     * Removes an album string.
+     * @param commandInput command
+     * @return the string
+     */
+    public String removeAlbum(final CommandInput commandInput) {
         if (albums.stream().noneMatch(album -> album.getName()
                 .equals(commandInput.getName()))) {
             return getUsername() + " doesn't have an album with the given name.";
@@ -170,19 +227,28 @@ public class Artist extends User {
         return getUsername() + " deleted the album successfully.";
     }
 
+    /**
+     * Gets all songs that are playing now.
+     * @return the song list
+     */
     public List<Song> allPlayingSongs() {
         List<Song> playingSongs = new ArrayList<>();
         List<SimpleUser> users = new ArrayList<>();
         users.addAll(Admin.getSimpleUsers());
 
         for (SimpleUser user : users) {
-            if (user.getPlayer().getCurrentAudioFile() != null && !user.getPlayer().getType().equals("podcast")) {
+            if (user.getPlayer().getCurrentAudioFile() != null
+                && !user.getPlayer().getType().equals("podcast")) {
                 playingSongs.add((Song) user.getPlayer().getCurrentAudioFile());
             }
         }
         return playingSongs;
     }
 
+    /**
+     * Gets all songs from all playlists from all users.
+     * @return the song list
+     */
     public List<Song> allPlaylistSongs() {
         List<SimpleUser> users = Admin.getSimpleUsers();
 
@@ -192,7 +258,12 @@ public class Artist extends User {
 
     }
 
-    public boolean checkValidDeletion(Album album) {
+    /**
+     * Check if songs from album are playing boolean.
+     * @param album album to delete
+     * @return boolean
+     */
+    public boolean checkValidDeletion(final Album album) {
         for (Song song : allPlayingSongs()) {
             if (album.getSongs().contains(song)) {
                 return true;
@@ -208,12 +279,19 @@ public class Artist extends User {
         return false;
     }
 
+    /**
+     * Gets all songs from all artist's albums.
+     * @return song list
+     */
     public List<Song> mySongs() {
-        return albums.stream().map(album -> album.getSongs())
-                              .flatMap(Collection::stream)
+        return albums.stream().map(Album::getSongs).flatMap(Collection::stream)
                               .collect(Collectors.toList());
     }
 
+    /**
+     * Delete the artist string.
+     * @return the string
+     */
     public String deleteArtist() {
         if (mySongIsPlaying() || pageIsVisited()) {
             return getUsername() + " can't be deleted.";
@@ -235,6 +313,10 @@ public class Artist extends User {
         return getUsername() + " was successfully deleted.";
     }
 
+    /**
+     * Checks if artist page is visited boolean.
+     * @return boolean
+     */
     public boolean pageIsVisited() {
         for (SimpleUser user : Admin.getSimpleUsers()) {
             if (user.getSelectedUser() != null
@@ -246,6 +328,10 @@ public class Artist extends User {
         return false;
     }
 
+    /**
+     * Checks if artist's songs are playing now boolean.
+     * @return boolean
+     */
     public boolean mySongIsPlaying() {
         for (Song song : mySongs()) {
             if (allPlayingSongs().contains(song)) {

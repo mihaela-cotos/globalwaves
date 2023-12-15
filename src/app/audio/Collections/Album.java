@@ -9,16 +9,19 @@ import lombok.Setter;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Album.
+ */
 @Getter
 @Setter
-public class Album extends AudioCollection {
+public final class Album extends AudioCollection {
     private int timestamp;
     private String description;
     private Integer releaseYear;
     private ArrayList<Song> songs;
 
-    public Album(String name, String owner, ArrayList<SongInput> songs, int timestamp,
-                                            String description, Integer releaseYear) {
+    public Album(final String name, final String owner, final ArrayList<SongInput> songs,
+                 final int timestamp, final String description, final Integer releaseYear) {
         super(name, owner);
         this.setSongs(songs);
         this.timestamp = timestamp;
@@ -26,6 +29,10 @@ public class Album extends AudioCollection {
         this.releaseYear = releaseYear;
     }
 
+    /**
+     * Gets total number of likes.
+     * @return number of likes
+     */
     public int getNumberOfLikes() {
         int likes = 0;
         for (Song song : songs) {
@@ -40,21 +47,15 @@ public class Album extends AudioCollection {
     }
 
     @Override
-    public AudioFile getTrackByIndex(int index) {
+    public AudioFile getTrackByIndex(final int index) {
         return songs.get(index);
     }
 
-    public boolean containsSong(SongInput song) {
-        int count = 0;
-        for (Song iterSong : songs) {
-            if (iterSong.getName().equals(song.getName())) {
-                count++;
-            }
-        }
-        return count > 1;
-    }
-
-    public void setSongs(List<SongInput> songInputList) {
+    /**
+     * Sets album's songs from input list.
+     * @param songInputList the songs input list
+     */
+    public void setSongs(final List<SongInput> songInputList) {
         songs = new ArrayList<>();
         for (SongInput songInput : songInputList) {
             songs.add(new Song(songInput.getName(), songInput.getDuration(), songInput.getAlbum(),
@@ -63,8 +64,13 @@ public class Album extends AudioCollection {
         }
     }
 
+    /**
+     * Matches album description boolean.
+     * @param albumDescription the album description
+     * @return if the user is the owner
+     */
     @Override
-    public boolean matchesDescription(String description) {
-        return getName().toLowerCase().startsWith(description.toLowerCase());
+    public boolean matchesDescription(final String albumDescription) {
+        return getDescription().toLowerCase().startsWith(albumDescription.toLowerCase());
     }
 }
