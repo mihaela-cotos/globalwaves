@@ -1,30 +1,40 @@
 #### Cotos Mihaela, 322CD
-# Proiect GlobalWaves  - Etapa 2
+# Proiect GlobalWaves
 
-Pentru partea a doua am extins implementarea echipei de POO a etapei 1, adăugând funcționalitățile noi.
+## Overview
+This project is a simplistic implementation of a music streaming platform such as Spotify. The realisation of this project helped me a lot in understanding and consolidating the basic concepts of OOP design and Java fundamentals.
 
-### Useri - Factory Pattern
-În cadrul acestei etape, am extins funcționalitățile clasei inițiale User, creând cele 3 tipuri de useri :
+The application is accessed by users. Every user has a player that executes commands. Also, every user has private playlists and liked songs that are visible to him.  All the public playlists, podcasts and songs are stored in a library that is accessible for everyone.
 
-- useri simpli/normali : au păstrat metodele implementate în etapa 1;
-- artiști : utilizator care poate adăuga albume și are propria pagină asociată;
-- hosts : utilizator care poate adăuga podcast-uri și are propria pagină asociată.
+The project works like a back-end application. It takes the input as a JSON file and outputs the result also in a JSON file.
 
-Am implementat această structură pentru a gestiona funcționalitățile specifice ale fiecărui tip de utilizator.
+## Structure
+* src/
+  * checker/ - checker files
+  * fileio/ - contains classes used to read data from the json files
+  * main/
+      * Main - the Main class runs the checker. 
+      * Test - run the main method from Test class with the name of the input file from the command line and the result will be written
+        to the out.txt file.
+* input/ - contains the tests and library in JSON format
+* ref/ - contains all reference output for the tests in JSON format
 
-Pentru a crea instanțe ale diferitelor tipuri de utilizatori, am implementat **Factory Pattern**. Astfel, am creat o fabrică (UserFactory) care generează utilizatori în funcție de tipul specificat.
+#### Users - Factory Pattern
+In this stage, functionalities of the initial User class were extended to create three types of users:
 
-În UserFactory este declarată metoda create, care este suprascrisă în fiecare clasă specifică (SimpleUserFactory, ArtistFactory, HostFactory) și returnează utilizatorul creat.
+- Normal users: retaining methods implemented in the initial stage.
+- Artists: users capable of adding albums and possessing their own associated page.
+- Hosts: users able to add podcasts and having their own associated page.
 
-### Pages - Strategy Pattern
-Am adăugat în aplicație o structură de pagini care permite utilizatorilor să acceseze diferite secțiuni ale platformei.
+The Factory Pattern was implemented to manage the specific functionalities of each user type. UserFactory declares the create method, overridden in specific classes (SimpleUserFactory, ArtistFactory, HostFactory), which returns the created user.
+
+#### Pages - Strategy Pattern
+
+A page structure was incorporated into the application to allow users to access different sections:
 
 - HomePage
 - LikedContentPage
 - ArtistPage
 - HostPage
 
-Am implementat sistemul de pagini folosind Strategy Pattern, pornind de la faptul că printCurrentPage trebuie implementat în mod specific pentru fiecare pagină. Astfel, fiecare print are propria pagină care implementează interfața comună PrintPageStrategy și unde implementează strategia sa de printare (ex : HomePageStrategy, LikedContentPageStrategy).
-
-### Other
-Celelalte funcționalități/operații care trebuiau implementate le-am creat după modelul celor deja existente din prima etapă.
+The page system was implemented using the Strategy Pattern, whereby printCurrentPage is implemented specifically for each page. Each print has its own page that implements the common PrintPageStrategy interface, defining its print strategy (e.g., HomePageStrategy, LikedContentPageStrategy).
