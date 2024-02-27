@@ -1,5 +1,4 @@
-#### Cotos Mihaela, 322CD
-# Proiect GlobalWaves
+# Project GlobalWaves
 
 ## Overview
 This project is a simplistic implementation of a music streaming platform such as Spotify. The realisation of this project helped me a lot in understanding and consolidating the basic concepts of OOP design and Java fundamentals.
